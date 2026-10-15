@@ -1,25 +1,268 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-10-14",
+  "generated_at": "2026-10-15",
   "synthetic": false,
   "pipeline": {
-    "proposed": 0,
-    "tested": 0,
+    "proposed": 8,
+    "tested": 5,
     "passed_discovery": 0,
     "replicated": 0,
     "passed_controls": 0,
     "approved": 0,
     "published": 0,
-    "last_run": null,
+    "last_run": "2026-10-15",
     "fdr_alpha": 0.05,
     "fdr_method": "LORD++",
     "min_cell_size": 11
   },
   "findings": [],
-  "stream": [],
-  "activity": [],
+  "stream": [
+    {
+      "id": "WD-0001",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "social-needs",
+        "medication-safety",
+        "timing"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 0.06,
+      "neg_log10_alpha": 2.53,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0002",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "social-needs",
+        "medication-safety",
+        "timing"
+      ],
+      "gate": "insufficient_data",
+      "neg_log10_p": null,
+      "neg_log10_alpha": null,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0003",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "social-needs",
+        "chronic-disease",
+        "timing"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 0.39,
+      "neg_log10_alpha": 3.2,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0004",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "care-model",
+        "social-needs",
+        "medication-safety",
+        "timing"
+      ],
+      "gate": "insufficient_data",
+      "neg_log10_p": null,
+      "neg_log10_alpha": null,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0005",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "behavioral-health",
+        "medication-safety",
+        "timing"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 0.25,
+      "neg_log10_alpha": 3.27,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0006",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "social-needs",
+        "chronic-disease",
+        "timing",
+        "access"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 1.14,
+      "neg_log10_alpha": 3.35,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0007",
+      "month": "2026-10",
+      "template": "cyclic_window_interaction",
+      "tags": [
+        "social-needs",
+        "medication-safety",
+        "timing"
+      ],
+      "gate": "insufficient_data",
+      "neg_log10_p": null,
+      "neg_log10_alpha": null,
+      "source": "internal"
+    },
+    {
+      "id": "WD-0008",
+      "month": "2026-10",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "care-model",
+        "social-needs",
+        "chronic-disease"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 0.0,
+      "neg_log10_alpha": 3.42,
+      "source": "internal"
+    }
+  ],
+  "activity": [
+    {
+      "seq": 1,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0001",
+      "outcome": "pass"
+    },
+    {
+      "seq": 2,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0001",
+      "outcome": "fail"
+    },
+    {
+      "seq": 3,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0002",
+      "outcome": "pass"
+    },
+    {
+      "seq": 4,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0002",
+      "outcome": "fail"
+    },
+    {
+      "seq": 5,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0003",
+      "outcome": "pass"
+    },
+    {
+      "seq": 6,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0003",
+      "outcome": "fail"
+    },
+    {
+      "seq": 7,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0004",
+      "outcome": "pass"
+    },
+    {
+      "seq": 8,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0004",
+      "outcome": "fail"
+    },
+    {
+      "seq": 9,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0005",
+      "outcome": "pass"
+    },
+    {
+      "seq": 10,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0005",
+      "outcome": "fail"
+    },
+    {
+      "seq": 11,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0006",
+      "outcome": "pass"
+    },
+    {
+      "seq": 12,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0006",
+      "outcome": "fail"
+    },
+    {
+      "seq": 13,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0007",
+      "outcome": "pass"
+    },
+    {
+      "seq": 14,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0007",
+      "outcome": "fail"
+    },
+    {
+      "seq": 15,
+      "month": "2026-10",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0008",
+      "outcome": "pass"
+    },
+    {
+      "seq": 16,
+      "month": "2026-10",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0008",
+      "outcome": "fail"
+    }
+  ],
   "intake": [],
-  "literature": [],
   "literature_pipeline": {
     "intake": 0,
     "identity_verified": 0,
@@ -33,5 +276,6 @@
     "replicated_locally": 0,
     "approved": 0,
     "published": 0
-  }
+  },
+  "literature": []
 }

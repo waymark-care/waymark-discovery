@@ -1,0 +1,37 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-10-14",
+  "synthetic": false,
+  "pipeline": {
+    "proposed": 0,
+    "tested": 0,
+    "passed_discovery": 0,
+    "replicated": 0,
+    "passed_controls": 0,
+    "approved": 0,
+    "published": 0,
+    "last_run": null,
+    "fdr_alpha": 0.05,
+    "fdr_method": "LORD++",
+    "min_cell_size": 11
+  },
+  "findings": [],
+  "stream": [],
+  "activity": [],
+  "intake": [],
+  "literature": [],
+  "literature_pipeline": {
+    "intake": 0,
+    "identity_verified": 0,
+    "relevant": 0,
+    "appraised": 0,
+    "applies": 0,
+    "corroborated": 0,
+    "skeptic_passed": 0,
+    "translated": 0,
+    "tested_locally": 0,
+    "replicated_locally": 0,
+    "approved": 0,
+    "published": 0
+  }
+}

@@ -1,0 +1,855 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "waymark-discovery/public_feed/v1",
+  "title": "Waymark Discovery Lab public feed",
+  "description": "Whitelist of everything allowed on the public site. Any extra key fails validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "synthetic",
+    "pipeline",
+    "findings",
+    "stream",
+    "activity",
+    "intake",
+    "literature_pipeline",
+    "literature"
+  ],
+  "$defs": {
+    "ratio": {
+      "type": "number",
+      "minimum": 0.01,
+      "maximum": 100
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 400
+    },
+    "tag": {
+      "enum": [
+        "social-needs",
+        "medication-safety",
+        "timing",
+        "chronic-disease",
+        "access",
+        "care-model",
+        "behavioral-health",
+        "maternal-health",
+        "pharmacy",
+        "utilization"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "month": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}$"
+    },
+    "small_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 11
+    },
+    "source": {
+      "enum": [
+        "pubmed",
+        "arxiv",
+        "medrxiv",
+        "biorxiv",
+        "openalex"
+      ]
+    },
+    "program": {
+      "enum": [
+        "chw",
+        "pharmacy",
+        "behavioral_health",
+        "care_coordination",
+        "social_needs",
+        "compass",
+        "signal",
+        "anchor",
+        "waypoint",
+        "causal_methods",
+        "ai_safety"
+      ]
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": "1"
+    },
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "pipeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "proposed",
+        "tested",
+        "passed_discovery",
+        "replicated",
+        "passed_controls",
+        "approved",
+        "published",
+        "last_run",
+        "fdr_alpha",
+        "fdr_method",
+        "min_cell_size"
+      ],
+      "properties": {
+        "proposed": {
+          "$ref": "#/$defs/count"
+        },
+        "tested": {
+          "$ref": "#/$defs/count"
+        },
+        "passed_discovery": {
+          "$ref": "#/$defs/count"
+        },
+        "replicated": {
+          "$ref": "#/$defs/count"
+        },
+        "passed_controls": {
+          "$ref": "#/$defs/count"
+        },
+        "approved": {
+          "$ref": "#/$defs/count"
+        },
+        "published": {
+          "$ref": "#/$defs/count"
+        },
+        "last_run": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "fdr_alpha": {
+          "type": "number"
+        },
+        "fdr_method": {
+          "const": "LORD++"
+        },
+        "min_cell_size": {
+          "type": "integer",
+          "minimum": 11
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "published",
+          "title",
+          "insight",
+          "why_surprising",
+          "action_taken",
+          "population_label",
+          "population",
+          "tags",
+          "template",
+          "effect",
+          "headline",
+          "chart",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^WD-\\d{4,6}$"
+          },
+          "published": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 90
+          },
+          "insight": {
+            "type": "string",
+            "maxLength": 280
+          },
+          "why_surprising": {
+            "$ref": "#/$defs/text"
+          },
+          "action_taken": {
+            "type": "string",
+            "maxLength": 300
+          },
+          "population_label": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "population": {
+            "enum": [
+              "1k–5k",
+              "5k–10k",
+              "10k–50k",
+              "50k+"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/tag"
+            },
+            "maxItems": 4
+          },
+          "template": {
+            "enum": [
+              "cyclic_window_interaction",
+              "stratified_rate_ratio"
+            ]
+          },
+          "effect": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "measure",
+              "estimate",
+              "ci_low",
+              "ci_high"
+            ],
+            "properties": {
+              "measure": {
+                "enum": [
+                  "ratio_of_rate_ratios",
+                  "rate_ratio_mh"
+                ]
+              },
+              "estimate": {
+                "$ref": "#/$defs/ratio"
+              },
+              "ci_low": {
+                "$ref": "#/$defs/ratio"
+              },
+              "ci_high": {
+                "$ref": "#/$defs/ratio"
+              }
+            }
+          },
+          "headline": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "measure",
+              "estimate",
+              "ci_low",
+              "ci_high"
+            ],
+            "properties": {
+              "measure": {
+                "enum": [
+                  "late_vs_early_rate_ratio",
+                  "rate_ratio_mh"
+                ]
+              },
+              "estimate": {
+                "$ref": "#/$defs/ratio"
+              },
+              "ci_low": {
+                "$ref": "#/$defs/ratio"
+              },
+              "ci_high": {
+                "$ref": "#/$defs/ratio"
+              },
+              "reference_estimate": {
+                "$ref": "#/$defs/ratio"
+              },
+              "reference_ci_low": {
+                "$ref": "#/$defs/ratio"
+              },
+              "reference_ci_high": {
+                "$ref": "#/$defs/ratio"
+              }
+            }
+          },
+          "chart": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "bins",
+                  "exposed",
+                  "reference",
+                  "exposed_label",
+                  "reference_label",
+                  "late_window",
+                  "early_window"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "day_of_month"
+                  },
+                  "bins": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^\\d{1,2}–\\d{1,2}$"
+                    },
+                    "minItems": 4,
+                    "maxItems": 11
+                  },
+                  "exposed": {
+                    "type": "array",
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 10
+                    }
+                  },
+                  "reference": {
+                    "type": "array",
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 10
+                    }
+                  },
+                  "exposed_label": {
+                    "type": "string",
+                    "maxLength": 40
+                  },
+                  "late_window": {
+                    "type": "string",
+                    "pattern": "^\\d{1,2}–\\d{1,2}$"
+                  },
+                  "early_window": {
+                    "type": "string",
+                    "pattern": "^\\d{1,2}–\\d{1,2}$"
+                  },
+                  "reference_label": {
+                    "type": "string",
+                    "maxLength": 40
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "adjust",
+                  "strata"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "strata_forest"
+                  },
+                  "adjust": {
+                    "enum": [
+                      "age_band",
+                      "state"
+                    ]
+                  },
+                  "strata": {
+                    "type": "array",
+                    "maxItems": 60,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "estimate"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "pattern": "^[A-Za-z0-9 +–-]{1,20}$"
+                        },
+                        "estimate": {
+                          "oneOf": [
+                            {
+                              "$ref": "#/$defs/ratio"
+                            },
+                            {
+                              "type": "null"
+                            }
+                          ]
+                        },
+                        "ci_low": {
+                          "$ref": "#/$defs/ratio"
+                        },
+                        "ci_high": {
+                          "$ref": "#/$defs/ratio"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fdr_controlled",
+              "replicated_on_holdout",
+              "negative_control",
+              "clinician_reviewed",
+              "skeptic_concerns"
+            ],
+            "properties": {
+              "fdr_controlled": {
+                "const": true
+              },
+              "replicated_on_holdout": {
+                "const": true
+              },
+              "negative_control": {
+                "enum": [
+                  "passed",
+                  "inconclusive",
+                  "none"
+                ]
+              },
+              "negative_control_outcome": {
+                "type": "string",
+                "maxLength": 40
+              },
+              "clinician_reviewed": {
+                "const": true
+              },
+              "skeptic_concerns": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/text"
+                },
+                "maxItems": 5
+              }
+            }
+          }
+        }
+      }
+    },
+    "stream": {
+      "type": "array",
+      "maxItems": 20000,
+      "description": "One entry per tested or proposed hypothesis. Status and statistics only: no variable names, no text.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "month",
+          "template",
+          "tags",
+          "gate",
+          "neg_log10_p",
+          "neg_log10_alpha",
+          "source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^WD-\\d{4,6}$"
+          },
+          "month": {
+            "$ref": "#/$defs/month"
+          },
+          "template": {
+            "enum": [
+              "cyclic_window_interaction",
+              "stratified_rate_ratio"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/tag"
+            },
+            "maxItems": 4
+          },
+          "gate": {
+            "enum": [
+              "invalid_spec",
+              "insufficient_data",
+              "not_significant",
+              "failed_replication",
+              "failed_negative_control",
+              "rejected_by_skeptic",
+              "in_review",
+              "published"
+            ]
+          },
+          "neg_log10_p": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 20
+          },
+          "neg_log10_alpha": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 20
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^(internal|LIT-\\d{5,6})$"
+          }
+        }
+      }
+    },
+    "activity": {
+      "type": "array",
+      "maxItems": 300,
+      "description": "Recent agent actions as enums and ids only.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "seq",
+          "month",
+          "agent",
+          "verb",
+          "object"
+        ],
+        "properties": {
+          "seq": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "month": {
+            "$ref": "#/$defs/month"
+          },
+          "agent": {
+            "enum": [
+              "scout",
+              "verifier",
+              "screener",
+              "appraiser",
+              "corroborator",
+              "skeptic",
+              "translator",
+              "hypothesizer",
+              "tester",
+              "replicator",
+              "controller",
+              "narrator",
+              "clinician"
+            ]
+          },
+          "verb": {
+            "enum": [
+              "read",
+              "screen",
+              "verify",
+              "appraise",
+              "corroborate",
+              "review",
+              "translate",
+              "propose",
+              "test",
+              "confirm",
+              "control",
+              "narrate",
+              "approve",
+              "reject"
+            ]
+          },
+          "object": {
+            "type": "string",
+            "pattern": "^(WD-\\d{4,6}|LIT-\\d{5,6}|pubmed|arxiv|medrxiv|biorxiv|openalex)$"
+          },
+          "outcome": {
+            "enum": [
+              "pass",
+              "fail",
+              "pending"
+            ]
+          }
+        }
+      }
+    },
+    "intake": {
+      "type": "array",
+      "maxItems": 600,
+      "description": "Papers screened per source per month. Counts under 11 are null.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "month",
+          "source",
+          "screened",
+          "relevant"
+        ],
+        "properties": {
+          "month": {
+            "$ref": "#/$defs/month"
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "screened": {
+            "$ref": "#/$defs/small_count"
+          },
+          "relevant": {
+            "$ref": "#/$defs/small_count"
+          }
+        }
+      }
+    },
+    "literature_pipeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intake",
+        "identity_verified",
+        "relevant",
+        "appraised",
+        "applies",
+        "corroborated",
+        "skeptic_passed",
+        "translated",
+        "tested_locally",
+        "replicated_locally",
+        "approved",
+        "published"
+      ],
+      "properties": {
+        "intake": {
+          "$ref": "#/$defs/count"
+        },
+        "identity_verified": {
+          "$ref": "#/$defs/count"
+        },
+        "relevant": {
+          "$ref": "#/$defs/count"
+        },
+        "appraised": {
+          "$ref": "#/$defs/count"
+        },
+        "applies": {
+          "$ref": "#/$defs/count"
+        },
+        "corroborated": {
+          "$ref": "#/$defs/count"
+        },
+        "skeptic_passed": {
+          "$ref": "#/$defs/count"
+        },
+        "translated": {
+          "$ref": "#/$defs/count"
+        },
+        "tested_locally": {
+          "$ref": "#/$defs/count"
+        },
+        "replicated_locally": {
+          "$ref": "#/$defs/count"
+        },
+        "approved": {
+          "$ref": "#/$defs/count"
+        },
+        "published": {
+          "$ref": "#/$defs/count"
+        }
+      }
+    },
+    "literature": {
+      "type": "array",
+      "maxItems": 500,
+      "description": "Clinician-approved literature cards. Bibliographic fields are copied from the registry record and re-verified at publish.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "published",
+          "title",
+          "venue",
+          "year",
+          "doi",
+          "pmid",
+          "arxiv_id",
+          "peer_reviewed",
+          "source",
+          "design",
+          "verdict",
+          "programs",
+          "corroboration",
+          "local_test",
+          "linked_finding",
+          "what_it_means",
+          "action_taken",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^LIT-\\d{5,6}$"
+          },
+          "published": {
+            "$ref": "#/$defs/month"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 300
+          },
+          "venue": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1990,
+            "maximum": 2100
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9<>]+$"
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{1,9}$"
+          },
+          "arxiv_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}\\.\\d{4,5}(v\\d+)?$"
+          },
+          "peer_reviewed": {
+            "type": "boolean"
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          },
+          "design": {
+            "enum": [
+              "rct",
+              "quasi_experimental",
+              "cohort",
+              "case_control",
+              "cross_sectional",
+              "qualitative",
+              "systematic_review",
+              "modeling",
+              "methods",
+              "other"
+            ]
+          },
+          "verdict": {
+            "enum": [
+              "applies",
+              "watch"
+            ]
+          },
+          "programs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/program"
+            },
+            "maxItems": 5
+          },
+          "corroboration": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "supports",
+              "refutes"
+            ],
+            "properties": {
+              "supports": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "refutes": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            }
+          },
+          "local_test": {
+            "enum": [
+              "replicated_locally",
+              "not_replicated_locally",
+              "not_testable",
+              "pending"
+            ]
+          },
+          "linked_finding": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^WD-\\d{4,6}$"
+          },
+          "what_it_means": {
+            "$ref": "#/$defs/text"
+          },
+          "action_taken": {
+            "type": "string",
+            "maxLength": 300
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "identity_verified",
+              "retracted",
+              "clinician_reviewed"
+            ],
+            "properties": {
+              "identity_verified": {
+                "const": true
+              },
+              "retracted": {
+                "const": false
+              },
+              "clinician_reviewed": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

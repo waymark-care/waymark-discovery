@@ -1,0 +1,24 @@
+{
+  "min_cell_size": 11,
+  "max_len": {
+    "title": 90,
+    "insight": 280,
+    "why_surprising": 400,
+    "action_taken": 300,
+    "population_label": 80
+  },
+  "deny_patterns": [
+    "\\b\\d{3,}\\b(?!\\s*%)",
+    "\\b\\d{1,2}/\\d{1,2}(/\\d{2,4})?\\b",
+    "\\b(19|20)\\d{2}-\\d{2}-\\d{2}\\b",
+    "(?i)\\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\\.?\\s+\\d{1,2}\\b",
+    "[\\w.+-]+@[\\w-]+\\.[\\w.]+",
+    "\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}",
+    "(?i)https?://",
+    "\\b(Mr|Mrs|Ms|Miss|Dr)\\.?\\s+[A-Z][a-z]",
+    "(?i)\\b(patient|member)\\s+(id|#|number)",
+    "(?i)\\b(county|zip|zipcode|census tract|neighborhood)\\b",
+    "(?i)\\b\\d+\\s+(members?|patients?|people|persons|individuals|cases|deaths|visits|admissions)\\b"
+  ],
+  "deny_terms": []
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Waymark Discovery Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Waymark's agents test hypotheses on de-identified Medicaid data and screen new research. Only associations that replicate and pass clinician review appear here.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!--BODY-->
+<div class="synthetic" id="synthetic" hidden>
+  <div class="wrap"><b>Synthetic preview.</b> <span>Every number below comes from simulated data used to test the pipeline. None of it describes Waymark members or real papers.</span></div>
+</div>
+
+<header class="strip" aria-label="Lab counters">
+  <div class="wrap">
+    <div class="brand">
+      <div class="name">Waymark / Discovery Lab</div>
+      <div class="sub">De-identified Medicaid data + new research</div>
+      <div class="status"><i class="dot" id="status-dot"></i><span id="status-text">Loading feed</span></div>
+    </div>
+    <div class="counter" id="c-papers"></div>
+    <div class="counter" id="c-hyp"></div>
+    <div class="counter" id="c-agents"></div>
+    <div class="counter" id="c-rep"></div>
+    <div class="counter" id="c-review"></div>
+    <div class="counter pub" id="c-pub"></div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="intro" aria-label="About">
+      <h1>Agents that keep asking what our data knows.</h1>
+      <p>Waymark's agents propose hypotheses about the Medicaid members we serve, test them on de-identified data, and try to knock them down. Agents also screen newly published and preprint research, and test whether each result holds in Waymark's own data. An association appears here only after it replicates on members the agents never saw and a Waymark clinician signs off.</p>
+    </section>
+  </div>
+
+  <figure class="obs" style="margin:0">
+    <canvas id="obs" role="img" aria-label="Observatory of hypotheses and agent actions"></canvas>
+  </figure>
+  <div class="wrap">
+    <div class="obs-key" id="obs-key">
+      <div><b>Left field</b><span id="key-left">One curve per hypothesis in the stream, and one per agent action on a paper.</span></div>
+      <div><b>Ledger ring</b><span id="key-ring">Ids, gates and statistics from the stream and the agent log. Outer ticks count hypotheses in stream order.</span></div>
+      <div><b>Spectrum</b><span id="key-right"><i class="swatch thin"></i>one ray per tested hypothesis, length = −log₁₀ p. <i class="swatch"></i>heavy rays passed the discovery threshold. <i class="swatch acc"></i>published. The line across the rays is each hypothesis's own LORD++ threshold.</span></div>
+    </div>
+
+    <div class="panels" id="panels">
+      <article class="panel"><header><h2>Investigation feed</h2><span id="p-feed-n"></span></header><div class="body" id="p-feed"></div></article>
+      <article class="panel"><header><h2>Literature intake</h2><span id="p-intake-n"></span></header><div class="body" id="p-intake"></div></article>
+      <article class="panel"><header><h2>Applicability workspace</h2><span id="p-work-n"></span></header><div class="body" id="p-work"></div></article>
+      <article class="panel"><header><h2>Alpha-wealth trace</h2><span>LORD++</span></header><div class="body" id="p-alpha"></div></article>
+      <article class="panel"><header><h2>Gate funnel</h2><span>cumulative</span></header><div class="body" id="p-funnel"></div></article>
+      <article class="panel"><header><h2>Agents / dispatch</h2><span id="p-agents-n"></span></header><div class="body" id="p-agents"></div></article>
+      <article class="panel"><header><h2>Replication field</h2><span>95% CI, log scale</span></header><div class="body" id="p-rep"></div></article>
+      <article class="panel"><header><h2>Method index</h2><span>template × tag</span></header><div class="body" id="p-matrix"></div></article>
+    </div>
+
+    <section class="block" id="gates">
+      <div class="section-head">
+        <div class="eyebrow">Rigor</div>
+        <h2>Every hypothesis has to clear five gates</h2>
+        <p>Continuous testing produces false positives unless the error rate is controlled across the whole stream. LORD++ controls the false discovery rate at <span id="fdr-pct">5%</span> across the open-ended stream under independence; tests that share members are dependent, so treat this as approximate. Each candidate is then confirmed on a held-out half of members and checked against a negative-control outcome that should show nothing.</p>
+      </div>
+      <div class="gates" id="gate-list"></div>
+      <div class="gates-foot" id="gate-foot"></div>
+      <div class="lit-gates">
+        <div class="eyebrow">Papers from the literature</div>
+        <ol>
+          <li>Screened for relevance to the programs Waymark runs.</li>
+          <li>Identity checked against the registry record (DOI, PubMed or arXiv), with retracted papers removed.</li>
+          <li>Appraised for study design, then marked as applies or watch.</li>
+          <li>Corroborated against other studies, and challenged by a skeptic agent.</li>
+          <li>Translated into a local test where Waymark's data can answer it, and run through the same gates as any other hypothesis.</li>
+          <li>Approved by a Waymark clinician before it appears here.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="block" id="findings">
+      <div class="section-head">
+        <div class="eyebrow">Findings</div>
+        <h2>What the agents found</h2>
+        <p>Observational associations, newest first. Each card shows the effect, how it was checked, and what our care teams changed because of it. None of these are causal estimates.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter findings by topic"></div>
+      <div class="findings" id="finding-list"></div>
+    </section>
+
+    <section class="block" id="literature">
+      <div class="section-head">
+        <div class="eyebrow">From the literature</div>
+        <h2>Research the agents checked against our data</h2>
+        <p>Published and preprint studies that passed screening, appraisal and clinician review. Each card says whether the result was tested in Waymark's data and what that test showed.</p>
+      </div>
+      <div class="lits" id="lit-list"></div>
+    </section>
+
+    <section class="block" id="privacy">
+      <div class="section-head">
+        <div class="eyebrow">Privacy</div>
+        <h2>Member data never leaves Waymark</h2>
+        <p>Discovery runs inside Waymark's secure environment. What reaches this page is a short whitelist of ratios, ids and labels, checked by software twice and by a clinician once.</p>
+      </div>
+      <div class="firewall">
+        <svg viewBox="0 0 1000 250" role="img" aria-label="Data flow: warehouse, agents, analysis templates and clinician review sit inside Waymark; only a whitelisted feed is public.">
+          <rect x="4" y="22" width="758" height="220" style="fill:none;stroke:var(--rule);stroke-width:1.5;stroke-dasharray:4 3"></rect>
+          <text x="10" y="14" style="fill:var(--muted);font:600 11px var(--font-mono);letter-spacing:.08em">INSIDE WAYMARK'S SECURE ENVIRONMENT</text>
+          <text x="790" y="14" style="fill:var(--muted);font:600 11px var(--font-mono);letter-spacing:.08em">PUBLIC</text>
+          <g style="font:13px var(--font-body)">
+            <g transform="translate(20,52)"><rect width="168" height="168" style="fill:var(--surface);stroke:var(--line)"></rect>
+              <text x="14" y="30" style="fill:var(--ink);font:600 12px var(--font-mono);letter-spacing:.06em">WAREHOUSE</text>
+              <text x="14" y="58" style="fill:var(--ink-2)"><tspan x="14">Row-level data stays</tspan><tspan x="14" dy="18">here. Members are</tspan><tspan x="14" dy="18">keyed by a salted</tspan><tspan x="14" dy="18">hash.</tspan></text></g>
+            <g transform="translate(206,52)"><rect width="168" height="168" style="fill:var(--surface);stroke:var(--line)"></rect>
+              <text x="14" y="30" style="fill:var(--ink);font:600 12px var(--font-mono);letter-spacing:.06em">AGENTS</text>
+              <text x="14" y="58" style="fill:var(--ink-2)"><tspan x="14">See the data</tspan><tspan x="14" dy="18">dictionary, papers and</tspan><tspan x="14" dy="18">aggregate results.</tspan><tspan x="14" dy="18">Never rows.</tspan></text></g>
+            <g transform="translate(392,52)"><rect width="168" height="168" style="fill:var(--surface);stroke:var(--line)"></rect>
+              <text x="14" y="30" style="fill:var(--ink);font:600 12px var(--font-mono);letter-spacing:.06em">FIXED TEMPLATES</text>
+              <text x="14" y="58" style="fill:var(--ink-2)"><tspan x="14">Audited code runs</tspan><tspan x="14" dy="18">every analysis. Cells</tspan><tspan x="14" dy="18">under 11 are</tspan><tspan x="14" dy="18">suppressed at source.</tspan></text></g>
+            <g transform="translate(578,52)"><rect width="168" height="168" style="fill:var(--surface);stroke:var(--line)"></rect>
+              <text x="14" y="30" style="fill:var(--ink);font:600 12px var(--font-mono);letter-spacing:.06em">CLINICIAN REVIEW</text>
+              <text x="14" y="58" style="fill:var(--ink-2)"><tspan x="14">A Waymark clinician</tspan><tspan x="14" dy="18">edits and approves</tspan><tspan x="14" dy="18">each card before it</tspan><tspan x="14" dy="18">can publish.</tspan></text></g>
+            <g transform="translate(790,52)"><rect width="196" height="168" style="fill:var(--surface);stroke:var(--ink);stroke-width:1.5"></rect>
+              <text x="14" y="30" style="fill:var(--ink);font:600 12px var(--font-mono);letter-spacing:.06em">PUBLIC FEED</text>
+              <text x="14" y="58" style="fill:var(--ink-2)"><tspan x="14">Ratios, intervals, ids,</tspan><tspan x="14" dy="18">size buckets and</tspan><tspan x="14" dy="18">month-level dates.</tspan><tspan x="14" dy="18">Schema-checked twice.</tspan></text></g>
+          </g>
+          <g style="stroke:var(--muted);stroke-width:1.5;fill:none">
+            <path d="M190 136h14"></path><path d="M376 136h14"></path><path d="M562 136h14"></path><path d="M748 136h40"></path>
+          </g>
+          <g style="fill:var(--muted)">
+            <path d="M204 136l-6 -4v8z"></path><path d="M390 136l-6 -4v8z"></path><path d="M576 136l-6 -4v8z"></path><path d="M788 136l-6 -4v8z"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="never">
+        <div><b>No individual records</b>Only ratios and confidence intervals computed from groups of at least 11.</div>
+        <div><b>No exact sizes</b>Population size is published as a range, such as 10k–50k members. Intake counts under 11 show as &lt;11.</div>
+        <div><b>No dates or places</b>Publication month only. Nothing finer than state.</div>
+        <div><b>No free text unchecked</b>Agent-written text is scanned for counts, dates, names and places, then edited by a clinician. The hypothesis stream carries ids and statistics only.</div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Findings are associations in Waymark's de-identified operational data. They generate hypotheses for care design and are not causal estimates. Effect sizes are rate ratios with 95% confidence intervals. Literature cards summarize the cited study; read the source for its full methods and limits.</p>
+    <p>False discovery rate control with LORD++ assumes independent tests. Hypotheses that share members are dependent, so the stated rate is approximate.</p>
+    <p>The full public feed is published as <a href="data/feed.json">data/feed.json</a>. Updated <span id="feed-date" class="mono">—</span>.</p>
+  </div>
+</footer>
+<div class="tip" id="tip" hidden></div>
+<script src="assets/app.js"></script>
+<!--/BODY-->
+</body>
+</html>

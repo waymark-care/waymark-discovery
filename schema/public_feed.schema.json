@@ -216,6 +216,7 @@
           "template": {
             "enum": [
               "cyclic_window_interaction",
+              "cyclic_window_single",
               "stratified_rate_ratio"
             ]
           },
@@ -232,6 +233,7 @@
               "measure": {
                 "enum": [
                   "ratio_of_rate_ratios",
+                  "late_vs_early_rate_ratio",
                   "rate_ratio_mh"
                 ]
               },
@@ -477,6 +479,7 @@
           "template": {
             "enum": [
               "cyclic_window_interaction",
+              "cyclic_window_single",
               "stratified_rate_ratio"
             ]
           },
@@ -491,6 +494,7 @@
             "enum": [
               "invalid_spec",
               "insufficient_data",
+              "underpowered",
               "not_significant",
               "failed_replication",
               "failed_negative_control",

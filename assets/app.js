@@ -20,8 +20,8 @@
     "behavioral-health": "Behavioral health", "maternal-health": "Maternal health", pharmacy: "Pharmacy", utilization: "Utilization",
   };
   const TAG_KEYS = Object.keys(TAGS);
-  const TEMPLATES = { cyclic_window_interaction: "cyclic_window", stratified_rate_ratio: "stratified_rr" };
-  const GATES = ["invalid_spec", "insufficient_data", "not_significant", "failed_replication", "failed_negative_control", "rejected_by_skeptic", "in_review", "published"];
+  const TEMPLATES = { cyclic_window_interaction: "cyclic_window", cyclic_window_single: "cyclic_single", stratified_rate_ratio: "stratified_rr" };
+  const GATES = ["invalid_spec", "insufficient_data", "underpowered", "not_significant", "failed_replication", "failed_negative_control", "rejected_by_skeptic", "in_review", "published"];
   const gateRank = (g) => GATES.indexOf(g);
   const passedDiscovery = (s) => gateRank(s.gate) > 2;
   const AGENTS = ["scout", "verifier", "screener", "appraiser", "corroborator", "skeptic", "translator", "hypothesizer", "tester", "replicator", "controller", "narrator", "clinician"];
@@ -640,19 +640,19 @@
     const host = $("#p-matrix"), s = feed.stream;
     const tmpl = Object.keys(TEMPLATES);
     const counts = {}; const rowsK = [...TAG_KEYS, "untagged"];
-    for (const r of rowsK) counts[r] = { cyclic_window_interaction: 0, stratified_rate_ratio: 0 };
-    for (const e of s) { const tags = e.tags.length ? e.tags : ["untagged"]; for (const t of tags) if (counts[t]) counts[t][e.template]++; }
+    for (const r of rowsK) counts[r] = Object.fromEntries(tmpl.map((t) => [t, 0]));
+    for (const e of s) { const tags = e.tags.length ? e.tags : ["untagged"]; for (const t of tags) if (counts[t] && e.template in counts[t]) counts[t][e.template]++; }
     const max = Math.max(1, ...rowsK.flatMap((r) => tmpl.map((t) => counts[r][t])));
     const shade = (v) => { const f = v / max; return v ? `background:color-mix(in srgb, var(--ink) ${(6 + 66 * f).toFixed(0)}%, var(--surface))` : "background:var(--surface)"; };
+    const short = { cyclic_window_interaction: "cyclic", cyclic_window_single: "single", stratified_rate_ratio: "strat." };
     const tbl = h("table", { class: "matrix" },
-      h("colgroup", null, h("col", { class: "c1" }), h("col"), h("col"), h("col")),
-      h("thead", null, h("tr", null, h("th", { text: "tag" }), h("th", { text: "cyclic" }), h("th", { text: "strat." }), h("th", { text: "all" }))),
+      h("colgroup", null, h("col", { class: "c1" }), ...tmpl.map(() => h("col")), h("col")),
+      h("thead", null, h("tr", null, h("th", { text: "tag" }), ...tmpl.map((t) => h("th", { text: short[t] || t })), h("th", { text: "all" }))),
       h("tbody", null, rowsK.map((r) => {
-        const a = counts[r].cyclic_window_interaction, b = counts[r].stratified_rate_ratio;
+        const vals = tmpl.map((t) => counts[r][t]);
         return h("tr", null, h("th", { text: r }),
-          h("td", { style: shade(a), class: a / max > 0.6 ? "hi" : "", title: `${r} × cyclic_window_interaction: ${a}`, text: num(a) }),
-          h("td", { style: shade(b), class: b / max > 0.6 ? "hi" : "", title: `${r} × stratified_rate_ratio: ${b}`, text: num(b) }),
-          h("td", { text: num(a + b) }));
+          ...tmpl.map((t, i) => h("td", { style: shade(vals[i]), class: vals[i] / max > 0.6 ? "hi" : "", title: `${r} × ${t}: ${vals[i]}`, text: num(vals[i]) })),
+          h("td", { text: num(vals.reduce((x, y) => x + y, 0)) }));
       })));
     fill(host, s.length ? tbl : none("No hypotheses yet. Counts of hypotheses by analysis template and topic tag will appear here."),
       s.length ? h("div", { class: "note", text: "Hypotheses with several tags count once per tag. Darker = more." }) : null);

@@ -255,3 +255,14 @@ footer p { margin: 0; max-width: 64em; }
 .pubcard .meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font: 500 11px/1.3 var(--font-mono); color: var(--muted); }
 .pubcard h3 { font: 600 15px/1.35 var(--font-body); margin: 8px 0 0; overflow-wrap: anywhere; }
 .pubcard h3 a { color: var(--ink); }
+
+.pubcard .pf-finding { margin: 8px 0 0; color: var(--ink); line-height: 1.45; }
+.pubcard .pf-why { margin: 8px 0 0; color: var(--ink-2); font-size: .92em; line-height: 1.45; }
+.pubcard .pf-why b { font: 600 10px/1 var(--font-mono); text-transform: uppercase; letter-spacing: .05em; margin-right: 4px; }
+.pubcard .pf-src { margin: 10px 0 0; font-size: .85em; }
+.pubcard .pf-src a { color: var(--muted); }
+.reprows { display: grid; gap: 10px; }
+.reprow { border-top: 1px solid var(--line); padding-top: 8px; display: grid; gap: 3px; min-width: 0; }
+.reprow .rv { font: 600 11px/1.3 var(--font-mono); color: var(--ink); text-transform: uppercase; letter-spacing: .04em; }
+.reprow .rm { font: 500 12px/1.4 var(--font-mono); color: var(--ink); overflow-wrap: anywhere; }
+.reprow .rh { font-size: 11px; color: var(--muted); line-height: 1.35; }

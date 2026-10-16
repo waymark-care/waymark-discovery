@@ -893,7 +893,9 @@
         h("p", { text: `${feed.literature_pipeline.intake ? `Agents have screened ${num(feed.literature_pipeline.intake)} papers so far. ` : ""}A paper appears only after its identity is verified against the registry record, it is appraised and corroborated, a skeptic agent reviews it, and a Waymark clinician approves the card.` })));
       return;
     }
-    fill(list, lits.map((l) => {
+    const rank = { replicated_locally: 0, not_replicated_locally: 1, pending: 2, not_testable: 3 };
+    const ordered = lits.slice().sort((a, b) => (rank[a.local_test] ?? 9) - (rank[b.local_test] ?? 9) || (a.verdict === "applies" ? -1 : 1) - (b.verdict === "applies" ? -1 : 1));
+    fill(list, ordered.map((l) => {
       const href = l.doi ? doiUrl(l.doi) : l.pmid ? pmUrl(l.pmid) : l.arxiv_id ? arxUrl(l.arxiv_id) : null;
       const ids = [];
       if (l.doi) ids.push(h("a", { href: doiUrl(l.doi), target: "_blank", rel: "noopener", text: `doi:${l.doi}` }));
@@ -918,9 +920,10 @@
         h("dl", null,
           h("dt", { text: "Design" }), h("dd", { text: DESIGNS[l.design] || l.design }),
           h("dt", { text: "Programs" }), h("dd", { text: l.programs.length ? l.programs.map((p) => PROGRAMS[p] || p).join(", ") : "none listed" }),
-          h("dt", { text: "Corroboration" }), h("dd", { text: corr }),
-          h("dt", { text: "Local test" }), h("dd", null, h("span", { class: l.local_test === "replicated_locally" ? "badge ok" : "badge pre", text: LOCAL[l.local_test] || l.local_test })),
-          h("dt", { text: "Linked finding" }), h("dd", null, linked)),
+          // rows that would read the same on every card are left out
+          ...(c.supports == null && c.refutes == null ? [] : [h("dt", { text: "Corroboration" }), h("dd", { text: corr })]),
+          ...(l.local_test === "not_testable" ? [] : [h("dt", { text: "Local test" }), h("dd", null, h("span", { class: l.local_test === "replicated_locally" ? "badge ok" : "badge pre", text: LOCAL[l.local_test] || l.local_test }))]),
+          ...(l.linked_finding ? [h("dt", { text: "Linked finding" }), h("dd", null, linked)] : [])),
         l.action_taken ? h("p", { class: "acted" }, h("b", { text: "What we changed" }), l.action_taken) : null);
     }));
   }

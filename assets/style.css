@@ -240,3 +240,10 @@ footer p { margin: 0; max-width: 64em; }
   .lit dd { margin-bottom: 6px; }
   section.block { padding-block: 36px; }
 }
+
+/* Waymark publications */
+.pubs .pub-year { margin: 18px 0 0; }
+.pubs .pub-items { margin: 6px 0 0; padding-left: 1.2em; }
+.pubs .pub-items li { margin: 0 0 8px; line-height: 1.45; overflow-wrap: anywhere; }
+.pubs .pub-items a { color: var(--ink); }
+.pubs .cite { color: var(--muted); font-size: .92em; }

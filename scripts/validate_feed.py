@@ -64,6 +64,16 @@ for c in feed.get("literature", []):
     if not (c.get("doi") or c.get("pmid") or c.get("arxiv_id")):
         errors.append(f"{c.get('id')}: no registry identifier")
 
+# Waymark publications: registry bibliographic records only.
+for i, p in enumerate(feed.get("publications", [])):
+    for k in ("title", "venue"):
+        for pat in IDENTIFIER_PATTERNS:
+            m = re.search(pat, str(p.get(k, "")))
+            if m:
+                errors.append(f"publications[{i}].{k}: identifier pattern matched {m.group(0)!r}")
+    if not (p.get("doi") or p.get("pmid")):
+        errors.append(f"publications[{i}]: no registry identifier")
+
 # Status-only stream and counts: independent re-check of the small-cell rule.
 for row in feed.get("intake", []):
     for k in ("screened", "relevant"):

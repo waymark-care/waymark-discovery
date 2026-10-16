@@ -687,7 +687,8 @@
       ["Clinician-approved", "signed off for publication", p.approved],
       ["Published", "on this page", p.published],
     ];
-    fill($("#gate-list"), g.map(([name, sub, n]) => h("div", { class: "gate" + (name === "Published" ? " pub" : "") },
+    // gates after "Tested" appear once something has reached them
+    fill($("#gate-list"), g.filter(([, , n], i) => i < 2 || n > 0).map(([name, sub, n]) => h("div", { class: "gate" + (name === "Published" ? " pub" : "") },
       h("div", { class: "name" }, name, h("small", { text: sub })),
       h("div", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${n ? Math.max(0.5, (100 * n) / max) : 0}%` })),
       h("div", { class: "n", text: num(n) }))));

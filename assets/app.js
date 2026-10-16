@@ -128,14 +128,18 @@
 
     const tested = feed.stream.filter((s) => s.neg_log10_p != null).length;
     const agentsActive = new Set(feed.activity.map((a) => a.agent)).size;
-    const review = Math.max(0, p.passed_controls - p.approved);
-    const published = p.published + feed.literature.length;
+    const pubs = feed.publications;
+    const peer = pubs.filter((x) => x.peer_reviewed).length;
+    const repPubs = pubs.filter((x) => x.replicated).length;
+    const approved = p.approved + lp.approved;
+    const waiting = Math.max(0, p.passed_controls - p.approved) + Math.max(0, lp.skeptic_passed - lp.approved);
+    const published = p.published + feed.literature.length + pubs.length;
     counter($("#c-papers"), "Papers screened", lp.intake, lp.intake ? `${Math.round(100 * pct(lp.relevant, lp.intake))}% relevant` : "none yet", pct(lp.relevant, lp.intake));
     counter($("#c-hyp"), "Hypotheses", feed.stream.length, feed.stream.length ? `${num(tested)} tested` : "none yet", pct(tested, feed.stream.length));
     counter($("#c-agents"), "Agents", agentsActive || AGENTS.length, agentsActive ? `active of ${AGENTS.length} in log` : `${AGENTS.length} configured, no log yet`, agentsActive ? agentsActive / AGENTS.length : 0);
-    counter($("#c-rep"), "Replicated", p.replicated, p.passed_discovery ? `of ${num(p.passed_discovery)} passed FDR` : "none yet", pct(p.replicated, p.passed_discovery));
-    counter($("#c-review"), "In clinical review", review, p.passed_controls ? `of ${num(p.passed_controls)} passed controls` : "none yet", pct(review, p.passed_controls));
-    counter($("#c-pub"), "Published", published, `${num(p.published)} findings · ${num(feed.literature.length)} papers`, pct(p.published, p.approved || p.published) || (published ? 1 : 0));
+    counter($("#c-rep"), "Replicated", p.replicated + repPubs, `${num(repPubs)} published · ${num(p.replicated)} agent hypotheses`, pct(p.replicated + repPubs, p.passed_discovery + peer));
+    counter($("#c-review"), "Reviewed", peer + approved, `${num(peer)} peer-reviewed · ${num(approved)} clinician-approved · ${num(waiting)} awaiting review`, pct(peer + approved, peer + approved + waiting));
+    counter($("#c-pub"), "Published", published, `${num(p.published)} findings · ${num(feed.literature.length)} checked · ${num(feed.publications.length)} by Waymark`, pct(p.published, p.approved || p.published) || (published ? 1 : 0));
   }
 
   /* ================= OBSERVATORY ================= */
@@ -793,12 +797,28 @@
   }
 
   let activeTag = "all";
+  function publishedFindings(feed) {
+    const peer = feed.publications.filter((p) => p.peer_reviewed);
+    if (!peer.length) return null;
+    const top = peer.slice().sort((a, b) => (b.replicated - a.replicated) || b.month.localeCompare(a.month)).slice(0, 8);
+    return h("div", { class: "pubfind" },
+      h("div", { class: "eyebrow", text: "Published findings · peer reviewed" }),
+      h("div", { class: "pubfind-grid" }, top.map((p) =>
+        h("article", { class: "pubcard" },
+          h("div", { class: "meta" }, h("span", { text: `${p.venue}, ${p.year}` }),
+            h("span", { class: "badge", text: "peer-reviewed" }),
+            p.replicated ? h("span", { class: "badge ok", text: "replicated" }) : null),
+          h("h3", null, h("a", { href: p.doi ? doiUrl(p.doi) : pmUrl(p.pmid), target: "_blank", rel: "noopener", text: p.title }))))),
+      h("p", { class: "note" }, `${num(peer.length)} peer-reviewed Waymark papers in all. `, h("a", { href: "#publications", text: "See the full list" }), "."));
+  }
+
   function renderFindings(feed) {
     const list = $("#finding-list"), filters = $("#filters"), fs = feed.findings;
+    const pubBlock = publishedFindings(feed);
     if (!fs.length) {
       filters.hidden = true;
-      fill(list, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "Nothing published yet" }), h("h3", { text: "The first findings will appear here" }),
-        h("p", { text: `${feed.pipeline.tested ? `Agents have tested ${num(feed.pipeline.tested)} hypotheses so far. ` : ""}A finding is published only after it passes online FDR control, replicates on held-out members, clears its negative control and is approved by a Waymark clinician. Most hypotheses never make it.` })));
+      fill(list, pubBlock, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "Agent findings" }), h("h3", { text: "No agent finding has cleared every gate yet" }),
+        h("p", { text: `${feed.pipeline.tested ? `Agents have tested ${num(feed.pipeline.tested)} hypotheses so far. ` : ""}A finding from the agents is published only after it passes online FDR control, replicates on held-out members, clears its negative control and is approved by a Waymark clinician. Most hypotheses never make it.` })));
       return;
     }
     const tags = [...new Set(fs.flatMap((f) => f.tags))];
@@ -807,7 +827,7 @@
       h("button", { class: "chip", type: "button", "data-tag": k, "aria-pressed": String(k === activeTag), text: l })));
     filters.onclick = (e) => { const b = e.target.closest("[data-tag]"); if (!b) return; activeTag = b.dataset.tag; renderFindings(feed); };
     const shown = fs.filter((f) => activeTag === "all" || f.tags.includes(activeTag));
-    fill(list, shown.map((f) => {
+    fill(list, pubBlock, shown.map((f) => {
       const host = h("div", { class: "chart" });
       const card = h("article", { class: "finding", id: f.id },
         h("div", { style: "min-width:0" },
@@ -882,7 +902,8 @@
           const href = p.doi ? doiUrl(p.doi) : pmUrl(p.pmid);
           return h("li", null,
             h("a", { href, target: "_blank", rel: "noopener", text: p.title }),
-            h("span", { class: "cite", text: ` ${p.venue}${p.peer_reviewed ? "" : " (preprint)"}` }));
+            h("span", { class: "cite", text: ` ${p.venue}${p.peer_reviewed ? "" : " (preprint)"}` }),
+            p.replicated ? h("span", { class: "badge ok", style: "margin-left:8px", text: "replicated" }) : null);
         })))));
   }
 

@@ -691,6 +691,17 @@
       h("div", { class: "name" }, name, h("small", { text: sub })),
       h("div", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${n ? Math.max(0.5, (100 * n) / max) : 0}%` })),
       h("div", { class: "n", text: num(n) }))));
+    const pubs = feed.publications, pmax = Math.max(1, pubs.length);
+    const pg = [
+      ["Papers by Waymark", "author affiliation on the registry record", pubs.length],
+      ["Peer reviewed", "published in a journal", pubs.filter((x) => x.peer_reviewed).length],
+      ["Featured findings", "non-intuitive results, clinician-approved", feed.published_findings.length],
+      ["Replicated", "validated on held-out, external or prospective data", pubs.filter((x) => x.replicated).length],
+    ];
+    fill($("#pub-gate-list"), pg.map(([name, sub, n], i) => h("div", { class: "gate" + (i === 2 ? " pub" : "") },
+      h("div", { class: "name" }, name, h("small", { text: sub })),
+      h("div", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${n ? Math.max(0.5, (100 * n) / pmax) : 0}%` })),
+      h("div", { class: "n", text: num(n) }))));
     const rejected = p.tested ? Math.round((100 * (p.tested - p.passed_controls)) / p.tested) : null;
     fill($("#gate-foot"), p.tested
       ? [h("div", null, h("b", { text: `${rejected}%` }), "of tested hypotheses rejected"),

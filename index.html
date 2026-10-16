@@ -65,9 +65,12 @@
     <section class="block" id="gates">
       <div class="section-head">
         <div class="eyebrow">Rigor</div>
-        <h2>Every hypothesis has to clear five gates</h2>
-        <p>Continuous testing produces false positives unless the error rate is controlled across the whole stream. LORD++ controls the false discovery rate at <span id="fdr-pct">5%</span> across the open-ended stream under independence; tests that share members are dependent, so treat this as approximate. Each candidate is then confirmed on a held-out half of members and checked against a negative-control outcome that should show nothing.</p>
+        <h2>How a finding earns a place on this page</h2>
+        <p>Findings reach this page by one of two routes. Waymark's published papers have passed journal peer review, and we feature only the non-intuitive results a Waymark clinician has approved. Agent hypotheses face five statistical gates instead: continuous testing produces false positives unless the error rate is controlled across the whole stream. LORD++ controls the false discovery rate at <span id="fdr-pct">5%</span> across the open-ended stream under independence; tests that share members are dependent, so treat this as approximate. Each candidate is then confirmed on a held-out half of members and checked against a negative-control outcome that should show nothing.</p>
       </div>
+      <div class="eyebrow" style="margin-bottom:10px">Waymark's published research · peer review</div>
+      <div class="gates" id="pub-gate-list"></div>
+      <div class="eyebrow" style="margin:28px 0 10px">Agent hypotheses · five statistical gates</div>
       <div class="gates" id="gate-list"></div>
       <div class="gates-foot" id="gate-foot"></div>
       <div class="lit-gates">

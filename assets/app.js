@@ -97,11 +97,11 @@
 
   /* ---------- normalize ---------- */
   const EMPTY_LP = { intake: 0, identity_verified: 0, relevant: 0, appraised: 0, applies: 0, corroborated: 0, skeptic_passed: 0, translated: 0, tested_locally: 0, replicated_locally: 0, approved: 0, published: 0 };
-  const EMPTY = { schema_version: "1", generated_at: null, synthetic: false, findings: [], stream: [], activity: [], intake: [], literature: [], literature_pipeline: EMPTY_LP,
+  const EMPTY = { schema_version: "1", generated_at: null, synthetic: false, findings: [], stream: [], activity: [], intake: [], literature: [], publications: [], literature_pipeline: EMPTY_LP,
     pipeline: { proposed: 0, tested: 0, passed_discovery: 0, replicated: 0, passed_controls: 0, approved: 0, published: 0, last_run: null, fdr_alpha: 0.05, fdr_method: "LORD++", min_cell_size: 11 } };
   function normalize(f) {
     const feed = Object.assign({}, EMPTY, f || {});
-    for (const k of ["findings", "stream", "activity", "intake", "literature"]) if (!Array.isArray(feed[k])) feed[k] = [];
+    for (const k of ["findings", "stream", "activity", "intake", "literature", "publications"]) if (!Array.isArray(feed[k])) feed[k] = [];
     feed.pipeline = Object.assign({}, EMPTY.pipeline, feed.pipeline || {});
     feed.literature_pipeline = Object.assign({}, EMPTY_LP, feed.literature_pipeline || {});
     feed.activitySorted = feed.activity.slice().sort((a, b) => a.seq - b.seq);
@@ -849,7 +849,8 @@
         h("div", { style: "min-width:0" },
           h("div", { class: "meta" }, h("span", { text: l.id }), h("span", { text: fmtMonth(l.published) }),
             h("span", { class: l.peer_reviewed ? "badge" : "badge pre", text: l.peer_reviewed ? "peer-reviewed" : "preprint" }),
-            h("span", { class: "badge" + (l.verdict === "applies" ? "" : " pre"), text: l.verdict })),
+            h("span", { class: "badge" + (l.verdict === "applies" ? "" : " pre"), text: l.verdict }),
+            l.waymark_authored ? h("span", { class: "badge pre", title: "A Waymark author is on this paper, so it is not independent evidence", text: "Waymark-authored" }) : null),
           h("h3", null, href ? h("a", { href, target: "_blank", rel: "noopener", text: l.title }) : l.title),
           h("p", { class: "cite", text: `${l.venue}, ${l.year} · via ${l.source}` }),
           h("div", { class: "ids" }, ids),
@@ -864,10 +865,31 @@
     }));
   }
 
+  function renderPublications(feed) {
+    const list = $("#pub-list"), pubs = feed.publications;
+    if (!pubs.length) {
+      fill(list, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "Loading the publication list" }), h("h3", { text: "Waymark papers will appear here" }),
+        h("p", { text: "The list is rebuilt daily from PubMed and OpenAlex records that name a Waymark affiliation." })));
+      return;
+    }
+    const peer = pubs.filter((p) => p.peer_reviewed).length;
+    const years = [...new Set(pubs.map((p) => p.year))].sort((a, b) => b - a);
+    fill(list,
+      h("p", { class: "note", text: `${num(pubs.length)} papers: ${num(peer)} peer-reviewed, ${num(pubs.length - peer)} preprints.` }),
+      years.map((y) => h("div", { class: "pub-year" },
+        h("h3", { class: "eyebrow", text: String(y) }),
+        h("ol", { class: "pub-items" }, pubs.filter((p) => p.year === y).map((p) => {
+          const href = p.doi ? doiUrl(p.doi) : pmUrl(p.pmid);
+          return h("li", null,
+            h("a", { href, target: "_blank", rel: "noopener", text: p.title }),
+            h("span", { class: "cite", text: ` ${p.venue}${p.peer_reviewed ? "" : " (preprint)"}` }));
+        })))));
+  }
+
   /* ---------- boot ---------- */
   function boot(raw) {
     const feed = normalize(raw);
-    const steps = [renderStrip, panelFeed, panelIntake, panelWork, panelAlpha, panelFunnel, panelAgents, panelReplication, panelMatrix, renderGates, renderFindings, renderLiterature, startObservatory];
+    const steps = [renderStrip, panelFeed, panelIntake, panelWork, panelAlpha, panelFunnel, panelAgents, panelReplication, panelMatrix, renderGates, renderFindings, renderPublications, renderLiterature, startObservatory];
     for (const s of steps) { try { s(feed); } catch (e) { console.error(`render ${s.name} failed`, e); } }
     if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
   }

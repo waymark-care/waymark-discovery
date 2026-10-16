@@ -874,7 +874,8 @@
           "month",
           "doi",
           "pmid",
-          "peer_reviewed"
+          "peer_reviewed",
+          "replicated"
         ],
         "properties": {
           "title": {
@@ -909,6 +910,9 @@
             "pattern": "^\\d{1,9}$"
           },
           "peer_reviewed": {
+            "type": "boolean"
+          },
+          "replicated": {
             "type": "boolean"
           }
         }

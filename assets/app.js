@@ -97,11 +97,11 @@
 
   /* ---------- normalize ---------- */
   const EMPTY_LP = { intake: 0, identity_verified: 0, relevant: 0, appraised: 0, applies: 0, corroborated: 0, skeptic_passed: 0, translated: 0, tested_locally: 0, replicated_locally: 0, approved: 0, published: 0 };
-  const EMPTY = { schema_version: "1", generated_at: null, synthetic: false, findings: [], stream: [], activity: [], intake: [], literature: [], publications: [], literature_pipeline: EMPTY_LP,
+  const EMPTY = { schema_version: "1", generated_at: null, synthetic: false, findings: [], stream: [], activity: [], intake: [], literature: [], publications: [], published_findings: [], literature_pipeline: EMPTY_LP,
     pipeline: { proposed: 0, tested: 0, passed_discovery: 0, replicated: 0, passed_controls: 0, approved: 0, published: 0, last_run: null, fdr_alpha: 0.05, fdr_method: "LORD++", min_cell_size: 11 } };
   function normalize(f) {
     const feed = Object.assign({}, EMPTY, f || {});
-    for (const k of ["findings", "stream", "activity", "intake", "literature", "publications"]) if (!Array.isArray(feed[k])) feed[k] = [];
+    for (const k of ["findings", "stream", "activity", "intake", "literature", "publications", "published_findings"]) if (!Array.isArray(feed[k])) feed[k] = [];
     feed.pipeline = Object.assign({}, EMPTY.pipeline, feed.pipeline || {});
     feed.literature_pipeline = Object.assign({}, EMPTY_LP, feed.literature_pipeline || {});
     feed.activitySorted = feed.activity.slice().sort((a, b) => a.seq - b.seq);
@@ -613,9 +613,22 @@
     })), h("div", { class: "note", text: "Last action per agent; bar = actions in the recent log." }));
   }
 
+  function publishedReplications(feed) {
+    const reps = feed.publications.filter((p) => p.replicated && p.replication);
+    if (!reps.length) return null;
+    return h("div", { class: "reprows" },
+      h("div", { class: "eyebrow", text: "Published replications · reported estimate (95% CI)" }),
+      reps.map((p) => h("div", { class: "reprow" },
+        h("a", { href: p.doi ? doiUrl(p.doi) : pmUrl(p.pmid), target: "_blank", rel: "noopener", class: "rv", text: `${p.venue.split(":")[0].trim()}, ${p.year}` }),
+        h("div", { class: "rm", text: p.replication.metric }),
+        h("div", { class: "rh", text: p.replication.how }))));
+  }
+
   function panelReplication(feed) {
     const host = $("#p-rep"), fs = feed.findings;
-    if (!fs.length) return fill(host, none("No approved findings yet. Each will show its effect estimate and 95% confidence interval here."));
+    const pub = publishedReplications(feed);
+    if (!fs.length) return fill(host, pub || none("No replicated findings yet. Each will show its effect estimate and 95% confidence interval here."),
+      pub ? h("div", { class: "note", text: "Estimates quoted from each paper's abstract, on the paper's own scale. Agent findings will be plotted here on a ratio scale once approved." }) : null);
     const rows = fs.map((f) => f.effect);
     const W = 320, rowH = 18, m = { l: 52, r: 40, t: 4, b: 18 }, H = m.t + m.b + rowH * rows.length;
     const ext = rows.flatMap((r) => [r.ci_low, r.ci_high]).concat([1]);
@@ -637,7 +650,7 @@
       hit.addEventListener("pointermove", (ev) => showTip([f.id, f.title, `${e.measure}: ${x2(e.estimate)} (95% CI ${x2(e.ci_low)}–${x2(e.ci_high)})`], ev));
       hit.addEventListener("pointerleave", hideTip);
     });
-    fill(host, svg, h("div", { class: "note", text: "Adjusted effect per approved finding. 1.0× means no difference." }));
+    fill(host, svg, h("div", { class: "note", text: "Adjusted effect per approved agent finding. 1.0× means no difference." }), pub);
   }
 
   function panelMatrix(feed) {
@@ -798,6 +811,20 @@
 
   let activeTag = "all";
   function publishedFindings(feed) {
+    const pf = feed.published_findings;
+    if (pf.length) {
+      return h("div", { class: "pubfind" },
+        h("div", { class: "eyebrow", text: "Published findings · peer reviewed" }),
+        h("div", { class: "pubfind-grid" }, pf.map((f) =>
+          h("article", { class: "pubcard" },
+            h("div", { class: "meta" }, h("span", { text: `${f.venue.split(":")[0].trim()}, ${f.year}` }),
+              f.replicated ? h("span", { class: "badge ok", text: "replicated" }) : h("span", { class: "badge", text: "peer-reviewed" })),
+            h("h3", { text: f.headline }),
+            h("p", { class: "pf-finding", text: f.finding }),
+            f.why_surprising ? h("p", { class: "pf-why" }, h("b", { text: "Why it matters " }), f.why_surprising) : null,
+            h("p", { class: "pf-src" }, h("a", { href: f.doi ? doiUrl(f.doi) : pmUrl(f.pmid), target: "_blank", rel: "noopener", text: f.title }))))),
+        h("p", { class: "note" }, `${num(feed.publications.filter((p) => p.peer_reviewed).length)} peer-reviewed Waymark papers in all. `, h("a", { href: "#publications", text: "See the full list" }), "."));
+    }
     const peer = feed.publications.filter((p) => p.peer_reviewed);
     if (!peer.length) return null;
     const top = peer.slice().sort((a, b) => (b.replicated - a.replicated) || b.month.localeCompare(a.month)).slice(0, 8);
@@ -817,8 +844,8 @@
     const pubBlock = publishedFindings(feed);
     if (!fs.length) {
       filters.hidden = true;
-      fill(list, pubBlock, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "Agent findings" }), h("h3", { text: "No agent finding has cleared every gate yet" }),
-        h("p", { text: `${feed.pipeline.tested ? `Agents have tested ${num(feed.pipeline.tested)} hypotheses so far. ` : ""}A finding from the agents is published only after it passes online FDR control, replicates on held-out members, clears its negative control and is approved by a Waymark clinician. Most hypotheses never make it.` })));
+      fill(list, pubBlock, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "New findings since our last publication" }),
+        h("p", { text: "Additional findings from Waymark's agents, not yet peer reviewed. None so far." })));
       return;
     }
     const tags = [...new Set(fs.flatMap((f) => f.tags))];
@@ -827,7 +854,7 @@
       h("button", { class: "chip", type: "button", "data-tag": k, "aria-pressed": String(k === activeTag), text: l })));
     filters.onclick = (e) => { const b = e.target.closest("[data-tag]"); if (!b) return; activeTag = b.dataset.tag; renderFindings(feed); };
     const shown = fs.filter((f) => activeTag === "all" || f.tags.includes(activeTag));
-    fill(list, pubBlock, shown.map((f) => {
+    fill(list, pubBlock, h("div", { class: "eyebrow", style: "margin:8px 0 4px", text: "New findings since our last publication · not yet peer reviewed" }), shown.map((f) => {
       const host = h("div", { class: "chart" });
       const card = h("article", { class: "finding", id: f.id },
         h("div", { style: "min-width:0" },

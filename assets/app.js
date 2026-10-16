@@ -857,8 +857,7 @@
     const pubBlock = publishedFindings(feed);
     if (!fs.length) {
       filters.hidden = true;
-      fill(list, pubBlock, h("div", { class: "empty" }, h("div", { class: "eyebrow", text: "New findings since our last publication" }),
-        h("p", { text: "Additional findings from Waymark's agents, not yet peer reviewed. None so far." })));
+      fill(list, pubBlock);   // agent block appears once the first agent finding is approved
       return;
     }
     const tags = [...new Set(fs.flatMap((f) => f.tags))];

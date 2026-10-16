@@ -137,9 +137,11 @@
     counter($("#c-papers"), "Papers screened", lp.intake, lp.intake ? `${Math.round(100 * pct(lp.relevant, lp.intake))}% relevant` : "none yet", pct(lp.relevant, lp.intake));
     counter($("#c-hyp"), "Hypotheses", feed.stream.length, feed.stream.length ? `${num(tested)} tested` : "none yet", pct(tested, feed.stream.length));
     counter($("#c-agents"), "Agents", agentsActive || AGENTS.length, agentsActive ? `active of ${AGENTS.length} in log` : `${AGENTS.length} configured, no log yet`, agentsActive ? agentsActive / AGENTS.length : 0);
-    counter($("#c-rep"), "Replicated", p.replicated + repPubs, `${num(repPubs)} published · ${num(p.replicated)} agent hypotheses`, pct(p.replicated + repPubs, p.passed_discovery + peer));
-    counter($("#c-review"), "Reviewed", peer + approved, `${num(peer)} peer-reviewed · ${num(approved)} clinician-approved · ${num(waiting)} awaiting review`, pct(peer + approved, peer + approved + waiting));
-    counter($("#c-pub"), "Published", published, `${num(p.published)} findings · ${num(feed.literature.length)} checked · ${num(feed.publications.length)} by Waymark`, pct(p.published, p.approved || p.published) || (published ? 1 : 0));
+    // subtitle parts appear only when their count is above zero
+    const parts = (...xs) => xs.filter(([n]) => n > 0).map(([n, label]) => `${num(n)} ${label}`).join(" · ") || "none yet";
+    counter($("#c-rep"), "Replicated", p.replicated + repPubs, parts([repPubs, "published"], [p.replicated, "agent hypotheses"]), pct(p.replicated + repPubs, p.passed_discovery + peer));
+    counter($("#c-review"), "Reviewed", peer + approved, parts([peer, "peer-reviewed"], [approved, "clinician-approved"], [waiting, "awaiting review"]), pct(peer + approved, peer + approved + waiting));
+    counter($("#c-pub"), "Published", published, parts([p.published, "findings"], [feed.literature.length, "checked"], [feed.publications.length, "by Waymark"]), pct(p.published, p.approved || p.published) || (published ? 1 : 0));
   }
 
   /* ================= OBSERVATORY ================= */

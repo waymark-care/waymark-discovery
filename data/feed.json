@@ -2571,10 +2571,1235 @@
     "translated": 0,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 0,
-    "published": 0
+    "approved": 41,
+    "published": 38
   },
-  "literature": [],
+  "literature": [
+    {
+      "id": "LIT-00595",
+      "published": "2026-10",
+      "title": "Flexible Doubly Robust Proximal Causal Inference for Censored Outcomes",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.20893",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Novel causal inference method for right-censored survival outcomes under unmeasured confounding. Theoretical contribution with benchmark validation. Medicaid fit unclear; no operational trial or US managed-care setting.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00572",
+      "published": "2026-10",
+      "title": "Artificial Intelligence in Health Insurance: An Interagency Framework for Federal and State Oversight",
+      "venue": "The Journal of law, medicine & ethics : a journal of the American Society of Law, Medicine & Ethics",
+      "year": 2026,
+      "doi": "10.1017/jme.2026.10269",
+      "pmid": "42878516",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Policy framework paper on AI governance in insurance, not empirical evidence. Relevant to Waymark's AI deployment and safety concerns, but no data on impact, validation, or operationalization in Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00564",
+      "published": "2026-10",
+      "title": "Cost-Effectiveness of Community Health Worker Interventions for Type 2 Diabetes Mellitus: A Systematic Review",
+      "venue": "Applied health economics and health policy",
+      "year": 2026,
+      "doi": "10.1007/s40258-026-01081-z",
+      "pmid": "42879091",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Systematic review of CHW cost-effectiveness in T2D is relevant to Waymark's core program. Medicaid fit is transferable but requires caution: studies focused on low-income/minority populations (aligned with Waymark) but global scope and heterogeneous designs limit direct applicability. No US Medicaid-specific evidence synthesis.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00560",
+      "published": "2026-10",
+      "title": "Prevalent knowledge omissions: An unseen risk of LLMs in patient-friendly adaptation of medical literature",
+      "venue": "PLOS digital health",
+      "year": 2026,
+      "doi": "10.1371/journal.pdig.0001739",
+      "pmid": "42879322",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Waymark's LLM safety concerns (Anchor product, COMPASS). However, uses a dataset of chemical-disease relations, not clinical notes or member-facing text. Transfer to Waymark's actual adaptation workflows requires validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00554",
+      "published": "2026-10",
+      "title": "Dynamic pathways of maternal well-being: A longitudinal latent class analysis of risk and adaptive trajectories in low-income families",
+      "venue": "PLOS mental health",
+      "year": 2026,
+      "doi": "10.1371/journal.pmen.0000596",
+      "pmid": "42879500",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Study identifies maternal mental health subgroups and trajectories in low-income populations similar to Waymark's demographic. Findings could inform behavioral health targeting and social needs screening, but lacks intervention component and does not address Medicaid-managed-care care-team workflow.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00540",
+      "published": "2026-10",
+      "title": "County-Level Context and Differential Policy Impacts on Buprenorphine Use Among Medicaid Enrollees with Opioid Use Disorder in Kentucky, 2018–2025",
+      "venue": "Drug and alcohol dependence",
+      "year": 2026,
+      "doi": "10.1016/j.drugalcdep.2026.113394",
+      "pmid": "42879915",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Interrupted time series of policy changes affecting medication access and use in Medicaid OUD population. Relevant to care coordination outreach and pharmacist medication review, but unclear if findings would inform Waymark's reach, team actions, or product behavior without adaptation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00538",
+      "published": "2026-10",
+      "title": "Applications of Transformer-Based pretrained language models for analyzing nursing records in adult Care: A scoping review",
+      "venue": "International journal of medical informatics",
+      "year": 2026,
+      "doi": "10.1016/j.ijmedinf.2026.106762",
+      "pmid": "42880008",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Scoping review of NLP methods for unstructured clinical notes. Relevant to Waymark's interest in LLM safety and care-note analysis, but no Medicaid-specific data, no operational validation, and no evidence that these methods improve care or reduce errors in practice.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00530",
+      "published": "2026-10",
+      "title": "Social Risk Screening and Referrals in the Pediatric Inpatient Setting",
+      "venue": "Pediatrics",
+      "year": 2026,
+      "doi": "10.1542/peds.2026-076714",
+      "pmid": "42880757",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Describes screening prevalence and practices but no causal evidence on impact. Inpatient acute setting differs from Waymark's community-based outpatient model. No health outcomes or cost data.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00514",
+      "published": "2026-10",
+      "title": "Large Language Models in the Emergency Department: Fairness Implications for Clinicians",
+      "venue": "Clinical and experimental emergency medicine",
+      "year": 2026,
+      "doi": "10.15441/ceem.26.409",
+      "pmid": "42881554",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM fairness risks relevant to Waymark's AI products (Signal, Compass, Anchor). Framework transfers to Medicaid settings but review is narrative, not empirical evidence of specific harms or solutions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00488",
+      "published": "2026-10",
+      "title": "Explainable AI in Healthcare: A Holistic View of Technical Approaches, Regulatory Frameworks, Reliable Clinical Implementation Insights and Limitations",
+      "venue": "Diagnostics (Basel, Switzerland)",
+      "year": 2026,
+      "doi": "10.3390/diagnostics16193107",
+      "pmid": "42882263",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Anchor's verification layer and LLM safety interests. Reviews XAI techniques for bias detection and hallucination reduction—core to Waymark's omission-error evaluation. Limited actionable guidance for Medicaid care-team workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00465",
+      "published": "2026-10",
+      "title": "Internal Consistency Does Not Validate an LLM-Assisted Nutrition Pipeline: A Reference-Standard-Free Forensic Reliability Audit of 13,073 Free-Text Meal Records",
+      "venue": "Nutrients",
+      "year": 2026,
+      "doi": "10.3390/nu18193233",
+      "pmid": "42884684",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses LLM reliability and omission-error detection—core to Waymark's Anchor and Signal products. However, nutrition application in rural Colombia does not transfer to Medicaid care coordination without explicit argument.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00455",
+      "published": "2026-10",
+      "title": "FERMAT: An Autoregressive Clinical Foundation Model for Disease Risk and Clinical Event Prediction",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.11.26365210",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Foundation model for risk prediction could improve Signal's rising-risk detection, but evidence is from a single hospital's insured population, not Medicaid managed care. No prospective validation or operational deployment shown.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00440",
+      "published": "2026-10",
+      "title": "Postpartum Medicaid extensions and follow-up care after pregnancy complications",
+      "venue": "Health affairs scholar",
+      "year": 2026,
+      "doi": "10.1093/haschl/qxag264",
+      "pmid": "42877160",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Studies postpartum Medicaid population Waymark serves but focuses narrowly on insurance continuity effect on utilization. Does not directly inform whom to reach, care-team actions, or product behavior without further analysis.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00435",
+      "published": "2026-10",
+      "title": "Estimation of Area Deprivation Index Rankings in South Dakota Using Spatiotemporal Change of Support Method",
+      "venue": "Statistics and public policy (Philadelphia, Pa.)",
+      "year": 2026,
+      "doi": "10.1080/2330443x.2026.2704953",
+      "pmid": "42877276",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses geographic misalignment in SDOH measurement, relevant to targeting. But South Dakota-specific methods paper with no outcomes data, no validation in Medicaid settings, and unclear operational integration.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00424",
+      "published": "2026-10",
+      "title": "Telepharmacological Consultation for Polypharmacy Management in Primary Care: A Qualitative Study of General Practitioners' Experiences With Cross‐Sectoral Coordination",
+      "venue": "Basic & clinical pharmacology & toxicology",
+      "year": 2026,
+      "doi": "10.1111/bcpt.70325",
+      "pmid": "42877986",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study of pharmacist–GP coordination for polypharmacy in Danish primary care. Addresses pharmacy program workflow integration and care-coordination gaps. Setting differs (single-payer, hospital-based service vs. Medicaid managed care). Small sample limits generalizability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00420",
+      "published": "2026-10",
+      "title": "Cognition, oversight, and the safety case for documentation AI",
+      "venue": "Journal of hospital medicine",
+      "year": 2026,
+      "doi": "10.1002/jhm.70513",
+      "pmid": "42878157",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Anchor's verification layer and LLM-safety interests. Hospital discharge setting differs from Waymark's community-based Medicaid care. Mechanism (oversight attenuation) plausibly transfers; population does not.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00416",
+      "published": "2026-10",
+      "title": "ProCARE: Real-World Study Automation via Profile-Grounded Evidence Contracts",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.16175",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Unreviewed preprint evaluated on 36 EHR benchmark tasks, not members or claims data. It targets temporal and index-date errors that matter given Waymark's claims lag and staggered ADT start dates. It does not show that the resulting effect estimates are valid or survive falsification.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00374",
+      "published": "2026-10",
+      "title": "Learning Who Benefits Most: Multi-Treatment Causal Ranking for Population Health Stratification",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.19782",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Unreviewed preprint tested only on synthetic and semi-synthetic data from the Italian system. Waymark's per-member treatment-effect rankings did not validate out of sample, and recovering generated orderings does not address that failure. Revisit if a real-outcome validation appears.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00360",
+      "published": "2026-10",
+      "title": "Seeded Probes Do Not Identify a Reviewer's Miss Rate: One-Sided Misclassification in Distribution-Free Risk Control",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.01.26364465",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "anchor",
+        "ai_safety",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Anchor and Compass safety rest on physician review of AI outputs. The paper argues that planted-error probes cannot validate those reviewers. Physician miss rates varied widely. The argument is mainly formal and fits any setting, but this is an unreviewed preprint with simulations and a small empirical sample of 17 physicians.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00320",
+      "published": "2026-10",
+      "title": "Adjudicator sensitivity of safety estimates in large language models for open-ended cardiovascular reasoning: a blinded multi-adjudicator benchmark study running title: adjudicator variability in LLM safety",
+      "venue": "Scientific Reports",
+      "year": 2026,
+      "doi": "10.1038/s41598-026-75767-8",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "ai_safety",
+        "anchor",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This is a peer-reviewed methods study. One adjudicator flagged 17.7% of responses as unsafe and the other flagged 0%. Single-reviewer safety audits like this bear directly on how Waymark validates Anchor and Compass outputs. The domain is cardiology, not Medicaid, but the measurement problem transfers.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00300",
+      "published": "2026-10",
+      "title": "A Machine Learning Approach to Linking Medicaid and Education Records in New York City",
+      "venue": "International Journal for Population Data Science",
+      "year": 2026,
+      "doi": "10.23889/ijpds.v11i1.3434",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Peer-reviewed methods work on Medicaid children's records. It is relevant to linking messy administrative sources such as claims, ADT and CBO referral data. It does not change whom Waymark reaches or what teams do. Education linkage is not a current Waymark data source. Linkage accuracy is reported only as a match rate, with no outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00296",
+      "published": "2026-10",
+      "title": "Factors Associated with Early ED Return Among Patients Discharged After Treatment for Alcohol Withdrawal Syndrome",
+      "venue": "Western Journal of Emergency Medicine",
+      "year": 2026,
+      "doi": "10.5811/westjem.63088",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "behavioral_health",
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Single-site retrospective review with only 14 72-hour returns. Covariates were picked by univariate screening, and the confidence intervals are very wide. The risk factors it finds (serious mental illness, homelessness) are already expected. It is relevant to post-ED outreach for alcohol withdrawal, but too fragile to change targeting or care-team actions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00291",
+      "published": "2026-10",
+      "title": "“I don't have to choose between everything”: Self-reported fruit and vegetable affordability, purchasing shifts, and healthcare utilization among produce prescription program participants in North Carolina",
+      "venue": "Preventive medicine reports",
+      "year": 2026,
+      "doi": "10.1016/j.pmedr.2026.103650",
+      "pmid": "42860961",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "chw"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Low-income food-insecure population is relevant to Medicaid social-needs work, but the evidence is weak: an uncontrolled online survey with recalled before/after affordability. The causal conclusions about improved affordability and healthcare use are not supported by this design. No claims-based outcomes. Worth tracking alongside controlled produce-prescription evaluations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00245",
+      "published": "2026-10",
+      "title": "Assessing the ability of cross-trained pharmacy technician-community health workers to identify non-medical drivers of health resources",
+      "venue": "Journal of the American Pharmacists Association : JAPhA",
+      "year": 2026,
+      "doi": "10.1016/j.japh.2026.103549",
+      "pmid": "42863629",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "pharmacy",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Descriptive analysis of training assignments, not patient encounters. It reports no referral completion, no member outcomes and no Medicaid-specific population. Cross-training pharmacy staff as CHWs is conceptually relevant to Waymark's team mix, but nothing here would change practice or evaluation yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00231",
+      "published": "2026-10",
+      "title": "Embedded Psychological Services and Lower 60-Day Acute-Care Utilization in High-Need, High-Cost Adults: A Target Trial Emulation",
+      "venue": "The journal of behavioral health services & research",
+      "year": 2026,
+      "doi": "10.1007/s11414-026-10021-7",
+      "pmid": "42864481",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The population closely resembles Waymark's members. But comparing engagers with decliners and no-shows invites healthy-adherer bias, which weighting on measured confounders cannot remove. An E-value of 2.37 is plausible for motivation. Admissions were null. This conflicts with Waymark's lesson favoring quasi-random operational variation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00220",
+      "published": "2026-10",
+      "title": "A University and Community Partnership to Address Diaper Insecurity Among Infants in Suburban Communities Through Home Visiting Services",
+      "venue": "Journal of public health management and practice : JPHMP",
+      "year": 2026,
+      "doi": "10.1097/phh.0000000000002450",
+      "pmid": "42864733",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The population and the CHW home-visit model closely match Waymark's pediatric Medicaid work. But this is a descriptive, post-only survey of 88 respondents with self-reported outcomes and no comparison group. It shows feasibility, not effect, so it is not enough to change practice yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00174",
+      "published": "2026-10",
+      "title": "Federal Immigration Enforcement Deployment and Emergency Department Utilization Among Children",
+      "venue": "JAMA network open",
+      "year": 2026,
+      "doi": "10.1001/jamanetworkopen.2026.38552",
+      "pmid": "42867863",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "compass",
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The urban pediatric safety-net population likely overlaps heavily with Medicaid, and VA is nearby. But this is one site over a short window, the unit is visits not children, and outcomes are unlinked, so care avoidance cannot be told apart from shifts to other sites. It points to equity and evaluation risk, not a validated intervention.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00173",
+      "published": "2026-10",
+      "title": "Patient Navigation Plus mHealth Incentives for Linkage to OUD Care for Adults Who Also Use Methamphetamines",
+      "venue": "JAMA network open",
+      "year": 2026,
+      "doi": "10.1001/jamanetworkopen.2026.38542",
+      "pmid": "42867864",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "behavioral_health",
+        "care_coordination",
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Small single-site pilot RCT at a Washington safety-net hospital, a population close to Waymark's. Linkage was 55% vs 50%, with a wide CI around a risk ratio of 1.10, so effectiveness is unknown. Feasibility and acceptability of navigation are encouraging, but it is not enough to change practice yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00139",
+      "published": "2026-10",
+      "title": "Protocol for the Nutrition OUtReach In Systems of Healthcare (NOURISH) trial: a phase II multicentre, parallel-group randomised controlled trial of medically tailored groceries to prevent malnutrition in transplant and cellular therapy patients",
+      "venue": "BMJ open",
+      "year": 2026,
+      "doi": "10.1136/bmjopen-2026-123025",
+      "pmid": "42869585",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "It reports no outcomes. The population is a narrow, high-acuity oncology transplant group in specialty centers, and payer mix is unreported. The planned sample is modest, and the primary endpoint is clinical malnutrition rather than utilization. Results could still inform food-as-medicine referral design.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00137",
+      "published": "2026-10",
+      "title": "Low‐Intensity Social Care for Dementia Caregivers: A Randomized Trial",
+      "venue": "Journal of the American Geriatrics Society",
+      "year": 2026,
+      "doi": "10.1111/jgs.70684",
+      "pmid": "42869650",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "chw",
+        "compass",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Peer-reviewed RCT with a null primary outcome. The ED reduction is a secondary, self-reported finding with a wide CI from a small sample. The population (low-income, mostly Black, US urban) plausibly transfers, but it was not Medicaid-specific. Text-navigator uptake was high.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00133",
+      "published": "2026-10",
+      "title": "Impact of a National Stepped‐Care Model of Opioid Use Disorder Treatment on Access to Medication Therapies Among Homeless‐Experienced Veterans",
+      "venue": "Health services research",
+      "year": 2026,
+      "doi": "10.1111/1475-6773.70171",
+      "pmid": "42869778",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "pharmacy",
+        "care_coordination",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Facility-level train-the-trainer support for stepped-care opioid use disorder treatment in non-specialty settings was associated with higher buprenorphine receipt among homeless patients with opioid use disorder, with no change in methadone or naltrexone.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00129",
+      "published": "2026-10",
+      "title": "Self-Adjusting Long-Term Medications: A Qualitative Descriptive Study of Patients’ Practices",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-10842-4",
+      "pmid": "42870183",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Small descriptive interview study. Country, payer and patient characteristics are not reported, so transfer to Medicaid members is unclear. It describes reasons for self-adjustment but tests no intervention. The themes may inform how pharmacists frame medication reviews, but it is not enough to change practice.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00120",
+      "published": "2026-10",
+      "title": "Woebot for Postpartum Mood and Anxiety: Randomized Controlled Trial Evaluating Feasibility, Acceptability, and Preliminary Efficacy of a Mobile Cognitive Behavioral Therapy Intervention",
+      "venue": "JMIR pediatrics and parenting",
+      "year": 2026,
+      "doi": "10.2196/74083",
+      "pmid": "42870464",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pilot RCT with a waitlist control and self-reported outcomes. The efficacy signal is weak (d=-0.16, n=97 symptomatic), and the improvement in stress was exploratory. The sample was mostly White, recruited through a research platform, and payer was not reported, so the Medicaid postpartum transfer is unproven. Engagement was modest, a median of 9 days.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00104",
+      "published": "2026-10",
+      "title": "Personalizing digital mental health: a micro-randomized trial analysis of cognitive behavioral therapy/dialectical behavioral therapy text messages to improve mood",
+      "venue": "JAMIA open",
+      "year": 2026,
+      "doi": "10.1093/jamiaopen/ooag156",
+      "pmid": "42871572",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "compass",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The design is relevant to Compass message timing, but average effects were null. The moderator findings come from multiple subgroup tests and were not replicated. The sample was mostly highly educated White women from social media, not Medicaid members. Waymark's own heterogeneous-effect rankings failed to validate out of sample.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00079",
+      "published": "2026-10",
+      "title": "Outpatient Antibiotic Fills and 30-Day Readmission Following Patient-Directed Discharge in Drug Use-Associated Infective Endocarditis in a National Medicaid Cohort",
+      "venue": "Clinical infectious diseases : an official publication of the Infectious Diseases Society of America",
+      "year": 2026,
+      "doi": "10.1093/cid/ciag649",
+      "pmid": "42873190",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "applies",
+      "programs": [
+        "pharmacy",
+        "care_coordination",
+        "chw",
+        "behavioral_health",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This is a direct Medicaid population with a clear high-risk, reachable subgroup: patients who leave against medical advice. The low fill rate is a robust descriptive target. The protective link between antibiotic fill and readmission is observational and likely confounded by healthy-adherer bias, so it does not prove that outreach would cut readmissions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00041",
+      "published": "2026-10",
+      "title": "Use of digital health tools to promote equitable and efficient health-related social needs screening and response",
+      "venue": "Current problems in pediatric and adolescent health care",
+      "year": 2026,
+      "doi": "10.1016/j.cppeds.2026.101980",
+      "pmid": "42875346",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "chw",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This is a narrative review with no new data, no comparison and no outcome estimates. The topic matches Waymark's social-needs screening and SMS navigation work. Its trauma-informed privacy framing may help with design, but it provides no evidence that would change practice or product behavior.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00035",
+      "published": "2026-10",
+      "title": "Skill-guided agentic reasoning enables longitudinal synthesis of myeloma records at expert-level concordance",
+      "venue": "NPJ precision oncology",
+      "year": 2026,
+      "doi": "10.1038/s41698-026-01733-2",
+      "pmid": "42875467",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The core result is a specialty-oncology benchmark, not a Medicaid population. The safety finding is relevant to Anchor: comparable error rates can hide a higher share of clinically significant errors. Skill libraries also helped plain retrieval-augmented generation. The study is retrospective and single-domain, with no evidence on patient outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00033",
+      "published": "2026-10",
+      "title": "Feasibility of Implementing a Pharmacist-Integrated Collaborative Model for Opioid Use Disorder: A Nonrandomized Clinical Trial",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-10924-3",
+      "pmid": "42875616",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "A single-arm pre-post feasibility study at four sites with no control and no significance testing. The adherence and retention changes are tiny and noisy, and the total sample size isn't reported. MOUD patients are heavily Medicaid, so the topic is relevant, but the study shows feasibility, not effectiveness.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    }
+  ],
   "publications": [
     {
       "title": "Complex Care Is Challenging, Expensive, and of Limited Success",

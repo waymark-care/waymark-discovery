@@ -702,6 +702,8 @@
       h("div", { class: "name" }, name, h("small", { text: sub })),
       h("div", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${n ? Math.max(0.5, (100 * n) / pmax) : 0}%` })),
       h("div", { class: "n", text: num(n) }))));
+    $("#agent-gates-label").textContent = "Agent hypotheses · five statistical gates" +
+      (p.passed_discovery ? "" : " · none past the FDR gate yet");
     const rejected = p.tested ? Math.round((100 * (p.tested - p.passed_controls)) / p.tested) : null;
     fill($("#gate-foot"), p.tested
       ? [h("div", null, h("b", { text: `${rejected}%` }), "of tested hypotheses rejected"),

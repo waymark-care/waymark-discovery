@@ -105,8 +105,8 @@ h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; le
 .feed .out.pass { color: var(--accent); }
 .feed .out.fail { color: var(--ink); }
 
-.work { list-style: none; margin: 0; padding: 0; max-height: 236px; overflow-y: auto; display: grid; gap: 3px; }
-.work li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.work { list-style: none; margin: 0; padding: 0; max-height: 236px; overflow-y: auto; display: block; }
+.work li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.55; margin: 0 0 3px; }
 .work .n { color: var(--muted); display: inline-block; width: 2.4em; }
 .work .ok { color: var(--accent); }
 

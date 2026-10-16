@@ -2584,7 +2584,8 @@
       "doi": "10.1056/cat.26.0522",
       "pmid": "42747052",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Administrative Burden Documented in Medicaid Care Coordination",
@@ -2594,17 +2595,8 @@
       "doi": "10.1001/jamahealthforum.2026.2932",
       "pmid": "42663996",
       "peer_reviewed": true,
-      "replicated": false
-    },
-    {
-      "title": "Association of Multidisciplinary Care Team Engagement With Hemoglobin A1c Among Medicaid Enrollees With Diabetes: A Doubly Robust Machine Learning Analysis",
-      "venue": "Diabetes Obesity and Cardiometabolic CARE",
-      "year": 2026,
-      "month": "2026-08",
-      "doi": "10.2337/doc26-0049",
-      "pmid": null,
-      "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "AI safety evaluation in an underrepresented population: real-world performance of clinical decision support and frontier language models on Medicaid patient messaging triage",
@@ -2614,7 +2606,19 @@
       "doi": "10.1186/s12911-026-03763-z",
       "pmid": null,
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
+    },
+    {
+      "title": "Association of Multidisciplinary Care Team Engagement With Hemoglobin A1c Among Medicaid Enrollees With Diabetes: A Doubly Robust Machine Learning Analysis",
+      "venue": "Diabetes Obesity and Cardiometabolic CARE",
+      "year": 2026,
+      "month": "2026-08",
+      "doi": "10.2337/doc26-0049",
+      "pmid": null,
+      "peer_reviewed": true,
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Co-designed, patient-facing large language models for primary-to-specialist care transitions: evidence and open questions from a pragmatic randomized trial",
@@ -2624,7 +2628,8 @@
       "doi": "10.21037/jmai-2026-0103",
       "pmid": null,
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Treatment-Effect-Based Versus Risk-Based Targeting of Care Management Outreach in Medicaid: A Retrospective Cohort Study with Machine Learning",
@@ -2634,7 +2639,8 @@
       "doi": "10.1177/19427891261472833",
       "pmid": "42498943",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Transferring healthcare risk prediction models between Medicaid populations: a transfer learning evaluation",
@@ -2644,7 +2650,8 @@
       "doi": "10.1038/s44401-026-00097-w",
       "pmid": "42527545",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Mitigating hallucinations in healthcare AI: a systematic review of evidence-based strategies",
@@ -2654,7 +2661,8 @@
       "doi": "10.1186/s12913-026-14851-1",
       "pmid": "42251377",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Comparing Care Coordination and Food Assistance Referrals to Improve Diabetes Outcomes: A Cohort Study",
@@ -2664,7 +2672,8 @@
       "doi": "10.1007/s11606-026-10550-z",
       "pmid": "42228317",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Offline reinforcement learning for care management: addressing sparse rewards, temporal dependencies, and fairness in Medicaid populations",
@@ -2674,7 +2683,8 @@
       "doi": "10.1038/s44482-026-00016-8",
       "pmid": null,
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing",
@@ -2684,7 +2694,8 @@
       "doi": "10.48550/arxiv.2608.20348",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Compositional Reasoning Depth Predicts Clinical AI Failure: Empirical Evidence Consistent with Transformer Compositionality Limits in Electronic Health Record Question Answering",
@@ -2694,7 +2705,8 @@
       "doi": "10.48550/arxiv.2606.16890",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Redesigning Medicaid frailty algorithms: improved identification of medically frail adults under community engagement",
@@ -2704,7 +2716,8 @@
       "doi": "10.1093/haschl/qxag108",
       "pmid": "42339135",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Type 1 diabetes intervention clusters in resource-limited settings: a systematic review and economic evaluation",
@@ -2714,7 +2727,8 @@
       "doi": "10.1016/s2213-8587(26)00002-1",
       "pmid": "42140211",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Community response teams: extending the rapid response model to outpatient care",
@@ -2724,7 +2738,8 @@
       "doi": "10.37765/ajmc.2026.89921",
       "pmid": "42044396",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Medicaid Managed Care Procurement Reveals Systematic Overemphasis of Technology and Equity Performance Claims Across 32 States",
@@ -2734,7 +2749,8 @@
       "doi": "10.1177/00469580261444608",
       "pmid": "42012014",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Opportunistic Cardiovascular Risk Assessment Using Routine Head CT in the Emergency Department",
@@ -2744,7 +2760,8 @@
       "doi": "10.1016/j.jacc.2026.02.5095",
       "pmid": "41949516",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Unifying the odyssey: artificial intelligence for rare disease diagnosis and therapy",
@@ -2754,7 +2771,8 @@
       "doi": "10.1007/s12553-026-01057-y",
       "pmid": "41940139",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Integrating healthcare system context to improve risk prediction and assess racial disparities among dual-eligible Medicare-Medicaid beneficiaries: a retrospective cohort study using national fee-for-service claims",
@@ -2764,7 +2782,8 @@
       "doi": "10.1136/bmjopen-2025-111343",
       "pmid": "41857842",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations",
@@ -2774,7 +2793,8 @@
       "doi": "10.48550/arxiv.2603.18353",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "An Artificial Intelligence Oracle for Proactive Population Health Quality Improvement",
@@ -2784,7 +2804,8 @@
       "doi": "10.1056/cat.25.0283",
       "pmid": "42418607",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Mechanistic interpretability of reinforcement learning in Medicaid care coordination",
@@ -2794,7 +2815,8 @@
       "doi": "10.1136/bmjhci-2025-101935",
       "pmid": "41667212",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Care Plan Generation for Underserved Patients Using Multi-Agent Language Models: Applying Nash Game Theory to Optimize Multiple Objectives",
@@ -2804,7 +2826,8 @@
       "doi": "10.64898/2026.02.23.26346934",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Medicare Advantage and Type 2 Diabetes Outcomes",
@@ -2814,7 +2837,8 @@
       "doi": "10.1001/jamainternmed.2026.3332",
       "pmid": "42573997",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Graphical structure learning identifies hypothesized mechanisms for heterogeneous treatment effects in Medicaid population health programs",
@@ -2824,7 +2848,8 @@
       "doi": "10.1093/aje/kwag089",
       "pmid": "42023435",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Comparing Alternative Approaches to Care Management Prioritization: A Prospective Comparative Cohort Study of Acute Care Utilization and Equity Among Medicaid Beneficiaries",
@@ -2834,7 +2859,8 @@
       "doi": "10.1111/1475-6773.70113",
       "pmid": "41934434",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Clinical decision support for population health management: development and validation of integrated acuity and intervention prediction models",
@@ -2844,7 +2870,11 @@
       "doi": "10.1093/jamia/ocaf225",
       "pmid": "41460187",
       "peer_reviewed": true,
-      "replicated": true
+      "replicated": true,
+      "replication": {
+        "how": "Development and validation study with blinded physician review, across three states",
+        "metric": "Absolute risk reduction 1.59 percentage points vs standard care (95% CI 0.21-3.04)"
+      }
     },
     {
       "title": "Early detection of high risk pregnancies using clinical and social data to improve health outcomes",
@@ -2854,7 +2884,8 @@
       "doi": "10.1038/s44482-025-00003-5",
       "pmid": null,
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Heterogeneity in associations between food insecurity and diabetes outcomes",
@@ -2864,7 +2895,8 @@
       "doi": "10.1136/jech-2025-224037",
       "pmid": "40681337",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Reinforcement Learning to Prevent Acute Care Events Among Medicaid Populations: Mixed Methods Study",
@@ -2874,7 +2906,8 @@
       "doi": "10.2196/74264",
       "pmid": "41062083",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Feasibility-Guided Fair Adaptive Offline Reinforcement Learning for Medicaid Care Management",
@@ -2884,7 +2917,8 @@
       "doi": "10.48550/arxiv.2509.09655",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "How is Engagement Defined Across Health Care Services and Technology Companies? A Systematic Review",
@@ -2894,7 +2928,8 @@
       "doi": "10.1016/j.mcpdig.2025.100256",
       "pmid": "40917342",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Projected Health System and Economic Impacts of 2025 Medicaid Policy Proposals",
@@ -2904,7 +2939,8 @@
       "doi": "10.1001/jamahealthforum.2025.3187",
       "pmid": "40668570",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Predicting quality measure completion among 14 million low-income patients enrolled in medicaid",
@@ -2914,7 +2950,8 @@
       "doi": "10.1038/s41746-025-01797-7",
       "pmid": "40604098",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Optimizing AI solutions for population health in primary care",
@@ -2924,7 +2961,8 @@
       "doi": "10.1038/s41746-025-01864-z",
       "pmid": "40652036",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Impact of Community Health Center Losses on County-Level Mortality: A Natural Experiment in the United States, 2011-2019",
@@ -2934,7 +2972,8 @@
       "doi": "10.1111/1475-6773.14648",
       "pmid": "40405553",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Housing Instability and Type 2 Diabetes Outcomes",
@@ -2944,7 +2983,8 @@
       "doi": "10.1001/jamanetworkopen.2025.4852",
       "pmid": "40227681",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Quantifying Indirect Billing Within the Medicare Physician Fee Schedule",
@@ -2954,7 +2994,8 @@
       "doi": "10.1001/jamahealthforum.2025.0433",
       "pmid": "40215071",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Medicaid Expansion Among Nonelderly Adults and Cardiovascular Disease: Efficiency Vs. Equity",
@@ -2964,7 +3005,8 @@
       "doi": "10.1111/1468-0009.70004",
       "pmid": "40115992",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Prevalence and Geographic Variation of Serious Mental Illness Among Young Adults Enrolled in Medicaid in New York State",
@@ -2974,7 +3016,8 @@
       "doi": "10.1016/j.jadohealth.2025.01.010",
       "pmid": "40100185",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Preventing tomorrow's high-cost claims: the rising-risk patient opportunity in Medicaid",
@@ -2984,7 +3027,8 @@
       "doi": "10.37765/ajmc.2025.89816",
       "pmid": "41289254",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Transportation Barriers and Diabetes Outcomes: A Longitudinal Analysis",
@@ -2994,7 +3038,8 @@
       "doi": "10.1177/21501319251320709",
       "pmid": "39970048",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Procedural Prescription Denials and Risk of Acute Care Utilization and Spending Among Medicaid Patients",
@@ -3004,7 +3049,8 @@
       "doi": "10.1001/jamanetworkopen.2024.57300",
       "pmid": "39883462",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Simulating A/B testing versus SMART designs for LLM-driven patient engagement to close preventive care gaps",
@@ -3014,7 +3060,8 @@
       "doi": "10.1038/s41746-024-01330-2",
       "pmid": "39558021",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Geographic variations and facility determinants of acute care utilization and spending for ACSCs",
@@ -3024,7 +3071,8 @@
       "doi": "10.37765/ajmc.2024.89630",
       "pmid": "39546753",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Population Health Implications of Medicaid Prerelease and Transition Services for Incarcerated Populations",
@@ -3034,7 +3082,8 @@
       "doi": "10.1111/1468-0009.12719",
       "pmid": "39387364",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Supporting Rising-Risk Medicaid Patients Through Early Intervention",
@@ -3044,7 +3093,8 @@
       "doi": "10.1056/cat.24.0060",
       "pmid": null,
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Estimating the impact of addressing food needs on diabetes outcomes",
@@ -3054,7 +3104,8 @@
       "doi": "10.1016/j.ssmph.2024.101709",
       "pmid": "39296549",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Impact of Vietnam-era G.I. Bill eligibility on later-life blood pressure distribution: evidence from the Vietnam draft lottery natural experiment",
@@ -3064,7 +3115,8 @@
       "doi": "10.1093/aje/kwae357",
       "pmid": "39289172",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Predictors and health outcomes of cigarette and shisha smoking among men in Gaza: a cross-sectional study",
@@ -3074,7 +3126,8 @@
       "doi": "10.1038/s41598-024-70226-8",
       "pmid": "38746468",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Preferences for food vouchers among adults with low incomes",
@@ -3084,7 +3137,8 @@
       "doi": "10.1080/19320248.2024.2383753",
       "pmid": "40134938",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Towards a wraparound model of surgical care: Expanding out-of-hospital phases and integrating health justice considerations to improve health outcomes",
@@ -3094,7 +3148,8 @@
       "doi": "10.1016/j.amjsurg.2024.115786",
       "pmid": "38871551",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Financing Thresholds for Sustainability of Community Health Worker Programs for Patients Receiving Medicaid Across the United States",
@@ -3104,7 +3159,8 @@
       "doi": "10.1007/s10900-023-01290-w",
       "pmid": "38311699",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "The Risk Of Perpetuating Health Disparities Through Cost-Effectiveness Analyses",
@@ -3114,7 +3170,8 @@
       "doi": "10.1377/hlthaff.2023.01583",
       "pmid": "39102593",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Comparison of Self and Caregiver Reports of Antiretroviral Treatment Adherence among Children and Adolescents Living with HIV in Western Kenya",
@@ -3124,7 +3181,8 @@
       "doi": "10.1177/23259582241242335",
       "pmid": "38562058",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Prediction of non emergent acute care utilization and cost among patients receiving Medicaid",
@@ -3134,7 +3192,11 @@
       "doi": "10.1038/s41598-023-51114-z",
       "pmid": "38263373",
       "peer_reviewed": true,
-      "replicated": true
+      "replicated": true,
+      "replication": {
+        "how": "Prospective identification across Medicaid programs in 26 states and DC",
+        "metric": "Sensitivity 11.3% (95% CI 10.5-12.1) vs 3.4% (3.0-4.0) for the standard model; specificity 99.8% vs 99.5%"
+      }
     },
     {
       "title": "Response to Ojha and Lu",
@@ -3144,7 +3206,8 @@
       "doi": "10.1007/s11606-023-08217-0",
       "pmid": "37127750",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Evaluation of the sugar-sweetened beverage tax in Oakland, United States, 2015-2019: A quasi-experimental and cost-effectiveness study",
@@ -3154,7 +3217,8 @@
       "doi": "10.1371/journal.pmed.1004212",
       "pmid": "37071600",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Eliminating Food Insecurity in the USA: a Target Trial Emulation Using Observational Data to Estimate Effects on Health-Related Quality of Life",
@@ -3164,7 +3228,8 @@
       "doi": "10.1007/s11606-023-08095-6",
       "pmid": "36814050",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Financing Health Care System Interventions Addressing Social Risks",
@@ -3174,7 +3239,8 @@
       "doi": "10.1001/jamahealthforum.2022.5241",
       "pmid": "36735247",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Medicaid Expansion and Racial-Ethnic and Sex Disparities in Cardiovascular Diseases Over 6 Years: A Generalized Synthetic Control Approach",
@@ -3184,7 +3250,8 @@
       "doi": "10.1097/ede.0000000000001691",
       "pmid": "38290145",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Estimated Costs of Intervening in Health-Related Social Needs Detected in Primary Care",
@@ -3194,7 +3261,8 @@
       "doi": "10.1001/jamainternmed.2023.1964",
       "pmid": "37252714",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "The hypertension cascade of care in the midst of conflict: the case of the Gaza Strip",
@@ -3204,7 +3272,8 @@
       "doi": "10.1038/s41371-022-00783-w",
       "pmid": "36509988",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Out of Pocket Spending on Insulin under $35 Copayment Caps",
@@ -3214,7 +3283,8 @@
       "doi": "10.1101/2022.12.21.22283784",
       "pmid": null,
       "peer_reviewed": false,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Association of Adequacy of Broadband Internet Service With Access to Primary Care in the Veterans Health Administration Before and During the COVID-19 Pandemic",
@@ -3224,7 +3294,8 @@
       "doi": "10.1001/jamanetworkopen.2022.36524",
       "pmid": "36251295",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "How the Gender Wage Gap for Primary Care Physicians Differs by Compensation Approach : A Microsimulation Study",
@@ -3234,7 +3305,8 @@
       "doi": "10.7326/m22-0664",
       "pmid": "35849829",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "The Underuse of Medicare's Prevention and Coordination Codes in Primary Care : A Cross-Sectional and Modeling Study",
@@ -3244,7 +3316,8 @@
       "doi": "10.7326/m21-4770",
       "pmid": "35759760",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Does Primary Care Availability Mediate the Relationship Between Rurality and Lower Life Expectancy in the United States?",
@@ -3254,7 +3327,8 @@
       "doi": "10.1177/21501319221125471",
       "pmid": "36222656",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Catastrophic Spending On Insulin In The United States, 2017-18",
@@ -3264,7 +3338,8 @@
       "doi": "10.1377/hlthaff.2021.01788",
       "pmid": "35787081",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     },
     {
       "title": "Contribution of primary care expansion to Sustainable Development Goal 3 for health: a microsimulation of the 15 largest cities in Brazil",
@@ -3274,7 +3349,9 @@
       "doi": "10.1136/bmjopen-2021-049251",
       "pmid": "35017236",
       "peer_reviewed": true,
-      "replicated": false
+      "replicated": false,
+      "replication": null
     }
-  ]
+  ],
+  "published_findings": []
 }

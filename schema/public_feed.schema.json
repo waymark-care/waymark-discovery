@@ -16,7 +16,8 @@
     "intake",
     "literature_pipeline",
     "literature",
-    "publications"
+    "publications",
+    "published_findings"
   ],
   "$defs": {
     "ratio": {
@@ -875,7 +876,8 @@
           "doi",
           "pmid",
           "peer_reviewed",
-          "replicated"
+          "replicated",
+          "replication"
         ],
         "properties": {
           "title": {
@@ -911,6 +913,113 @@
           },
           "peer_reviewed": {
             "type": "boolean"
+          },
+          "replicated": {
+            "type": "boolean"
+          },
+          "replication": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "how",
+                  "metric"
+                ],
+                "properties": {
+                  "how": {
+                    "type": "string",
+                    "maxLength": 160
+                  },
+                  "metric": {
+                    "type": "string",
+                    "maxLength": 200
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "published_findings": {
+      "type": "array",
+      "maxItems": 500,
+      "description": "Clinician-approved plain-language findings from Waymark's peer-reviewed research papers.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "venue",
+          "year",
+          "doi",
+          "pmid",
+          "headline",
+          "finding",
+          "why_surprising",
+          "design",
+          "non_intuitive",
+          "replicated"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 300
+          },
+          "venue": {
+            "type": "string",
+            "maxLength": 200
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1990,
+            "maximum": 2100
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^10\\.\\d{4,9}/[-._;()/:A-Za-z0-9<>]+$"
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{1,9}$"
+          },
+          "headline": {
+            "type": "string",
+            "maxLength": 90
+          },
+          "finding": {
+            "type": "string",
+            "maxLength": 280
+          },
+          "why_surprising": {
+            "$ref": "#/$defs/text"
+          },
+          "design": {
+            "enum": [
+              "rct",
+              "quasi_experimental",
+              "cohort",
+              "cross_sectional",
+              "modeling",
+              "methods",
+              "other"
+            ]
+          },
+          "non_intuitive": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
           },
           "replicated": {
             "type": "boolean"

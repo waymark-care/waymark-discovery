@@ -2571,10 +2571,356 @@
     "translated": 0,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 41,
-    "published": 41
+    "approved": 52,
+    "published": 52
   },
   "literature": [
+    {
+      "id": "LIT-00728",
+      "published": "2026-10",
+      "title": "Enhancing Scientific Validity by Integrating EHR and Claims Data in the National Clinical Cohort Collaborative",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.12.26365348",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodologically relevant to Waymark's causal evaluation interests (target trial emulation), but population is Medicare-only, not Medicaid. Transfer argument needed.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00724",
+      "published": "2026-10",
+      "title": "Faster but Not Truer, Part 1: A Systematic Scoping Review of Artificial Intelligence in Health Economics and Outcomes Research",
+      "venue": "Journal of health economics and outcomes research",
+      "year": 2026,
+      "doi": "10.36469/001c.171937",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses AI performance measurement gaps and validation failures in causal inference—relevant to Signal and Anchor. But population is HEOR literature, not Medicaid operations. Transferability unclear without Waymark-specific analysis.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00717",
+      "published": "2026-10",
+      "title": "Real-world evaluation of a multilingual agentic retrieval-augmented clinical AI framework for evidence-grounded medical decision support",
+      "venue": "Scientific Reports",
+      "year": 2026,
+      "doi": "10.1038/s41598-026-75369-4",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Anchor's error-detection mission and AI safety priorities. However, this is a benchmark study of physician-facing AI tools, not a real-world evaluation of patient outcomes or care-team behavior in Medicaid settings.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00713",
+      "published": "2026-10",
+      "title": "Human-in-the-loop large language model framework for identification of cutaneous immune-related adverse events",
+      "venue": "npj Precision Oncology",
+      "year": 2026,
+      "doi": "10.1038/s41698-026-01737-y",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Framework demonstrates LLM safety via human-in-the-loop design and NLP for note analysis. Oncology setting does not directly transfer to Waymark's Medicaid population, but error-detection methods may inform Anchor validation logic.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00712",
+      "published": "2026-10",
+      "title": "A multi-stage validation framework for trustworthy large-scale clinical information extraction using large language models",
+      "venue": "npj Digital Medicine",
+      "year": 2026,
+      "doi": "10.1038/s41746-026-03341-7",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "ai_safety",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses LLM safety and omission-error evaluation in clinical-note processing—core to Anchor and Signal. Demonstrates scalable validation without exhaustive annotation, relevant to Waymark's NLP and AI safety interests.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00687",
+      "published": "2026-10",
+      "title": "Postpartum Maternal Preferences on Health-Related Social Needs Programs in the First 1000 Days",
+      "venue": "Academic pediatrics",
+      "year": 2026,
+      "doi": "10.1016/j.acap.2026.103479",
+      "pmid": "42887715",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study of maternal preferences on social needs screening timing and resource navigation. Findings could inform Waymark's social-needs program design and care-coordination workflows, but evidence is descriptive without quantified program impact or causal inference.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00683",
+      "published": "2026-10",
+      "title": "Large language models as raters of hospital incident reports: a blinded multi-model evaluation of severity under-grading and shared errors",
+      "venue": "Joint Commission journal on quality and patient safety",
+      "year": 2026,
+      "doi": "10.1016/j.jcjq.2026.09.002",
+      "pmid": "42888060",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly tests LLM safety for clinical classification—relevant to Waymark's Anchor product (AI verification layer). However, study uses hospital incident reports, not Waymark's care-note context. Transfer to Medicaid care coordination requires validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00672",
+      "published": "2026-10",
+      "title": "Drug–Drug Interactions vs. Therapeutic Combinations in Patients with Congestive Heart Failure and Diabetes: An Ambispective Real‐World Study",
+      "venue": "Clinical pharmacology and therapeutics",
+      "year": 2026,
+      "doi": "10.1002/cpt.70528",
+      "pmid": "42888475",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses pharmacist medication review workflow and DDI screening, relevant to Waymark's clinical pharmacy program. However, hospitalized setting, small sample, cross-sectional design, and lack of causal inference limit evidence strength. No outcome data on safety or health impact.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00668",
+      "published": "2026-10",
+      "title": "Target Trial Emulation or Target Trial Approximation?",
+      "venue": "Pharmacoepidemiology and drug safety",
+      "year": 2026,
+      "doi": "10.1002/pds.70485",
+      "pmid": "42888900",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses Waymark's core causal-evaluation method (target-trial emulation). Argues the framework has value but cannot eliminate observational-data limitations. Does not propose new methods or present empirical evidence from Medicaid populations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00658",
+      "published": "2026-10",
+      "title": "TrialCalibre1: An Agentic System for Trial Emulation, Benchmarking, and Calibration",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.13.26365421",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "TrialCalibre1 addresses Waymark's causal-evaluation interests (target-trial emulation, sensitivity analysis) and AI-safety concerns (protocol review, implementation verification). Preprint; limited validation; design departures and residual imbalance acknowledged.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00657",
+      "published": "2026-10",
+      "title": "Exploring the impact of GLP-1 analogues and DPP-4 inhibitors on cognitive decline in elderly patients with type 2 diabetes: a competing risks analysis from a real-world cohort",
+      "venue": "Frontiers in Pharmacology",
+      "year": 2026,
+      "doi": "10.3389/fphar.2026.1822158",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pharmacist-relevant medication-class comparison in real-world cohort using causal methods (marginal structural models, competing risks). However, study focuses on cognitive outcomes in elderly diabetics—a narrower population than Waymark's broader Medicaid membership. Transfer to Medicaid managed-care pharmacy work requires evidence it improves reach, adherence, or outcomes in Waymark's actual mem",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-00595",
       "published": "2026-10",

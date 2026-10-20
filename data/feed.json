@@ -2571,10 +2571,395 @@
     "translated": 0,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 52,
-    "published": 52
+    "approved": 64,
+    "published": 64
   },
   "literature": [
+    {
+      "id": "LIT-00819",
+      "published": "2026-10",
+      "title": "Automated, Component-Level Assessment of a National Inpatient Diabetes Guideline: Adherence and Its Association with Hospitalization Complications Across Six Hospitals",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.09.26.26364069",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Inpatient diabetes guideline adherence in Israeli hospitals does not directly transfer to Waymark's outpatient Medicaid population. No Medicaid or US setting. Automation approach and causal methods (IPTW) are methodologically relevant but population/setting mismatch is substantial.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00815",
+      "published": "2026-10",
+      "title": "Social Needs Z Codes and Subsequent Acute Care Across 21 U.S. Health Systems",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.14.26365559",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "social_needs",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Challenges Waymark's assumption that Z codes reliably identify hardship for targeting. Shows documentation varies 1–24% across systems; 46–70% of association is administrative artifact, not hardship signal.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00801",
+      "published": "2026-10",
+      "title": "Enfermeiro gestor de caso no acompanhamento de utentes crónicos em ambiente hospitalar na transição para a comunidade: scoping review",
+      "venue": "RIAGE - Revista Ibero-Americana de Gerontologia",
+      "year": 2026,
+      "doi": "10.61415/riage.517",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Scoping review of nurse case management for hospital-to-community transitions in chronic disease. Only 10 studies included, mostly non-US settings. Population and payer context differ from US Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00774",
+      "published": "2026-10",
+      "title": "Community health workers and promotores de salud: a tiered framework for infectious disease prevention and care among California agricultural workers",
+      "venue": "Frontiers in public health",
+      "year": 2026,
+      "doi": "10.3389/fpubh.2026.1972841",
+      "pmid": "42890459",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses CHW effectiveness in high-need populations with low healthcare engagement and social barriers. Proposes integrated, tiered CHW model. However, agricultural workers differ from typical Medicaid managed-care populations; Medicaid fit unclear without explicit transfer argument.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00772",
+      "published": "2026-10",
+      "title": "Improving Continuous Glucose Monitoring Access Among Adults With Type 1 Diabetes in an Urban Safety-Net Hospital",
+      "venue": "Diabetes, obesity, and cardiometabolic CARE",
+      "year": 2026,
+      "doi": "10.2337/doc25-0043",
+      "pmid": "42890503",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Safety-net setting serves uninsured/Medicaid populations. Pharmacy and care-coordination teams could adopt CGM education and workflow redesign. No explicit Medicaid managed-care context; internal improvement study without external comparison group.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00771",
+      "published": "2026-10",
+      "title": "Heterogeneous Treatment Effects of a Prescription for Produce Subsidy on Diabetes Care Management",
+      "venue": "Diabetes, obesity, and cardiometabolic CARE",
+      "year": 2026,
+      "doi": "10.2337/doc26-0005",
+      "pmid": "42890552",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "HTE analysis of food subsidy for diabetes is relevant to Waymark's social-needs navigation and screening. Population is food-insecure with chronic disease. Setting is US primary care but not Medicaid-specific; insurance mix unclear. Effect sizes modest.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00770",
+      "published": "2026-10",
+      "title": "The Cost of Inaction in Treating Obesity in the U.S",
+      "venue": "Diabetes, obesity, and cardiometabolic CARE",
+      "year": 2026,
+      "doi": "10.2337/doci25-0011",
+      "pmid": "42890581",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "modeling",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Modeling study projecting obesity treatment benefits across populations including Medicaid. Relevant to whom Waymark reaches (adults with obesity, chronic disease) but provides no operational evidence about care-team interventions, product behavior, or program evaluation methods Waymark uses.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00767",
+      "published": "2026-10",
+      "title": "AI safety is a system property, not a sum of individual defenses",
+      "venue": "Patterns (New York, N.Y.)",
+      "year": 2026,
+      "doi": "10.1016/j.patter.2026.101686",
+      "pmid": "42890770",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "applies",
+      "programs": [
+        "ai_safety",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Waymark deploys LLMs (Compass) in clinical contexts with vulnerable populations. Understanding how safety failures compound—especially jailbreaking affecting hallucination and fairness—directly informs safe product design and evaluation of omission errors.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00765",
+      "published": "2026-10",
+      "title": "Beyond the black box in healthcare operations: a structured literature review and governance framework for explainable AI in clinical process intelligence systems",
+      "venue": "Frontiers in artificial intelligence",
+      "year": 2026,
+      "doi": "10.3389/frai.2026.1864565",
+      "pmid": "42890956",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "compass",
+        "signal",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Framework addresses XAI governance for operational systems (relevant to Waymark's Signal, Compass, Anchor products), but review is descriptive, not empirical. Framework is preliminary and explicitly lacks external validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00745",
+      "published": "2026-10",
+      "title": "Relationship extraction for adverse drug events in clinical notes using large language models: a retrospective cross-sectional study",
+      "venue": "EBioMedicine",
+      "year": 2026,
+      "doi": "10.1016/j.ebiom.2026.106516",
+      "pmid": "42892212",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "NLP for ADE extraction could improve pharmacist safety review (Waymark program), but study lacks Medicaid population, capitated care context, and outcome validation on actionable safety improvement.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00741",
+      "published": "2026-10",
+      "title": "Federally Qualified Health center–level characteristics associated with sustaining tobacco screening and treatment in the United States, 2020–2024",
+      "venue": "Preventive medicine",
+      "year": 2026,
+      "doi": "10.1016/j.ypmed.2026.108684",
+      "pmid": "42892477",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies FQHC capacity factors predicting sustained screening performance. Relevant to Waymark's care-coordination and outreach design for low-income Medicaid members, but cross-sectional design cannot support causal claims about interventions or care-team actions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00735",
+      "published": "2026-10",
+      "title": "Association of Visual Impairment With Medication Adherence and Unintentional Nonadherence Behaviors in Older Adults With Chronic Diseases: A Cross-Sectional Observational Study",
+      "venue": "Medical science monitor : international medical journal of experimental and clinical research",
+      "year": 2026,
+      "doi": "10.12659/msm.954346",
+      "pmid": "42892708",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies a barrier (visual impairment) that pharmacists could screen for and address via simplification, pill organizers, or audio support. Single-center China study with small n limits US Medicaid transferability; cross-sectional design cannot establish causation or treatment effect.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-00728",
       "published": "2026-10",

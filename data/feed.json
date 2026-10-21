@@ -2571,10 +2571,360 @@
     "translated": 0,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 64,
-    "published": 64
+    "approved": 75,
+    "published": 75
   },
   "literature": [
+    {
+      "id": "LIT-00900",
+      "published": "2026-10",
+      "title": "Conformal Policy Selection: When to Deploy AI Decisions for Targeted Intervention",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.22930",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses safe deployment of risk-targeting AI and heterogeneous treatment effects—core to Signal. Methods paper with theoretical guarantees and semi-synthetic validation, not real-world deployment evidence yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00899",
+      "published": "2026-10",
+      "title": "DeDiCa: A Scalable Deconfounding Discrete Causal Generative Model",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.23272",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological advance in causal inference with hidden confounding could support Waymark's causal-evaluation interests, but no empirical validation on health or Medicaid data; transferability undemonstrated.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00894",
+      "published": "2026-10",
+      "title": "Recognizing Study Lineage Is Not Enough: Over-Crediting Same-Trial Evidence in LLM-Based Medical Verification",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.23721",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses LLM safety in medical evidence synthesis—core to Anchor's verification layer. But study is purely computational with no patient data, payer, or clinical workflow. Transfer to Medicaid context requires validation on real care decisions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00882",
+      "published": "2026-10",
+      "title": "Federated causal inference for effect estimation in healthcare: methods, challenges, and applications",
+      "venue": "npj Artificial Intelligence",
+      "year": 2026,
+      "doi": "10.1038/s44387-026-00168-1",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods review addresses Waymark's interest in causal evaluation with observational data across distributed settings. But abstract lacks empirical validation in Medicaid managed care; applicability depends on methodological solutions to confounding and heterogeneity.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00872",
+      "published": "2026-10",
+      "title": "Automated Calculation of the Pediatric Emergency Care Applied Research Network (PECARN) Intra-Abdominal Injury Rule from Unstructured Emergency Department Notes Using a Large Language Model",
+      "venue": "Journal of the American College of Emergency Physicians open",
+      "year": 2026,
+      "doi": "10.1016/j.acepjo.2026.100525",
+      "pmid": "42893265",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Demonstrates LLM reliability for extracting structured data from clinical notes—directly relevant to Waymark's Anchor product and NLP methods interest. However, population (pediatric ED trauma) and setting (acute emergency care) differ substantially from Waymark's Medicaid chronic-disease population.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00871",
+      "published": "2026-10",
+      "title": "Performance Evaluation of the Latest General-Purpose Large Language Models in Medical Reasoning and Clinical Screening Tasks",
+      "venue": "Spine surgery and related research",
+      "year": 2026,
+      "doi": "10.22603/ssrr.2026-0056",
+      "pmid": "42893293",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Paper validates LLM performance on medical reasoning and screening, relevant to Anchor's omission-error detection role. However, orthopedic literature screening does not transfer to Medicaid care-coordination tasks or member outreach.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00868",
+      "published": "2026-10",
+      "title": "Lessons From a Quality Improvement Initiative to Address Transportation Barriers in an Urban Primary Care Practice",
+      "venue": "Journal of primary care & community health",
+      "year": 2026,
+      "doi": "10.1177/21501319261500178",
+      "pmid": "42893419",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses unmet social needs (transportation) that Waymark tackles. Workflow integration and rideshare model are plausibly applicable. But n=22 pilot lacks comparison group, causal evidence, or Medicaid-specific validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00856",
+      "published": "2026-10",
+      "title": "Patterns of social determinants of health screening and health-related social needs among patients with newly diagnosed breast cancer in a safety-net system",
+      "venue": "Breast cancer research and treatment",
+      "year": 2026,
+      "doi": "10.1007/s10549-026-08095-0",
+      "pmid": "42894053",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Documents SDOH screening patterns and reassessment timing in a vulnerable population. Transferable to Medicaid but disease-specific (breast cancer) and descriptive only—no intervention or causal claim tested.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00843",
+      "published": "2026-10",
+      "title": "Navigating Health Information Sharing to Address Social Needs: Practice, Research, and Policy Recommendations from Hospital-Based Violence Intervention",
+      "venue": "The Journal of law, medicine & ethics : a journal of the American Society of Law, Medicine & Ethics",
+      "year": 2026,
+      "doi": "10.1017/jme.2026.10288",
+      "pmid": "42894472",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses information-sharing barriers relevant to Waymark's social-needs and care-coordination work. However, this is a qualitative policy-practice paper without empirical impact data on outcomes or operations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00838",
+      "published": "2026-10",
+      "title": "The Intersection of Place and Need: How Lack of Enrollment Offices Deters Participation in the Safety Net",
+      "venue": "Tax policy and the economy",
+      "year": 2026,
+      "doi": "10.1086/740384",
+      "pmid": "42894840",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses structural barriers to safety-net participation using quasi-experimental methods. Relevant to Waymark's re-enrollment (waypoint) and social-needs navigation, but SNAP enrollment differs from Medicaid re-enrollment workflows and member engagement.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00837",
+      "published": "2026-10",
+      "title": "Hepatitis C screening strategies and linkage-to-care approaches in U.S. emergency departments: A systematic review and meta-analysis",
+      "venue": "Preventive medicine reports",
+      "year": 2026,
+      "doi": "10.1016/j.pmedr.2026.103658",
+      "pmid": "42894864",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review compares CHW-led navigation to other linkage strategies for HCV, relevant to Waymark's care-coordination model. However, ED-specific context and outcome focus (HCV cure) differ from Waymark's broader population-health approach. Medicaid fit unclear; payer mix not specified.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-00819",
       "published": "2026-10",

@@ -2571,10 +2571,709 @@
     "translated": 0,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 75,
-    "published": 75
+    "approved": 97,
+    "published": 97
   },
   "literature": [
+    {
+      "id": "LIT-01042",
+      "published": "2026-10",
+      "title": "Trust the Edge, Doubt the Arrow: Auditing Validation Signals for Text-Mined Clinical Causal Knowledge Graphs",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.24390",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM safety and causal-knowledge validation in EHR contexts. Waymark uses NLP on care notes and causal evaluation. However, this is a methods paper on EHR mining, not a Medicaid program or population study. Transfer to care-coordination workflows uncertain.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01037",
+      "published": "2026-10",
+      "title": "Concordance Plausibility Check for Intervention-Conditioned Human Digital Twins",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.24577",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Preprint methodological contribution on validating causal claims in digital twins. Relevant to Waymark's interest in causal evaluation and LLM/model safety, but no empirical demonstration yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01033",
+      "published": "2026-10",
+      "title": "Nesting or resolution? Facility proxies for variance estimation versus confounding adjustment in claims data without facility identifiers",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.24679",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses methodological challenge (missing facility identifiers in de-identified claims) directly relevant to Waymark's causal evaluation work. Japanese health system structure differs from US Medicaid managed care; transfer depends on whether US claims face similar de-identification constraints.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01030",
+      "published": "2026-10",
+      "title": "Medical Fine-Tuning Reshapes, Not Reduces, Patient-Facing AI Risk: A Rubric-Based, LLM-Judge Evaluation Framework",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.24807",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Compass (patient-facing AI SMS navigator) safety evaluation. Preprint; evaluation on benchmark, not real deployed systems. Transfer to Medicaid member population unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01018",
+      "published": "2026-10",
+      "title": "DR-Learners for Generalizing CATEs from a Randomized Controlled Trial",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.25405",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological paper on RCT generalization. Waymark operates observationally without trials. gDR-Learner targets RCT-to-population generalization, not observational program evaluation or Medicaid operations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01010",
+      "published": "2026-10",
+      "title": "Where to weight? Estimating population causal effects with weighted double score matching in complex surveys",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.25870",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on survey-weighted matching for causal inference. Waymark works with administrative claims (not surveys) but faces confounding, overlap, and observational design challenges. Technique could strengthen causal evaluation of programs.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01007",
+      "published": "2026-10",
+      "title": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.26088",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Waymark's AI safety interests and Signal's use of LLMs for next-best-action suggestions, but limited to inpatient hospital prediction tasks without Medicaid-managed-care or primary-care population evidence.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01004",
+      "published": "2026-10",
+      "title": "Incorporating therapist capacity, availability and turnover in trials of therapist-delivered interventions: Non-orthogonal factorial designs",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.26321",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological paper on trial design for therapist interventions. Transferable to Waymark's behavioral_health program, but preprint status, no empirical validation, and lack of direct applicability to observational causal methods limit immediate impact.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01000",
+      "published": "2026-10",
+      "title": "Doubly Robust Learning of Heterogeneous Survival Treatment Effects under Time-Varying Treatments",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.26710",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological advance in causal inference for longitudinal survival data with time-varying treatments. Directly relevant to Waymark's stated methods interest in doubly robust estimators and causal evaluation of population-health programs. No empirical validation on Medicaid or social-needs populations yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00993",
+      "published": "2026-10",
+      "title": "Cost-Effectiveness of Expanding Housing Access for People Experiencing Homelessness and Opioid Use Disorder in California",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.15.26365505",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "modeling",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Housing is a high-impact social intervention for a high-need population. Waymark may reach unhoused Medicaid members with OUD, but this model does not evaluate how to identify, engage, or coordinate with such members in managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00988",
+      "published": "2026-10",
+      "title": "Comorbidity Exposure-Window Definitions and Multidimensional Disparities in Long COVID Risk: Evidence from a U.S. National Cohort (2020-2024)",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.07.11.26357794",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodologically rigorous study of temporal bias in EHR exposure definitions using causal ML. Relevant to Waymark's Signal risk models. But population is broad EHR cohort, not Medicaid-enrolled members; LC is not a current Waymark focus; unclear if findings transfer to capitated care targeting.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00965",
+      "published": "2026-10",
+      "title": "Key considerations in the design, conduct, analysis, and interpretation of observational studies in dialysis",
+      "venue": "Current opinion in nephrology and hypertension",
+      "year": 2026,
+      "doi": "10.1097/mnh.0000000000001228",
+      "pmid": "42895316",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological review directly applicable to Waymark's stated interest in target-trial emulation for causal evaluation. However, dialysis is a narrow clinical domain; transfer to population-health interventions in Medicaid managed care is not demonstrated.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00961",
+      "published": "2026-10",
+      "title": "Readmission of children in foster care to psychiatric residential treatment facilities",
+      "venue": "The American journal of orthopsychiatry",
+      "year": 2026,
+      "doi": "10.1037/ort0000973",
+      "pmid": "42895504",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies high-risk subgroup (foster care youth) with elevated psychiatric residential readmission. Relevant to Waymark's behavioral_health and care_coordination but does not directly evaluate a Waymark-type intervention or suggest actionable next-best actions for care teams.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00956",
+      "published": "2026-10",
+      "title": "Initial Treatment for Acute Low Back Pain and Risk of Opioid Use Disorder and Overdose",
+      "venue": "JAMA network open",
+      "year": 2026,
+      "doi": "10.1001/jamanetworkopen.2026.39420",
+      "pmid": "42895745",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "applies",
+      "programs": [
+        "care_coordination",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly informs care-team decisions on initial aLBP treatment referral pathways and could refine Signal risk models for OUD prediction. Transfers immediately—exact Medicaid population, retrospective cohort design with exposure assessment and follow-up.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00951",
+      "published": "2026-10",
+      "title": "Propensity Score Methods and Target Trial Emulation in Orthopaedic Surgery: A Practical Guide to Causal Inference from Observational Data",
+      "venue": "JBJS reviews",
+      "year": 2026,
+      "doi": "10.2106/jbjs.rvw.26.00185",
+      "pmid": "42896011",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological guidance on causal inference from observational data directly relevant to Waymark's stated interest in target-trial emulation and quasi-experimental designs. Orthopedic setting differs, but principles transfer.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00941",
+      "published": "2026-10",
+      "title": "Large Language Model–Generated Synthetic Data for Parole and Probation Detection in Clinical Notes: Development and Evaluation Study",
+      "venue": "JMIR AI",
+      "year": 2026,
+      "doi": "10.2196/104586",
+      "pmid": "42896172",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "NLP method for extracting justice-system status from notes could improve care coordination eligibility screening. But study is VA-only; Medicaid population, documentation practices, and legal-system linkage differ materially.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00939",
+      "published": "2026-10",
+      "title": "Variation in Medical Ethics Recommendations Across Large Language Models: Case-Based Audit Study",
+      "venue": "JMIR AI",
+      "year": 2026,
+      "doi": "10.2196/102713",
+      "pmid": "42896177",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Tests LLM behavior on ethics cases, relevant to Waymark's AI safety interests and Anchor verification layer. But no clinical population, no Medicaid setting, no measurement of downstream clinician or patient impact.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00938",
+      "published": "2026-10",
+      "title": "“There is a Place for it”: Practitioners’ Perspectives on Situated Ethical Acceptability of AI Technologies for Mental Health Practice (Preprint)",
+      "venue": "JMIR mental health",
+      "year": 2026,
+      "doi": "10.2196/91884",
+      "pmid": "42896178",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study of practitioner perspectives on AI ethics in mental health. Directly relevant to Waymark's behavioral_health and LLM-safety interests, but UK-based, small sample, and focused on provider acceptance rather than member outcomes or operational changes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00937",
+      "published": "2026-10",
+      "title": "Overuse and False Restraint in Large Language Model Recommendations for Choosing Wisely Scenarios",
+      "venue": "Annals of internal medicine",
+      "year": 2026,
+      "doi": "10.7326/annals-26-01667",
+      "pmid": "42896192",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Tests LLM accuracy on clinical decision-making without real care teams, members, or outcomes. Anchor uses LLMs to verify clinical outputs; this benchmark is relevant to LLM safety but doesn't validate Waymark's actual use case or population.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00928",
+      "published": "2026-10",
+      "title": "Multilevel predictors of stable treatment for opioid use disorder in pregnant individuals enrolled in Medicaid",
+      "venue": "Journal of substance use and addiction treatment",
+      "year": 2026,
+      "doi": "10.1016/j.josat.2026.210142",
+      "pmid": "42896673",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "applies",
+      "programs": [
+        "chw",
+        "pharmacy",
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies actionable contextual and individual barriers to medication adherence in a Medicaid OUD population. Suggests whom to reach (high-vulnerability pregnant people, rural areas with low MOUD access) and what care teams should prioritize (access facilitation, social support).",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00916",
+      "published": "2026-10",
+      "title": "Human-in-the-loop LLM-assisted thematic analysis: A validated, reproducible tutorial for large-scale qualitative research",
+      "venue": "Behavior research methods",
+      "year": 2026,
+      "doi": "10.3758/s13428-026-03207-6",
+      "pmid": "42897414",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM safety and validation rigor relevant to Waymark's AI products (Compass, Signal, Anchor), but demonstration uses Reddit posts, not clinical or care-coordination text. Transfer to Medicaid care notes unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-00912",
+      "published": "2026-10",
+      "title": "“I really can’t imagine anything that could’ve been more easy”: patient perspectives on low-threshold peer-facilitated telemedicine hepatitis C treatment for people who use drugs",
+      "venue": "Addiction science & clinical practice",
+      "year": 2026,
+      "doi": "10.1186/s13722-026-00704-z",
+      "pmid": "42897587",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study of peer-facilitated care model for rural PWUD with HCV. Peer support and care coordination resonate with Waymark's CHW/coordinator work, but hepatitis C treatment specificity limits direct applicability. No Medicaid enrollment data reported.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-00900",
       "published": "2026-10",

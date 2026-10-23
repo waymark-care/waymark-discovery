@@ -2571,10 +2571,518 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 97,
-    "published": 97
+    "approved": 113,
+    "published": 113
   },
   "literature": [
+    {
+      "id": "LIT-01165",
+      "published": "2026-10",
+      "title": "Does Multi-Agent Collaboration Reduce Hallucination in Clinical Tasks?",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.27027",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Anchor's safety evaluation needs and LLM hallucination mitigation. However, abstract reports only benchmarked tasks, not real clinical workflows, member outcomes, or Medicaid settings. Transferability to production requires validation on actual care notes and clinical decisions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01163",
+      "published": "2026-10",
+      "title": "A general-purpose System One decision model for clinical records",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.27099",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "CS1 addresses clinical NLP and population screening relevant to Waymark's Signal (identification) and LLM-safety interests. However, it is trained on inpatient hospital records, not Medicaid outpatient populations, and the paper does not validate on Medicaid data or demonstrate transferability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01160",
+      "published": "2026-10",
+      "title": "A plug-in estimator of the non-iterative conditional expectation g-formula using long short-term memory models",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.27354",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "modeling",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological advance in causal inference for complex longitudinal data with time-varying confounding. Proof-of-concept on simulated HIV data; no real-world evaluation or transfer to Medicaid populations yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01159",
+      "published": "2026-10",
+      "title": "Doubly Robust Estimation and Inference for Longitudinal Win Probabilities with Ordinal Outcomes in Observational Studies",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.27372",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological advance in causal inference for longitudinal outcomes relevant to Waymark's stated interest in doubly robust estimators and observational evaluation. However, preprint status, no Medicaid population, and abstract does not show method outperforms simpler alternatives in realistic settings.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01151",
+      "published": "2026-10",
+      "title": "When Do Humans and Machines Truly Complement Each Other? Formal Conditions and Empirical Evidence for Human-AI Synergy",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.27965",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Formal framework on human-AI complementarity directly relevant to Anchor (verification layer checking AI outputs). Preprint with seven clinical case studies; setting and population unspecified. No Medicaid/managed-care specificity.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01142",
+      "published": "2026-10",
+      "title": "Interpretable subgroup identification across survival and generalized-linear outcomes",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.28379",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on subgroup identification in trials. Signal relies on whom-to-reach predictions, but this targets trial post-hoc subgroup mining, not prospective targeting in observational settings Waymark uses.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01136",
+      "published": "2026-10",
+      "title": "The crystal ball problem: why prediction models are not guaranteed to improve health outcomes",
+      "venue": "npj Artificial Intelligence",
+      "year": 2026,
+      "doi": "10.1038/s44387-026-00171-6",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses the gap between prediction and outcome improvement—core to Signal's next-best-action logic. Argues for causal rather than accuracy-only validation, aligned with Waymark's methods interest. Case study is ICU-specific; transferability to community Medicaid care coordination unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01129",
+      "published": "2026-10",
+      "title": "Expertise modulates automation bias and sentinel behavior in human–AI collaborative diagnosis of neonatal pneumoperitoneum",
+      "venue": "npj Digital Medicine",
+      "year": 2026,
+      "doi": "10.1038/s41746-026-03399-3",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Anchor's verification-layer design and LLM-safety evaluation. However, neonatal radiology diagnosis is far from Waymark's population (adult/pediatric Medicaid with social needs, chronic disease, SMI) and care setting (community-based navigation vs. hospital emergency diagnosis).",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01117",
+      "published": "2026-10",
+      "title": "A Conversation Tool to Enhance Care for People With Type 2 Diabetes",
+      "venue": "JAMA Network Open",
+      "year": 2026,
+      "doi": "10.1001/jamanetworkopen.2026.39032",
+      "pmid": "42895748",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Null RCT of a shared-decision-making tool in a safety-net primary care setting with Medicaid-eligible patients. Relevant to Waymark's care-coordination and behavioral-health work but shows no benefit on fit-of-care or clinical outcomes. Design is sound but underpowered and single-center.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01112",
+      "published": "2026-10",
+      "title": "Community health worker certification as a pathway to workforce development and career advancement: a qualitative study",
+      "venue": "Frontiers in health services",
+      "year": 2026,
+      "doi": "10.3389/frhs.2026.1902919",
+      "pmid": "42898316",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses CHW workforce retention and career development, which affect Waymark's ability to sustain local teams. Qualitative evidence on certification's role in retention is relevant but does not measure impact on member outcomes or care delivery.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01109",
+      "published": "2026-10",
+      "title": "Synthetic gatekeeping in health chatbots: configured answer systems as the unit of AI evaluation and governance for medical information",
+      "venue": "Frontiers in digital health",
+      "year": 2026,
+      "doi": "10.3389/fdgth.2026.1976313",
+      "pmid": "42898389",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Theoretical framework for evaluating configured AI systems, not empirical evidence. Addresses AI safety/governance but in chatbots, not Waymark's care-coordination context. No Medicaid population or outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01106",
+      "published": "2026-10",
+      "title": "Inhaled treatment adherence patterns and related barriers across three monthly follow-up waves among patients with cough variant asthma: a clinical natural language processing study",
+      "venue": "Frontiers in immunology",
+      "year": 2026,
+      "doi": "10.3389/fimmu.2026.1966303",
+      "pmid": "42898473",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "NLP extraction of adherence barriers from clinical notes is methodologically relevant to Waymark's care-note NLP work and pharmacy program. However, population (CVA patients in specialty care) and setting (single-center telephone follow-up) differ significantly from Waymark's Medicaid managed-care population with complex social needs.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01084",
+      "published": "2026-10",
+      "title": "Impact of Fixed-Dose Combination Therapies on Cardiovascular Mortality and Major Cardiovascular Events",
+      "venue": "Current cardiology reports",
+      "year": 2026,
+      "doi": "10.1007/s11886-026-02430-z",
+      "pmid": "42900438",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Polypharmacy simplification could support Waymark's pharmacy program for high-risk Medicaid members. However, review focuses on clinical outcomes in cardiovascular populations, not social determinants or integrated care delivery. Transferability to US Medicaid uncertain; most trials conducted outside US.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01074",
+      "published": "2026-10",
+      "title": "Identifying Social Need Trends Among Emergency Department Super-Users: A Latent Class Analysis",
+      "venue": "The western journal of emergency medicine",
+      "year": 2026,
+      "doi": "10.5811/westjem.58307",
+      "pmid": "42900946",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Latent class segmentation of ED super-users identifies need archetypes relevant to Waymark's social-needs and behavioral-health programs. ED super-users overlap with Waymark's high-utilizer population. However, no intervention tested; chart review without clinical validation; cross-sectional design cannot establish causation or predict who benefits from which intervention.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01064",
+      "published": "2026-10",
+      "title": "Agentic artificial intelligence for code status extraction from clinical notes: a cross-model comparison of single agent, reflective agent, and multiagent extractor-reviewer system",
+      "venue": "Journal of the American Medical Informatics Association : JAMIA",
+      "year": 2026,
+      "doi": "10.1093/jamia/ocag179",
+      "pmid": "42901486",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Waymark's anchor product (verification layer checking AI outputs for omissions and errors). Suggests single-agent designs may be more efficient than multiagent review. Setting is hospital ICU, not primary Waymark population (community-based Medicaid). No intervention, no outcomes beyond extraction accuracy.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01060",
+      "published": "2026-10",
+      "title": "Food insecurity in the development of metabolic diseases",
+      "venue": "Nature reviews. Endocrinology",
+      "year": 2026,
+      "doi": "10.1038/s41574-026-01314-0",
+      "pmid": "42901975",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies food insecurity as a cardiometabolic risk driver and names Food as Medicine as a promising intervention class, relevant to Waymark's social-needs screening and community referral. However, review is primarily associational; calls for rigorous evaluation rather than reporting it.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-01042",
       "published": "2026-10",

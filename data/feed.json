@@ -2571,10 +2571,233 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 113,
-    "published": 113
+    "approved": 120,
+    "published": 120
   },
   "literature": [
+    {
+      "id": "LIT-01221",
+      "published": "2026-10",
+      "title": "Scaling Therapy Supervision: Assessing Psychotherapy Fidelity Using Large Language Models",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.28772",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "LLM-based fidelity feedback could improve Waymark therapist supervision and self-learning. However, preprint lacks peer review, sample sizes unreported, and generalization to Medicaid populations unstated. RCT validation on CBT/non-CBT distinction does not measure patient outcomes or feedback utility at scale.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01218",
+      "published": "2026-10",
+      "title": "Estimand frameworks for causal inference in clinical research and regulatory decision making",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.28983",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological framework relevant to Waymark's stated interest in causal evaluation and target-trial emulation. However, it is a conceptual paper without empirical validation in Waymark's population or programs.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01211",
+      "published": "2026-10",
+      "title": "From Scores to Safe Sets: Exact Safety--Constrained Decoding for Medication Recommendation",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.29228",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses medication safety optimization, relevant to Waymark's clinical pharmacist program. However, uses fixed pretrained scores on historical EHR data without validation on live Medicaid populations or prospective safety outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01208",
+      "published": "2026-10",
+      "title": "BRIDGE: An Acceptance Gate to Block False Improvements in Model Updates, with a Retrospective Clinical Evaluation",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.29515",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "BRIDGE addresses a real Waymark problem—rejecting model updates that improve validation metrics but fail prospectively. Cross-fitting and bootstrap-bound thresholds could strengthen Signal and Anchor deployment gates. Clinical evaluation is retrospective; no prospective trial in US Medicaid.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01183",
+      "published": "2026-10",
+      "title": "Generative AI in clinical practice: how should rheumatologists evaluate and monitor emerging tools?",
+      "venue": "Arthritis Care & Research",
+      "year": 2026,
+      "doi": "10.1002/acr.80195",
+      "pmid": "42901770",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Proposes AI evaluation framework relevant to Waymark's anchor product (verification layer for AI outputs). Addresses hallucinations, automation bias, and documentation errors. However, rheumatology-specific; no Medicaid or community health worker data; no empirical validation of framework.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01176",
+      "published": "2026-10",
+      "title": "Access to prescription medication labels in Spanish from community pharmacies",
+      "venue": "Frontiers in Health Services",
+      "year": 2026,
+      "doi": "10.3389/frhs.2026.1900946",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Small qualitative study identifies a modifiable pharmacy barrier (label language) affecting a Medicaid-relevant population. Could inform pharmacist workflows, but study lacks causal evidence and clinical outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01174",
+      "published": "2026-10",
+      "title": "Health Data Utilities as Essential Public Infrastructure: A Cooperative Federalism Architecture",
+      "venue": "Milbank Quarterly",
+      "year": 2026,
+      "doi": "10.1111/1468-0009.70136",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "modeling",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "social_needs",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses Waymark's core challenge: fragmented data preventing risk identification and eligibility verification. Proposes infrastructure Waymark depends on. But is policy architecture without empirical validation of outcomes claims.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-01165",
       "published": "2026-10",

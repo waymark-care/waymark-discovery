@@ -2571,10 +2571,519 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 120,
-    "published": 120
+    "approved": 136,
+    "published": 136
   },
   "literature": [
+    {
+      "id": "LIT-01391",
+      "published": "2026-10",
+      "title": "When Reconstruction Is Not Enough: Doubly Robust Counterfactual and Interventional Mediation Analysis with Learned Multimodal Representations",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.30220",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses representation sufficiency in doubly robust causal estimation from multimodal data—directly relevant to Waymark's causal evaluation methods and AI safety concerns. Preprint, not peer-reviewed. No empirical application to health-services outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01390",
+      "published": "2026-10",
+      "title": "Automated screening of privacy risks in medical AI",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.30229",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses AI safety and omission-error evaluation, areas Waymark cares about. But privacy-risk screening is upstream of model use; unclear how identifying vulnerable records changes operations, reach, or team actions.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01388",
+      "published": "2026-10",
+      "title": "SIM-UT: A User Simulation based Evaluation Framework for Medical Triage Chatbots",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.30412",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "compass",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to Compass (SMS chatbot safety) and AI safety evaluation methods. But LMIC WhatsApp context differs from US Medicaid SMS. No US data; no comparison of evaluation method predictive validity.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01381",
+      "published": "2026-10",
+      "title": "Local Discrimination of Binary Classifiers via Localized AUC Functional",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.31216",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological paper on model evaluation without clinical validation. No population, payer, or care-setting details. Preprint status and lack of empirical results in abstract limit immediate applicability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01375",
+      "published": "2026-10",
+      "title": "Causal inference in staggered adoption panels: The correct comparison set depends on your intervention",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.31537",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Waymark explicitly uses staggered difference-in-differences for causal evaluation with operational variation. This methodological paper clarifies which comparison sets answer which counterfactual questions—critical for designing falsifiable tests.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01364",
+      "published": "2026-10",
+      "title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.05.18.26353541",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Demonstrates LLM safety evaluation framework (omission vs. fabrication separation) potentially useful for Waymark's Anchor product, but oncology registry abstraction does not directly change care delivery, member reach, or population-health program evaluation in Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01360",
+      "published": "2026-10",
+      "title": "Community Health Worker Density and Child Immunisation Coverage in Nigeria: A Target-Trial Emulation of Health System Decentralisation Effects",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "year": 2026,
+      "doi": "10.5281/zenodo.23549547",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Paper demonstrates causal design feasibility for CHW interventions using quasi-random variation, aligned with Waymark's methodologic interests. However, Nigeria's public-sector immunization context transfers poorly to US Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01347",
+      "published": "2026-10",
+      "title": "LINGUISTIC OPTIMIZATION OF PATIENT-FACING DRUG DELIVERY INFORMATION USING GENERATIVE ARTIFICIAL INTELLIGENCE: A READABILITY, TERMINOLOGY AND CONTENT-FIDELITY STUDY",
+      "venue": "International Journal of Drug Delivery Technology",
+      "year": 2026,
+      "doi": "10.25258/ijddt.16.76s.159",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses AI-assisted patient communication in pharmacy context, relevant to Waymark's clinical pharmacist program and COMPASS safety. However, document-level study on general drug materials; no evidence from actual Medicaid member interactions or care workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01324",
+      "published": "2026-10",
+      "title": "R-GCRED: a retrieval-grounded and calibrated risk estimation for depression prediction and screening recommendation framework",
+      "venue": "Frontiers in artificial intelligence",
+      "year": 2026,
+      "doi": "10.3389/frai.2026.1931579",
+      "pmid": "42903271",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses AI safety (calibration, evidence grounding, uncertainty) relevant to Waymark's LLM products. But evaluated only on research benchmarks, not prospective clinical validation or real Medicaid workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01295",
+      "published": "2026-10",
+      "title": "Tenant Right-to-Counsel and Emergency Department Use in Low-Income and Uninsured Populations",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-10864-y",
+      "pmid": "42905183",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses social-needs intervention (eviction prevention) and uses staggered natural experiment with difference-in-differences—methods Waymark values. But heterogeneous effects (only early phase and children show benefit) and unexpected mental-health signal warrant caution before operationalizing.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01275",
+      "published": "2026-10",
+      "title": "Are Increased Engagements With Recovery Support Services Associated With Reductions in Medicaid Billing Charges and Reimbursements?",
+      "venue": "Health services research",
+      "year": 2026,
+      "doi": "10.1111/1475-6773.70172",
+      "pmid": "42905883",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant population and payer. However, observational study without causal design; cannot rule out confounding (sicker patients may seek more support). Waymark uses quasi-random variation; this study does not.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01270",
+      "published": "2026-10",
+      "title": "Assisting Screening of Adolescent Depression With Large Language Models as Symptom Detectors: Algorithm Development and Validation",
+      "venue": "JMIR formative research",
+      "year": 2026,
+      "doi": "10.2196/71614",
+      "pmid": "42906143",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "NLP method for depression screening in adolescent EHR notes could improve behavioral health identification and signal design. However, Waymark serves mostly adult Medicaid; pediatric applicability and real-world deployment validation remain unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01265",
+      "published": "2026-10",
+      "title": "Development and Validation of the Large Language Model Privacy Concern Assessment Questionnaire: Psychometric Evaluation Study on a Brief Instrument for Assessing User Privacy Concerns With Large Language Model Applications",
+      "venue": "JMIR human factors",
+      "year": 2026,
+      "doi": "10.2196/102910",
+      "pmid": "42906530",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Psychometric instrument development for LLM privacy concerns is relevant to Waymark's AI safety interests, but the study population (mostly college-educated, young, White, general public) does not represent Medicaid members or clinical workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01253",
+      "published": "2026-10",
+      "title": "Effect of a Multilevel Intervention on Racial Disparities in Medication Adherence: An Analysis of the Rich Life Project",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-10951-0",
+      "pmid": "42907691",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pragmatic RCT of team-based care in primary care, relevant to Waymark's care-coordination and pharmacy work. However, setting appears to be commercial/mixed payer primary care practices, not Medicaid managed care. No social-needs assessment or CHW component. Null finding on disparity reduction limits actionability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01252",
+      "published": "2026-10",
+      "title": "Association of a Chronic Care Management Model with Health Care Costs and Utilization",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-10948-9",
+      "pmid": "42907693",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "applies",
+      "programs": [
+        "chw",
+        "pharmacy",
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "pending",
+      "linked_finding": null,
+      "what_it_means": "Direct operational parallel: multidisciplinary team (RN, pharmacy, BH, CHW) reduces acute utilization in high-risk Medicaid population. Propensity-score matching addresses selection bias. Maryland's Medicaid managed-care structure transfers to Waymark's states.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
+    {
+      "id": "LIT-01230",
+      "published": "2026-10",
+      "title": "Receipt of needed care coordination and emergency department utilization among US children with chronic physical pain: a pooled analysis of the 2022–2024 National Survey of Children's Health",
+      "venue": "Frontiers in pain research (Lausanne, Switzerland)",
+      "year": 2026,
+      "doi": "10.3389/fpain.2026.1994046",
+      "pmid": "42908562",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Cross-sectional design cannot establish causation; confounding by unmeasured need severity likely. Authors acknowledge no temporal ordering. Signal for care coordination's value in pediatric chronic pain, but requires prospective causal design to inform Waymark operations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false
+    },
     {
       "id": "LIT-01221",
       "published": "2026-10",

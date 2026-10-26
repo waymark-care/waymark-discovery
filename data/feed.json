@@ -29,7 +29,8 @@
       "gate": "not_significant",
       "neg_log10_p": 0.06,
       "neg_log10_alpha": 2.53,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0002",
@@ -43,7 +44,8 @@
       "gate": "insufficient_data",
       "neg_log10_p": null,
       "neg_log10_alpha": null,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0003",
@@ -57,7 +59,8 @@
       "gate": "not_significant",
       "neg_log10_p": 0.39,
       "neg_log10_alpha": 3.2,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0004",
@@ -72,7 +75,8 @@
       "gate": "insufficient_data",
       "neg_log10_p": null,
       "neg_log10_alpha": null,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0005",
@@ -86,7 +90,8 @@
       "gate": "not_significant",
       "neg_log10_p": 0.25,
       "neg_log10_alpha": 3.27,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0006",
@@ -101,7 +106,8 @@
       "gate": "not_significant",
       "neg_log10_p": 1.14,
       "neg_log10_alpha": 3.35,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0007",
@@ -115,7 +121,8 @@
       "gate": "insufficient_data",
       "neg_log10_p": null,
       "neg_log10_alpha": null,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     },
     {
       "id": "WD-0008",
@@ -129,7 +136,8 @@
       "gate": "not_significant",
       "neg_log10_p": 0.0,
       "neg_log10_alpha": 3.42,
-      "source": "internal"
+      "source": "internal",
+      "known": false
     }
   ],
   "activity": [

@@ -2580,72 +2580,9 @@
     "tested_locally": 0,
     "replicated_locally": 0,
     "approved": 182,
-    "published": 182
+    "published": 180
   },
   "literature": [
-    {
-      "id": "LIT-01779",
-      "published": "2026-10",
-      "title": "Detection and Validation of Hidden Subgroup Disparities in Clinical AI",
-      "venue": "arXiv",
-      "year": 2026,
-      "doi": null,
-      "pmid": null,
-      "arxiv_id": "2610.32362",
-      "peer_reviewed": false,
-      "source": "arxiv",
-      "design": "methods",
-      "verdict": "watch",
-      "programs": [
-        "ai_safety"
-      ],
-      "corroboration": {
-        "supports": null,
-        "refutes": null
-      },
-      "local_test": "not_testable",
-      "linked_finding": null,
-      "what_it_means": "Addresses safety of clinical ML via subgroup discovery, relevant to Waymark's AI monitoring (Signal, Compass, Anchor). However, chest X-ray imaging is not Waymark's core domain; transfer to text-based care coordination and risk prediction models unclear. Preprint, unvalidated on Medicaid workflows.",
-      "action_taken": "",
-      "evidence": {
-        "identity_verified": true,
-        "retracted": false,
-        "clinician_reviewed": true
-      },
-      "waymark_authored": false
-    },
-    {
-      "id": "LIT-01776",
-      "published": "2026-10",
-      "title": "ALLMTS: Automated LLM-based Medical Triage System",
-      "venue": "arXiv",
-      "year": 2026,
-      "doi": null,
-      "pmid": null,
-      "arxiv_id": "2610.32469",
-      "peer_reviewed": false,
-      "source": "arxiv",
-      "design": "methods",
-      "verdict": "watch",
-      "programs": [
-        "ai_safety",
-        "anchor"
-      ],
-      "corroboration": {
-        "supports": null,
-        "refutes": null
-      },
-      "local_test": "not_testable",
-      "linked_finding": null,
-      "what_it_means": "ALLMTS addresses LLM safety and omission errors—core Waymark interests. Synthetic validation only; real clinical deployment safety and Medicaid applicability untested. Relevant to Anchor's verification layer.",
-      "action_taken": "",
-      "evidence": {
-        "identity_verified": true,
-        "retracted": false,
-        "clinician_reviewed": true
-      },
-      "waymark_authored": false
-    },
     {
       "id": "LIT-01772",
       "published": "2026-10",
@@ -2700,14 +2637,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "RCT design and causal mediation analysis are rigorous, but null effect on PA and no mediation pathway limit immediate applicability. Food insecurity is relevant to Waymark's social-needs work; transferability to Medicaid managed care requires assumption that NC clinical-site population resembles Waymark's membership.",
+      "what_it_means": "This secondary analysis of a randomized trial found no clear effect on physical activity or evidence of mediation through food insecurity; estimates were imprecise. Food insecurity is relevant to Waymark's social-needs work, but transfer to Medicaid managed care depends on comparability with food-insecure adults with hypertension recruited in North Carolina.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01758",
@@ -2763,14 +2706,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Scoping review of telepharmacy models in non-US, non-Medicaid settings. Only 6 small studies; unclear if findings transfer to US Medicaid managed care. No comparison of reach, team workflows, or causal mechanisms relevant to Waymark.",
+      "what_it_means": "Scoping review of 6 telepharmacy studies in non-US, non-Medicaid settings. Evidence is limited, and transfer to US Medicaid managed care is unclear. The abstract describes pharmacist roles, benefits, and barriers but does not report comparative evidence on reach or team workflows.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01742",
@@ -2826,14 +2775,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Qualitative study of care coordinator burnout risk factors in tertiary pediatric setting. Transferability to adult Medicaid community-based care coordinators uncertain; setting is hospital-based, not capitated community care.",
+      "what_it_means": "Qualitative study of moral distress, its influencing factors and its impacts among care coordinators at a tertiary pediatric hospital. Transferability to adult Medicaid community-based care coordinators is uncertain; the study setting differs from Waymark's capitated community care.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01734",
@@ -2953,14 +2908,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "DCDs align with Waymark's behavioral engagement (COMPASS text navigator could deploy commitments). Population overlaps with Medicaid members at cardiometabolic risk. But review lacks Medicaid-specific evidence, duration beyond 12 months, and Waymark's delivery model (CHW + therapist, not pure digital).",
+      "what_it_means": "Digital commitments could fit Waymark's behavioral engagement, including COMPASS texts. Adults with cardiometabolic risk plausibly overlap with Waymark's Medicaid population. But the abstract does not establish Medicaid-specific effectiveness, sustained benefits beyond 12 months, or applicability to Waymark's team-based care.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01724",
@@ -2985,14 +2946,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Study shows administrative burden drives distress in a chronic-illness population. Transportation barriers increase workload. Findings could inform care-coordination triage, but population (cancer patients) and payer (likely commercial/mixed) differ materially from Waymark's Medicaid focus.",
+      "what_it_means": "In this observational cohort of people receiving cancer treatment, administrative tasks were associated with distress, and unreliable transportation was associated with more time spent on those tasks. Findings could inform care-coordination triage, but applicability to Waymark's Medicaid members is uncertain; payer mix was not reported.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01713",
@@ -3207,14 +3174,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses Medicaid obesity population and treatment ROI. Relevant for identifying whom to reach (5.9M candidates) and prioritizing care-coordination referrals. However, modeling abstracts operational barriers (adherence, retention, care-team capacity) that shape real-world impact.",
+      "what_it_means": "Models social ROI from obesity treatment in Medicaid, with 5.9M potential referrals among adults with obesity lacking qualifying obesity-related complications. Relevant to referral planning, but not an operational targeting tool. Initiation and continuation rates are modeled; how well they reflect local adherence, retention and care-team capacity remains uncertain.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01668",
@@ -3336,14 +3309,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "RCT of CHW-delivered, family-centered intervention in underserved communities with documented SDOH burden mirrors Waymark's model. However, CVD prevention focus and California setting require explicit transfer argument to Medicaid managed care. Results pending (36-month outcomes not yet reported).",
+      "what_it_means": "This medRxiv preprint describes a family-centered CHW trial with documented social-needs burden. CHW delivery overlaps with Waymark's approach, but transfer from Latino and Vietnamese families in California to Medicaid managed care needs justification. Only design and baseline findings are reported; cardiovascular and blood pressure outcomes are pending.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01624",
@@ -3401,14 +3380,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Direct Medicaid managed-care population and setting. Doubly robust DML with GRF heterogeneity identifies whom to reach (high baseline HbA1c) and validates across multiple causal methods. Informs Waymark care-team deployment and Signal next-best-action logic.",
+      "what_it_means": "In a Virginia Medicaid managed-care cohort, care-team engagement was associated with lower HbA1c, with larger estimated benefits at higher baseline HbA1c. Sensitivity estimates had the same direction, but the single-value analysis included no effect. Findings could inform Waymark outreach and Signal hypotheses; targeting performance remains untested.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": true
+      "waymark_authored": true,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01615",
@@ -3433,14 +3418,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Tests LLM safety for medication review—a Waymark pharmacy function. RA population is narrow; generalization to Medicaid managed-care polypharmacy unclear. No causal design or population-health outcome.",
+      "what_it_means": "Evaluates LLM agreement with expert drug-interaction judgments—relevant to Waymark medication review, but not direct evidence of safety. RA population is narrow; generalization to Medicaid managed-care polypharmacy is unclear. No causal design or population-health outcome.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01606",
@@ -3466,14 +3457,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses methodological rigor for observational RWE—core to Waymark's causal evaluation mandate. Reviews solutions (target-trial emulation, IPSW) Waymark already uses. Applies to claims-based Medicaid analysis.",
+      "what_it_means": "Addresses methodological rigor for observational real-world evidence, relevant to Waymark's causal evaluation interests. Reviews approaches including target-trial emulation and inverse probability of sampling weighting that could inform claims-based Medicaid analyses.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01591",
@@ -3498,14 +3495,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Waymark's clinical pharmacists deliver MTM-like medication review. ML targeting to improve engagement directly parallels Signal (rising-risk prediction). Propensity-matched quasi-experimental design with real operational cohorts matches Waymark's methods interest and data constraints.",
+      "what_it_means": "Waymark's pharmacists provide similar medication review. ML targeting was associated with higher consultation acceptance in a propensity-matched historical comparison. This may inform whom Signal helps teams reach, but engagement targeting differs from rising-risk prediction. Applicability to Medicaid and fit with Waymark's evaluation requirements need assessment.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01587",
@@ -3531,14 +3534,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Direct Medicaid population and setting. Demonstrates that removing administrative friction increases uptake of a clinical intervention. Relevant to Waymark's coordination and pharmacy work, but focuses on a single disease and policy levers outside Waymark's control.",
+      "what_it_means": "In Wisconsin Medicaid, removing hepatitis C treatment restrictions was associated with higher treatment initiation, though uptake peaked at only 23%. Relevant to Waymark's coordination and pharmacy work, but this observational study focuses on one disease and policy levers outside Waymark's control.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01580",
@@ -3564,14 +3573,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Qualitative systems mapping identifies CHW capacity constraints and structural barriers relevant to Waymark's model. However, no empirical evidence that identified interventions change outcomes. Participatory design is valuable for program design but does not validate causal claims or guide whom to reach.",
+      "what_it_means": "Qualitative systems mapping identifies CHW capacity constraints and structural barriers relevant to Waymark's model. This study did not test whether proposed interventions improve outcomes. Its findings may inform program design and place-based outreach priorities, but do not establish causal effects or validate individual targeting.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01577",
@@ -3690,14 +3705,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Describes rising phenotype (stimulant polyuse, age, homelessness, Medicaid) in opioid-use-disorder population with psychiatric comorbidity. Signals clinical demand for integrated treatment and housing support Waymark members may need. Does not test an intervention or evaluation method.",
+      "what_it_means": "Among selected methadone treatment episodes with psychiatric comorbidity, clients were older, stimulant co-use and homelessness were more common, and Medicaid payment increased. These descriptive comparisons suggest possible needs for integrated care and housing support relevant to Waymark members. The study does not test an intervention or evaluation method.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01524",
@@ -3723,14 +3744,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses scalable remote monitoring with equity lens and discusses barriers (digital divide, social needs, language) relevant to Waymark's Medicaid population. However, focused on RPM device implementation, not SMS navigation, prediction, or core Waymark workflows.",
+      "what_it_means": "Reviews scalable, equitable hypertension RPM, including devices, team-based care, outreach, and language and social barriers relevant to Waymark's Medicaid population. Offers implementation lessons for care teams, but does not directly evaluate SMS navigation or risk prediction.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01506",
@@ -3848,14 +3875,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "FQHC population overlaps Medicaid. Addresses hypertension management via monitoring + coaching model that could inform Waymark care-team workflows. Small pilot, underpowered, high attrition (63% analyzed), no between-arm efficacy signal.",
+      "what_it_means": "FQHC care could inform Waymark's Medicaid workflows. Monitoring plus coaching may be relevant to care teams. This pilot was underpowered for efficacy; 63% of recruits were analyzed, but randomized-arm counts were unavailable, limiting assessment of attrition. No statistically significant between-arm BP-control difference was found; this does not establish equivalence.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01455",
@@ -3911,14 +3944,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Identifies adherence as a modifiable mediator of ED disparities in serious mental illness on Medicaid. Relevant to pharmacy and care-coordination teams, but uses historical claims only—no intervention tested.",
+      "what_it_means": "In Medicaid adults with schizophrenia or schizoaffective disorder, claims-based antipsychotic coverage statistically mediated part of the racial difference in ED use. Mediation was not significant for first-generation or long-acting injectable users. Relevant to pharmacy and care-coordination teams, but this observational study did not test whether improving coverage reduces disparities.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01428",
@@ -4135,14 +4174,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly relevant to Compass (SMS chatbot safety) and AI safety evaluation methods. But LMIC WhatsApp context differs from US Medicaid SMS. No US data; no comparison of evaluation method predictive validity.",
+      "what_it_means": "This unreviewed preprint offers evaluation ideas relevant to Compass SMS safety. Its LMIC WhatsApp context differs from US Medicaid SMS. The abstract reports no US data or comparison of evaluation methods' predictive validity.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01381",
@@ -4167,14 +4212,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological paper on model evaluation without clinical validation. No population, payer, or care-setting details. Preprint status and lack of empirical results in abstract limit immediate applicability.",
+      "what_it_means": "Methods preprint proposing localized AUC to identify patient subgroups where prediction models perform poorly. The abstract reports real-world and simulation testing but gives no quantitative results or specific population, payer, or care-setting details. Applicability to Medicaid care remains unclear.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01375",
@@ -4229,14 +4280,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Demonstrates LLM safety evaluation framework (omission vs. fabrication separation) potentially useful for Waymark's Anchor product, but oncology registry abstraction does not directly change care delivery, member reach, or population-health program evaluation in Medicaid managed care.",
+      "what_it_means": "This non-peer-reviewed preprint presents an evaluation framework separating omissions from fabrications, potentially useful for Waymark's Anchor product. Its oncology abstraction results from Singapore do not establish applicability to Medicaid managed care or effects on care delivery, member reach, or program evaluation.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01360",
@@ -4357,14 +4414,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses social-needs intervention (eviction prevention) and uses staggered natural experiment with difference-in-differences—methods Waymark values. But heterogeneous effects (only early phase and children show benefit) and unexpected mental-health signal warrant caution before operationalizing.",
+      "what_it_means": "Uses a staggered natural experiment and difference-in-differences to study eviction prevention. There was no overall association with ED use. Lower use was associated with the earliest rollout phase; the estimate for children was uncertain. Higher mental-health and substance-use ED use also warrants caution before operationalizing.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01275",
@@ -4549,14 +4612,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Cross-sectional design cannot establish causation; confounding by unmeasured need severity likely. Authors acknowledge no temporal ordering. Signal for care coordination's value in pediatric chronic pain, but requires prospective causal design to inform Waymark operations.",
+      "what_it_means": "Cross-sectional findings cannot establish causation or temporal ordering; unmeasured need severity may confound the association. Receipt of needed care coordination was associated with lower ED use among children with chronic pain. Prospective causal evaluation is needed before using this finding to guide Waymark operations.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01221",
@@ -4676,14 +4745,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "BRIDGE addresses a real Waymark problem—rejecting model updates that improve validation metrics but fail prospectively. Cross-fitting and bootstrap-bound thresholds could strengthen Signal and Anchor deployment gates. Clinical evaluation is retrospective; no prospective trial in US Medicaid.",
+      "what_it_means": "This non-peer-reviewed preprint explores rejecting model updates whose validation gains fail on new data. Cross-fitting and bootstrap-bound thresholds could inform Signal and Anchor deployment gates. Clinical testing was retrospective; prospective performance in US Medicaid remains unestablished.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01183",
@@ -4772,14 +4847,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses Waymark's core challenge: fragmented data preventing risk identification and eligibility verification. Proposes infrastructure Waymark depends on. But is policy architecture without empirical validation of outcomes claims.",
+      "what_it_means": "Relevant to Waymark's risk identification and eligibility workflows: proposes state health data utilities that combine clinical, claims, and social-service data. This is a policy architecture, not an empirical demonstration of improved outcomes.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01165",
@@ -4867,14 +4948,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological advance in causal inference for complex longitudinal data with time-varying confounding. Proof-of-concept on simulated HIV data; no real-world evaluation or transfer to Medicaid populations yet.",
+      "what_it_means": "An unreviewed preprint explores an LSTM-based g-formula estimator for causal inference with time-varying confounding. It offers proof of concept using simulated data resembling an HIV cohort; no real-world evaluation or transfer to Medicaid populations is reported.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01159",
@@ -4898,14 +4985,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological advance in causal inference for longitudinal outcomes relevant to Waymark's stated interest in doubly robust estimators and observational evaluation. However, preprint status, no Medicaid population, and abstract does not show method outperforms simpler alternatives in realistic settings.",
+      "what_it_means": "Methods preprint relevant to Waymark's interest in doubly robust estimators and observational evaluation. The application involves hospitalized adults with acute respiratory illness; Medicaid applicability is not established. Simulations show benefits, but the abstract does not establish superiority over simpler alternatives in realistic settings.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01151",
@@ -5153,14 +5246,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "NLP extraction of adherence barriers from clinical notes is methodologically relevant to Waymark's care-note NLP work and pharmacy program. However, population (CVA patients in specialty care) and setting (single-center telephone follow-up) differ significantly from Waymark's Medicaid managed-care population with complex social needs.",
+      "what_it_means": "NLP extraction of adherence barriers from clinical notes is methodologically relevant to Waymark's care-note NLP work and pharmacy program. However, this single-center adult CVA cohort with telephone follow-up differs from Waymark's Medicaid managed-care population with complex social needs, limiting direct transfer.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01084",
@@ -5217,14 +5316,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Latent class segmentation of ED super-users identifies need archetypes relevant to Waymark's social-needs and behavioral-health programs. ED super-users overlap with Waymark's high-utilizer population. However, no intervention tested; chart review without clinical validation; cross-sectional design cannot establish causation or predict who benefits from which intervention.",
+      "what_it_means": "Need-based groups among ED super-users may inform Waymark's social-needs and behavioral-health programs. This population shares features with Waymark's high-utilizer members. The study used chart review and tested no intervention; its cross-sectional design cannot establish causation or show who benefits from which intervention.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01064",
@@ -5280,14 +5385,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Identifies food insecurity as a cardiometabolic risk driver and names Food as Medicine as a promising intervention class, relevant to Waymark's social-needs screening and community referral. However, review is primarily associational; calls for rigorous evaluation rather than reporting it.",
+      "what_it_means": "Links food insecurity with cardiometabolic risk and names Food as Medicine as a promising intervention class, relevant to Waymark's social-needs screening and community referral. Evidence is mainly associational; the review calls for rigorous evaluation of these interventions.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01042",
@@ -5312,14 +5423,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses LLM safety and causal-knowledge validation in EHR contexts. Waymark uses NLP on care notes and causal evaluation. However, this is a methods paper on EHR mining, not a Medicaid program or population study. Transfer to care-coordination workflows uncertain.",
+      "what_it_means": "This non-peer-reviewed preprint addresses LLM safety and causal-knowledge validation in EHR contexts, aligning with Waymark's interests in NLP of care notes and causal evaluation. It is a methods study, not a Medicaid program or population study. Transfer to care-coordination workflows remains uncertain.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01037",
@@ -5344,14 +5461,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Preprint methodological contribution on validating causal claims in digital twins. Relevant to Waymark's interest in causal evaluation and LLM/model safety, but no empirical demonstration yet.",
+      "what_it_means": "Preprint methodological contribution on assessing the plausibility of causal claims in digital twins. Relevant to Waymark's interest in causal evaluation and LLM/model safety; the supplied abstract reports no empirical demonstration.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01033",
@@ -5438,14 +5561,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological paper on RCT generalization. Waymark operates observationally without trials. gDR-Learner targets RCT-to-population generalization, not observational program evaluation or Medicaid operations.",
+      "what_it_means": "This non-peer-reviewed methods preprint targets generalizing trial treatment effects to broader populations. Waymark's stated evaluation interests focus on observational data. The method is not designed for observational program evaluation; its relevance would depend on having suitable trial and target-population data.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01010",
@@ -5469,14 +5598,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methods paper on survey-weighted matching for causal inference. Waymark works with administrative claims (not surveys) but faces confounding, overlap, and observational design challenges. Technique could strengthen causal evaluation of programs.",
+      "what_it_means": "Unreviewed arXiv preprint on survey-weighted matching for causal inference. Waymark faces confounding and overlap challenges in observational program evaluation, but the method targets complex surveys. Its usefulness for administrative claims would need evaluation.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01007",
@@ -5533,14 +5668,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological paper on trial design for therapist interventions. Transferable to Waymark's behavioral_health program, but preprint status, no empirical validation, and lack of direct applicability to observational causal methods limit immediate impact.",
+      "what_it_means": "Methods preprint proposing randomization strategies for therapist-delivered interventions, evaluated in simulations. It may inform future trials in Waymark's behavioral health program, but applicability to Waymark is untested and it does not directly address observational causal evaluation.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-01000",
@@ -5564,14 +5705,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological advance in causal inference for longitudinal survival data with time-varying treatments. Directly relevant to Waymark's stated methods interest in doubly robust estimators and causal evaluation of population-health programs. No empirical validation on Medicaid or social-needs populations yet.",
+      "what_it_means": "This arXiv preprint, not yet peer reviewed, proposes a doubly robust method for survival treatment effects with time-varying treatments. It aligns with Waymark's interest in causal evaluation of population-health programs. The abstract reports theoretical guarantees and numerical experiments, but no validation in Medicaid or social-needs populations.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00993",
@@ -5596,14 +5743,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Housing is a high-impact social intervention for a high-need population. Waymark may reach unhoused Medicaid members with OUD, but this model does not evaluate how to identify, engage, or coordinate with such members in managed care.",
+      "what_it_means": "This non-peer-reviewed model projects that expanding Housing First access for unhoused people with OUD in California could be cost-effective. Waymark may reach unhoused Medicaid members with OUD, but the model does not evaluate identification, engagement, or care coordination in managed care.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00988",
@@ -5628,14 +5781,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodologically rigorous study of temporal bias in EHR exposure definitions using causal ML. Relevant to Waymark's Signal risk models. But population is broad EHR cohort, not Medicaid-enrolled members; LC is not a current Waymark focus; unclear if findings transfer to capitated care targeting.",
+      "what_it_means": "Non-peer-reviewed cohort preprint examining how EHR comorbidity exposure windows change Long COVID risk estimates, using double/debiased machine learning. Potentially relevant to Waymark's Signal risk models, but the broad adult EHR cohort is not Medicaid-specific, and transfer to capitated care targeting remains uncertain.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00965",
@@ -5723,14 +5882,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly informs care-team decisions on initial aLBP treatment referral pathways and could refine Signal risk models for OUD prediction. Transfers immediately—exact Medicaid population, retrospective cohort design with exposure assessment and follow-up.",
+      "what_it_means": "May inform initial acute low back pain referrals and suggest candidate predictors for Signal. The retrospective cohort studied opioid-naive Medicaid adults under age 65 in expansion states. Findings are associations; applicability to Waymark members and value for OUD prediction need local assessment.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00951",
@@ -5786,14 +5951,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "NLP method for extracting justice-system status from notes could improve care coordination eligibility screening. But study is VA-only; Medicaid population, documentation practices, and legal-system linkage differ materially.",
+      "what_it_means": "NLP detection of parole or probation in notes could support care coordination. Real-world evaluation used VA notes only; usefulness for Medicaid eligibility screening and transfer across documentation practices remain untested.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00939",
@@ -5850,14 +6021,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Qualitative study of practitioner perspectives on AI ethics in mental health. Directly relevant to Waymark's behavioral_health and LLM-safety interests, but UK-based, small sample, and focused on provider acceptance rather than member outcomes or operational changes.",
+      "what_it_means": "Small qualitative study of practitioner perspectives on AI ethics in mental health. Relevant to Waymark's behavioral health and LLM-safety interests, but focused on practitioner views rather than member outcomes or measured operational changes. Applicability to US Medicaid care is not established.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00937",
@@ -5882,14 +6059,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Tests LLM accuracy on clinical decision-making without real care teams, members, or outcomes. Anchor uses LLMs to verify clinical outputs; this benchmark is relevant to LLM safety but doesn't validate Waymark's actual use case or population.",
+      "what_it_means": "Tests LLM accuracy on clinical scenarios without real care teams, members, or patient outcomes. Anchor checks AI and clinical outputs for omissions and errors; this benchmark is relevant to LLM safety but doesn't validate Waymark's actual use case or population.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00928",
@@ -6012,14 +6195,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses safe deployment of risk-targeting AI and heterogeneous treatment effects—core to Signal. Methods paper with theoretical guarantees and semi-synthetic validation, not real-world deployment evidence yet.",
+      "what_it_means": "Addresses safe deployment of risk-targeting AI and heterogeneous treatment effects—relevant to Signal. Methods preprint, not peer reviewed, with theoretical guarantees and semi-synthetic validation, not real-world deployment evidence yet.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00899",
@@ -6043,14 +6232,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Methodological advance in causal inference with hidden confounding could support Waymark's causal-evaluation interests, but no empirical validation on health or Medicaid data; transferability undemonstrated.",
+      "what_it_means": "This unreviewed preprint proposes a method for causal inference with hidden confounding that could support Waymark's causal-evaluation interests. The supplied abstract reports no health or Medicaid validation, so transferability remains unclear.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00894",
@@ -6074,14 +6269,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses LLM safety in medical evidence synthesis—core to Anchor's verification layer. But study is purely computational with no patient data, payer, or clinical workflow. Transfer to Medicaid context requires validation on real care decisions.",
+      "what_it_means": "This non-peer-reviewed methods preprint examines LLM evidence aggregation, relevant to Anchor's verification layer. It evaluates model behavior using clinical publication families, not patient outcomes. The supplied evidence does not establish validation in payer or clinical workflows; applicability to Medicaid care decisions needs testing.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00882",
@@ -6136,14 +6337,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Demonstrates LLM reliability for extracting structured data from clinical notes—directly relevant to Waymark's Anchor product and NLP methods interest. However, population (pediatric ED trauma) and setting (acute emergency care) differ substantially from Waymark's Medicaid chronic-disease population.",
+      "what_it_means": "One LLM extracted PECARN variables from pediatric ED trauma notes with over 94% accuracy against clinician review. This is relevant to Waymark's NLP and Anchor evaluation interests, but does not establish reliability in Medicaid care notes. Transfer to Waymark's community-based care setting needs testing.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00871",
@@ -6168,14 +6375,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Paper validates LLM performance on medical reasoning and screening, relevant to Anchor's omission-error detection role. However, orthopedic literature screening does not transfer to Medicaid care-coordination tasks or member outreach.",
+      "what_it_means": "The study evaluates LLMs on medical exam questions and orthopedic literature screening. It may inform Anchor evaluation, but it does not validate omission-error detection or establish transfer to Medicaid care coordination or member outreach.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00868",
@@ -6232,14 +6445,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Documents SDOH screening patterns and reassessment timing in a vulnerable population. Transferable to Medicaid but disease-specific (breast cancer) and descriptive only—no intervention or causal claim tested.",
+      "what_it_means": "Documents SDOH screening patterns and reassessment timing among breast cancer patients in a safety-net system. May inform Medicaid social-needs screening, but transferability is uncertain. Descriptive only—no intervention or causal claim tested.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00843",
@@ -6488,14 +6707,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Safety-net setting serves uninsured/Medicaid populations. Pharmacy and care-coordination teams could adopt CGM education and workflow redesign. No explicit Medicaid managed-care context; internal improvement study without external comparison group.",
+      "what_it_means": "Pharmacy and care-coordination teams could consider CGM education and workflow redesign. This internal safety-net improvement study describes no external comparison group. Participants' insurance coverage and a Medicaid managed-care context are not specified, so transfer to Waymark's population needs assessment.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00771",
@@ -6651,14 +6876,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "NLP for ADE extraction could improve pharmacist safety review (Waymark program), but study lacks Medicaid population, capitated care context, and outcome validation on actionable safety improvement.",
+      "what_it_means": "NLP for ADE extraction could support Waymark pharmacist safety review, but applicability to Medicaid managed care remains unestablished. The study evaluated extraction performance, not whether using the models improves medication safety.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00741",
@@ -6683,14 +6914,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Identifies FQHC capacity factors predicting sustained screening performance. Relevant to Waymark's care-coordination and outreach design for low-income Medicaid members, but cross-sectional design cannot support causal claims about interventions or care-team actions.",
+      "what_it_means": "Links FQHC patient volume and composition to sustained tobacco screening/treatment performance; these associations may reflect organizational capacity. Relevant to Waymark's Medicaid outreach and care coordination, but the cross-sectional design cannot establish effects of interventions or care-team actions.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00735",
@@ -6714,14 +6951,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Identifies a barrier (visual impairment) that pharmacists could screen for and address via simplification, pill organizers, or audio support. Single-center China study with small n limits US Medicaid transferability; cross-sectional design cannot establish causation or treatment effect.",
+      "what_it_means": "Visual impairment was associated with lower adherence, suggesting a potential role for pharmacist screening. Simplification, pill organizers, or audio support could be considered but were not tested. The small, single-center sample of older adults limits US Medicaid transferability; the cross-sectional design cannot establish causation or treatment effects.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00728",
@@ -6872,14 +7115,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses LLM safety and omission-error evaluation in clinical-note processing—core to Anchor and Signal. Demonstrates scalable validation without exhaustive annotation, relevant to Waymark's NLP and AI safety interests.",
+      "what_it_means": "Demonstrates scalable validation of LLM-based clinical-note extraction without exhaustive manual annotation. Relevant to Anchor's verification role and Waymark's NLP and AI safety interests, though the abstract does not establish how well the framework detects omissions.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00687",
@@ -6997,14 +7246,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses Waymark's core causal-evaluation method (target-trial emulation). Argues the framework has value but cannot eliminate observational-data limitations. Does not propose new methods or present empirical evidence from Medicaid populations.",
+      "what_it_means": "Addresses target-trial emulation, one of Waymark's stated methods interests. Argues the framework has value but cannot eliminate observational-data limitations. Does not propose new methods or present empirical evidence from Medicaid populations.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00658",
@@ -7060,14 +7315,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Pharmacist-relevant medication-class comparison in real-world cohort using causal methods (marginal structural models, competing risks). However, study focuses on cognitive outcomes in elderly diabetics—a narrower population than Waymark's broader Medicaid membership. Transfer to Medicaid managed-care pharmacy work requires evidence it improves reach, adherence, or outcomes in Waymark's actual mem",
+      "what_it_means": "This observational medication-class comparison used marginal structural models and competing-risk analyses. The primary outcome combined cognitive disorders with death; cognitive findings alone were inconclusive. Its older population with type 2 diabetes is narrower than Waymark's Medicaid membership, so relevance to pharmacy practice needs evidence in Waymark's population.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00595",
@@ -7091,14 +7352,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Novel causal inference method for right-censored survival outcomes under unmeasured confounding. Theoretical contribution with benchmark validation. Medicaid fit unclear; no operational trial or US managed-care setting.",
+      "what_it_means": "Non-peer-reviewed preprint proposing a causal inference method for right-censored survival outcomes under unmeasured confounding. Methods contribution with benchmark and real-world evaluations. Medicaid fit unclear; no operational trial or US managed-care evaluation reported.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00581",
@@ -7122,14 +7389,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "LLM phenotype extraction could support Waymark's clinical NLP work on omission errors and care-note understanding. However, population is pediatric Rett syndrome (rare, specialist-managed), not Medicaid chronic disease or social needs. Transferability unclear.",
+      "what_it_means": "This non-peer-reviewed preprint suggests LLM phenotype extraction could inform Waymark's clinical NLP work. It studies Rett syndrome notes at Texas Children's Hospital; ages and Medicaid coverage are not reported. Transferability to Waymark's broader chronic-disease and social-needs work, and usefulness for omission-error detection, remain unclear.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00579",
@@ -7153,14 +7426,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Waymark explicitly values causal methods for observational data including staggered DiD. This paper directly addresses heterogeneous-effects estimation under time-varying confounding—a core challenge in Waymark's operational context where treatment timing and covariate trajectories vary.",
+      "what_it_means": "Waymark's interest in observational causal methods makes this unreviewed preprint potentially relevant. It proposes estimating heterogeneous effects with time-varying covariates under conditional parallel trends assumptions. It could inform program evaluation where treatment and covariates change over time, but has not been validated in Waymark data.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00578",
@@ -7185,14 +7464,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "SurvICL could improve risk prediction for whom to reach, but evidence is purely methodological on synthetic/benchmark data, not real clinical cohorts. Medicaid transfer untested. Preprint status.",
+      "what_it_means": "SurvICL could inform whom to reach through risk prediction. This methods preprint reports synthetic pretraining and strong held-out survival benchmark performance, not demonstrated benefits for outreach. Transfer to Medicaid remains unestablished.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00572",
@@ -7248,14 +7533,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Systematic review of CHW cost-effectiveness in T2D is relevant to Waymark's core program. Medicaid fit is transferable but requires caution: studies focused on low-income/minority populations (aligned with Waymark) but global scope and heterogeneous designs limit direct applicability. No US Medicaid-specific evidence synthesis.",
+      "what_it_means": "This review is relevant to Waymark's CHW program: included studies focused on adults with type 2 diabetes from low-income and/or ethnic minority populations. Heterogeneous designs limit interpretation. The abstract does not specify study countries or report Medicaid-specific findings, so applicability to US Medicaid managed care needs assessment.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00560",
@@ -7375,14 +7666,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Scoping review of NLP methods for unstructured clinical notes. Relevant to Waymark's interest in LLM safety and care-note analysis, but no Medicaid-specific data, no operational validation, and no evidence that these methods improve care or reduce errors in practice.",
+      "what_it_means": "Scoping review of transformer-based models for adult nursing notes. Relevant to Waymark's care-note analysis and LLM safety work, but Medicaid applicability is unclear. One study reported prospective silent evaluation; none evaluated clinical deployment or effects on clinical outcomes.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00530",
@@ -7437,14 +7734,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses LLM fairness risks relevant to Waymark's AI products (Signal, Compass, Anchor). Framework transfers to Medicaid settings but review is narrative, not empirical evidence of specific harms or solutions.",
+      "what_it_means": "Addresses LLM fairness risks relevant to Waymark's AI products (Signal, Compass, Anchor). The framework may inform Medicaid applications, but this emergency-care narrative review does not establish specific harms, effective solutions, or transferability.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00488",
@@ -7469,14 +7772,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly relevant to Anchor's verification layer and LLM safety interests. Reviews XAI techniques for bias detection and hallucination reduction—core to Waymark's omission-error evaluation. Limited actionable guidance for Medicaid care-team workflows.",
+      "what_it_means": "Relevant to Anchor's verification layer and Waymark's LLM safety interests. Reviews XAI techniques for identifying bias and analyzing hallucinations, but does not establish their usefulness for omission-error evaluation. Limited actionable guidance for Medicaid care-team workflows.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00465",
@@ -7500,14 +7809,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Directly addresses LLM reliability and omission-error detection—core to Waymark's Anchor and Signal products. However, nutrition application in rural Colombia does not transfer to Medicaid care coordination without explicit argument.",
+      "what_it_means": "The audit suggests reproducibility checks and intermediate-output inspection that may inform Anchor's verification work. It does not directly evaluate omission detection or Signal's risk predictions. Transfer from nutrition logging in rural Colombia to Medicaid care coordination needs explicit justification.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00455",
@@ -7595,14 +7910,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Addresses geographic misalignment in SDOH measurement, relevant to targeting. But South Dakota-specific methods paper with no outcomes data, no validation in Medicaid settings, and unclear operational integration.",
+      "what_it_means": "Addresses geographic misalignment in SDOH measurement, relevant to targeting. This South Dakota methods study's abstract reports no health-outcome evaluation or Medicaid-setting validation; integration into Waymark operations remains unclear.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00424",
@@ -7820,14 +8141,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Peer-reviewed methods work on Medicaid children's records. It is relevant to linking messy administrative sources such as claims, ADT and CBO referral data. It does not change whom Waymark reaches or what teams do. Education linkage is not a current Waymark data source. Linkage accuracy is reported only as a match rate, with no outcomes.",
+      "what_it_means": "Peer-reviewed methods work linking children's Medicaid and education records. It may inform linkage of messy administrative sources such as claims, ADT and CBO referrals. The abstract reports linkage coverage, not a validated accuracy estimate, and reports no health outcomes. Its operational value for Waymark remains to be assessed.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00296",
@@ -7854,14 +8181,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Single-site retrospective review with only 14 72-hour returns. Covariates were picked by univariate screening, and the confidence intervals are very wide. The risk factors it finds (serious mental illness, homelessness) are already expected. It is relevant to post-ED outreach for alcohol withdrawal, but too fragile to change targeting or care-team actions.",
+      "what_it_means": "Single-site retrospective review with only 14 returns within 72 hours and wide confidence intervals. Covariates were selected by univariate screening. Schizophrenia, anxiety and Medicaid coverage were associated with 72-hour return; homelessness with 30-day admission. Relevant to post-ED outreach, but larger studies are needed before using these findings to guide targeting.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00291",
@@ -7886,14 +8219,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Low-income food-insecure population is relevant to Medicaid social-needs work, but the evidence is weak: an uncontrolled online survey with recalled before/after affordability. The causal conclusions about improved affordability and healthcare use are not supported by this design. No claims-based outcomes. Worth tracking alongside controlled produce-prescription evaluations.",
+      "what_it_means": "Produce prescriptions may be relevant to Medicaid social-needs work, but this uncontrolled online survey relies on recalled before/after affordability and self-reported healthcare use. It cannot establish that the programs caused improvements. No claims-based outcomes are reported. Worth tracking alongside controlled produce-prescription evaluations.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00245",
@@ -7952,14 +8291,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "The population closely resembles Waymark's members. But comparing engagers with decliners and no-shows invites healthy-adherer bias, which weighting on measured confounders cannot remove. An E-value of 2.37 is plausible for motivation. Admissions were null. This conflicts with Waymark's lesson favoring quasi-random operational variation.",
+      "what_it_means": "These high-need safety-net adults may resemble some Waymark members. Comparing engagers with decliners/no-shows risks unmeasured selection bias despite weighting. The E-value of 2.37 does not establish whether motivation explains the association. Admissions were not statistically significant. The design differs from Waymark's lesson favoring quasi-random operational variation.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00220",
@@ -8018,14 +8363,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "The urban pediatric safety-net population likely overlaps heavily with Medicaid, and VA is nearby. But this is one site over a short window, the unit is visits not children, and outcomes are unlinked, so care avoidance cannot be told apart from shifts to other sites. It points to equity and evaluation risk, not a validated intervention.",
+      "what_it_means": "This single-site study may inform Waymark's equity and evaluation work, but Medicaid coverage was not reported. Over a short window, it measured visits, not individual children. The reported counts cannot distinguish care avoidance from shifts to other sites. It flags a potential access concern, not a validated intervention.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00173",
@@ -8052,14 +8403,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Small single-site pilot RCT at a Washington safety-net hospital, a population close to Waymark's. Linkage was 55% vs 50%, with a wide CI around a risk ratio of 1.10, so effectiveness is unknown. Feasibility and acceptability of navigation are encouraging, but it is not enough to change practice yet.",
+      "what_it_means": "Small single-site pilot RCT in hospitalized Washington adults with OUD and methamphetamine use who started buprenorphine. At 30 days, linkage was 55% vs 50% (risk ratio 1.10; wide CI crossing 1), so effectiveness remains uncertain. Feasibility and navigation satisfaction were encouraging; applicability to Waymark's broader Medicaid population needs assessment.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00139",
@@ -8117,14 +8474,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Peer-reviewed RCT with a null primary outcome. The ED reduction is a secondary, self-reported finding with a wide CI from a small sample. The population (low-income, mostly Black, US urban) plausibly transfers, but it was not Medicaid-specific. Text-navigator uptake was high.",
+      "what_it_means": "Peer-reviewed RCT with a null primary outcome. Lower self-reported ED use was a secondary finding with a wide CI among caregivers with social risks; no ED difference was detected without social risks. Participants were mostly Black and urban, with mixed incomes, and were not Medicaid-specific. Transfer to Waymark is uncertain. Text-navigator uptake was high.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00133",
@@ -8151,14 +8514,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "Facility-level train-the-trainer support for stepped-care opioid use disorder treatment in non-specialty settings was associated with higher buprenorphine receipt among homeless patients with opioid use disorder, with no change in methadone or naltrexone.",
+      "what_it_means": "Facility-level train-the-trainer support for stepped-care opioid use disorder treatment outside specialty settings was associated with higher buprenorphine receipt among homeless-experienced veterans, with no significant differences in methadone or naltrexone receipt.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00129",
@@ -8281,14 +8650,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "This is a direct Medicaid population with a clear high-risk, reachable subgroup: patients who leave against medical advice. The low fill rate is a robust descriptive target. The protective link between antibiotic fill and readmission is observational and likely confounded by healthy-adherer bias, so it does not prove that outreach would cut readmissions.",
+      "what_it_means": "This Medicaid study identifies a high-risk subgroup: patients with drug use-associated endocarditis who leave via patient-directed discharge. Few filled antibiotics within three days. Early fills were associated with lower readmission, but residual confounding, including possible healthy-adherer bias, means the study does not prove that outreach would cut readmissions.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00041",
@@ -8314,14 +8689,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "This is a narrative review with no new data, no comparison and no outcome estimates. The topic matches Waymark's social-needs screening and SMS navigation work. Its trauma-informed privacy framing may help with design, but it provides no evidence that would change practice or product behavior.",
+      "what_it_means": "This review discusses digital tools for pediatric social-needs screening and referral. The abstract reports no new comparative outcome estimates. It is relevant to Waymark's screening and SMS navigation work; its trauma-informed privacy guidance may inform design, but the abstract does not establish improved outcomes.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00035",
@@ -8346,14 +8727,20 @@
       },
       "local_test": "not_testable",
       "linked_finding": null,
-      "what_it_means": "The core result is a specialty-oncology benchmark, not a Medicaid population. The safety finding is relevant to Anchor: comparable error rates can hide a higher share of clinically significant errors. Skill libraries also helped plain retrieval-augmented generation. The study is retrospective and single-domain, with no evidence on patient outcomes.",
+      "what_it_means": "The main benchmark used myeloma records, not a Medicaid population. For Anchor, the safety lesson is that similar error rates can mask a higher share of clinically significant errors. Adding the skill library also improved iterative RAG. The study evaluated existing records, included exploratory cross-dataset testing, and provides no evidence on patient outcomes.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
         "retracted": false,
         "clinician_reviewed": true
       },
-      "waymark_authored": false
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "id": "LIT-00033",
@@ -9175,10 +9562,16 @@
       "pmid": "41934434",
       "headline": "Targeting care management by predicted benefit beats targeting by risk",
       "finding": "Prioritizing Medicaid outreach by predicted benefit, rather than predicted risk, was associated with 92 fewer acute care visits per thousand member-months, with similar engagement rates.",
-      "why_surprising": "Conventional wisdom targets the sickest or highest-risk patients for intensive care management. This study shows that identifying patients most likely to benefit from intervention—regardless of baseline risk—achieves better results with the same engagement effort.",
+      "why_surprising": "Risk-based targeting prioritizes patients most likely to need acute care. In this study, targeting Medicaid patients by predicted benefit instead was associated with fewer acute care visits, while outreach and engagement rates were similar.",
       "design": "quasi_experimental",
       "non_intuitive": 3,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Treatment-Effect-Based Versus Risk-Based Targeting of Care Management Outreach in Medicaid: A Retrospective Cohort Study with Machine Learning",
@@ -9199,12 +9592,18 @@
       "year": 2025,
       "doi": "10.37765/ajmc.2025.89816",
       "pmid": "41289254",
-      "headline": "Targeting rising-risk patients beats focusing on current high-cost claimants",
+      "headline": "Rising-risk Medicaid patients show greater spending growth in a cohort analysis",
       "finding": "Spending for rising-risk Medicaid patients nearly doubled over the year while spending for high-cost claimants fell 41.6% as costs regressed to the mean; half of new high-cost claimants had been flagged as rising risk.",
-      "why_surprising": "Standard practice targets current high-cost claimants for intervention. This analysis shows high-cost status is often temporary due to regression to the mean, while rising-risk patients represent the true cost trajectory. Early intervention on rising-risk patients addresses disease progression before it peaks.",
+      "why_surprising": "In this observational analysis, high-cost status was often temporary, consistent with regression to the mean. Rising-risk patients' spending grew, suggesting a potential focus for outreach. The analysis does not establish that targeting them prevents disease progression or lowers costs.",
       "design": "cohort",
       "non_intuitive": 3,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "The Risk Of Perpetuating Health Disparities Through Cost-Effectiveness Analyses",
@@ -9238,12 +9637,18 @@
       "year": 2024,
       "doi": "10.1038/s41598-023-51114-z",
       "pmid": "38263373",
-      "headline": "Better data triples detection of high-risk Medicaid patients and corrects racial bias",
-      "finding": "Adding richer data tripled sensitivity for at-risk patients (11.3% vs 3.4%) at near-identical specificity and reversed the standard cost-based model's lower sensitivity for Black versus White patients.",
-      "why_surprising": "Risk models for Medicaid patients have historically performed poorly due to incomplete data. This confirms that collecting better social risk data substantially improves their ability to find high-risk patients—a meaningful validation of this common-sense approach.",
+      "headline": "Medicaid risk model linked to better detection and reversal of racial sensitivity gap",
+      "finding": "In a cohort study, the best-performing model had roughly triple the sensitivity of the standard model (11.3% vs 3.4%) at similar specificity, and reversed the standard model's lower sensitivity for Black versus White patients.",
+      "why_surprising": "The study supports improved Medicaid risk prediction using an alternative modeling approach after data-quality and social-risk data initiatives. It does not establish that collecting richer social risk data alone caused the improvement.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": true
+      "replicated": true,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Medicare Advantage and Type 2 Diabetes Outcomes",
@@ -9253,10 +9658,16 @@
       "pmid": "42573997",
       "headline": "Medicare Advantage not linked to better diabetes outcomes than original Medicare",
       "finding": "Among adults with type 2 diabetes, Medicare Advantage was not associated with better hemoglobin A1c, blood pressure, cholesterol, food insecurity, housing instability, or transportation barriers compared with original Medicare.",
-      "why_surprising": "Medicare Advantage plans market financial protections and supplemental benefits (food assistance, transportation) specifically designed to address social needs and improve diabetes outcomes. One might expect these additional benefits to produce measurable health gains, but the study finds no difference in any clinical or social outcome.",
+      "why_surprising": "Medicare Advantage can offer financial protections and supplemental benefits, such as healthy food assistance, that might improve diabetes outcomes and address social needs. Yet this cohort study found no evidence of better measured clinical outcomes or fewer social needs than original Medicare.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Opportunistic Cardiovascular Risk Assessment Using Routine Head CT in the Emergency Department",
@@ -9266,10 +9677,16 @@
       "pmid": "41949516",
       "headline": "Routine emergency head CT scans reveal hidden cardiovascular risk",
       "finding": "Deep learning on routine emergency head CT scans added to traditional risk factors for predicting cardiovascular events, flagging subclinical disease in younger patients with favorable risk profiles.",
-      "why_surprising": "Head CT is ordered for neurological reasons, not cardiac risk assessment. Most clinicians would expect cardiac-specific imaging or biomarkers to outperform incidental findings. This shows routine scans contain useful cardiovascular information and identified younger patients with subclinical disease that traditional models missed.",
+      "why_surprising": "Head CT is not designed for cardiac risk assessment. In this retrospective cohort, deep learning extracted cardiovascular risk information from these scans that complemented traditional risk factors, identifying subclinical disease in younger patients with favorable risk profiles.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Transferring healthcare risk prediction models between Medicaid populations: a transfer learning evaluation",
@@ -9277,12 +9694,18 @@
       "year": 2026,
       "doi": "10.1038/s44401-026-00097-w",
       "pmid": "42527545",
-      "headline": "Simple model transfer matches complex methods for predicting acute care use",
+      "headline": "Simple model transfer shows similar discrimination to a complex ensemble",
       "finding": "A basic transfer approach achieved similar discrimination as a sophisticated meta-ensemble when predicting acute care utilization across Medicaid populations, with recalibration substantially improving calibration.",
-      "why_surprising": "Complex transfer learning methods like domain-adversarial networks and Enhanced MAML are often expected to outperform naive approaches when adapting models across populations with different demographics and outcome prevalence. This finding shows simpler solutions work equally well.",
+      "why_surprising": "Despite their complexity, advanced methods did not clearly outperform simple transfer on discrimination in this evaluation. Source-only transfer had similar discrimination to the meta-ensemble, but this does not establish equal performance overall. Target-adapted models had smaller fairness disparities, and broader validation is needed.",
       "design": "quasi_experimental",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Early detection of high risk pregnancies using clinical and social data to improve health outcomes",
@@ -9291,11 +9714,17 @@
       "doi": "10.1038/s44482-025-00003-5",
       "pmid": null,
       "headline": "Adding social data to pregnancy risk models boosts sensitivity by 10 points",
-      "finding": "Adding social data, especially health care access, raised sensitivity for high-risk pregnancies from 71.3% to 81.3% at 94.3% specificity and narrowed the gap between Black and White patients.",
-      "why_surprising": "While social determinants' link to maternal outcomes is known, most clinical risk models rely primarily on medical history. This shows that systematically incorporating SDoH data meaningfully improves prediction accuracy and, notably, reduces algorithmic bias—a practical validation of equity benefits often discussed theoretically.",
+      "finding": "In this Medicaid cohort, adding social data, especially health care access, increased model sensitivity from 71.3% to 81.3%. The augmented model had 94.3% specificity and eliminated the sensitivity gap between Black and White patients.",
+      "why_surprising": "The link between social determinants and maternal outcomes is well established. This study shows their practical value for risk prediction: adding social data improved sensitivity and eliminated the Black–White sensitivity gap in this cohort. It does not establish broader reductions in algorithmic bias or improved health outcomes.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Offline reinforcement learning for care management: addressing sparse rewards, temporal dependencies, and fairness in Medicaid populations",
@@ -9303,12 +9732,18 @@
       "year": 2026,
       "doi": "10.1038/s44482-026-00016-8",
       "pmid": null,
-      "headline": "Doubly robust evaluation stabilizes reinforcement learning for Medicaid care decisions",
-      "finding": "Standard off-policy evaluation achieved 0% effective sample size due to variance inflation, while doubly robust evaluation achieved 44.2%, enabling stable policy assessment. Fairness constraints reduced racial/ethnic intervention disparities from 3.5 to 0.8 percentage points.",
-      "why_surprising": "High-dimensional action spaces typically cause extreme variance in off-policy evaluation, making policy assessment unreliable. This result demonstrates that doubly robust methods can achieve stability, and that fairness constraints simultaneously reduce disparities—a combination not often demonstrated together.",
+      "headline": "Doubly robust evaluation is associated with more stable Medicaid policy assessment",
+      "finding": "In this Medicaid cohort, standard off-policy evaluation had 0% effective sample size versus 44.2% for doubly robust evaluation. Fairness-constrained training was associated with racial/ethnic intervention disparities of 0.8 versus 3.5 percentage points.",
+      "why_surprising": "High-dimensional action spaces can make off-policy evaluation unreliable. In this Medicaid cohort, doubly robust evaluation was associated with greater stability, while fairness-constrained training was associated with smaller racial/ethnic intervention disparities.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Redesigning Medicaid frailty algorithms: improved identification of medically frail adults under community engagement",
@@ -9355,12 +9790,18 @@
       "year": 2026,
       "doi": "10.1186/s12911-026-03763-z",
       "pmid": null,
-      "headline": "AI triage tools need physician oversight for Medicaid patient safety",
+      "headline": "Evaluated AI tools fell short of autonomous triage targets in Medicaid messaging",
       "finding": "No AI tool or combination achieved both 0.80 sensitivity and specificity for autonomous triage. Best balanced ensemble reached 0.69 sensitivity and 0.58 specificity; highest specificity had only 0.30 sensitivity.",
-      "why_surprising": "Frontier language models and ensemble approaches often outperform individual tools on benchmarks. Real-world Medicaid messages with lower reading levels and colloquialisms revealed that even sophisticated AI combinations cannot reliably identify clinical hazards without physician review, suggesting benchmarks overstate real-world safety.",
+      "why_surprising": "Medicaid messages had lower reading levels and more colloquialisms than physician-scripted scenarios. No evaluated AI configuration met both accuracy targets for autonomous triage in this cohort, although two configurations met the sensitivity-floor target with clinician review of flagged messages.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Association of Multidisciplinary Care Team Engagement With Hemoglobin A1c Among Medicaid Enrollees With Diabetes: A Doubly Robust Machine Learning Analysis",
@@ -9368,12 +9809,18 @@
       "year": 2026,
       "doi": "10.2337/doc26-0049",
       "pmid": "42923442",
-      "headline": "Diabetes care teams help most patients with worst control",
-      "finding": "Multidisciplinary care team engagement associated with 0.30 percentage point A1c reduction. Benefit increased per unit higher baseline A1c; among those with baseline A1c ≥9%, reduction approached 1 percentage point.",
-      "why_surprising": "The overall effect is modest, which might seem disappointing. However, benefits concentrate sharply among people with the worst baseline control (≥9% A1c), differing from typical interventions that show more uniform effects. This supports targeting resources to sickest patients.",
+      "headline": "Care team engagement linked to larger A1c declines with worse baseline control",
+      "finding": "Among Medicaid enrollees with diabetes, care team engagement was associated with a 0.30 percentage point A1c reduction. The estimated association was larger at higher baseline A1c, approaching 1 percentage point among those with baseline A1c ≥9%.",
+      "why_surprising": "The modest overall association masks a larger estimated association among people with baseline A1c ≥9%. This suggests targeted outreach to Medicaid enrollees with uncontrolled diabetes may be worth prioritizing, but the observational study does not establish that engagement caused the improvement.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Quantifying Indirect Billing Within the Medicare Physician Fee Schedule",
@@ -9396,10 +9843,16 @@
       "pmid": "39883462",
       "headline": "Some prescription denials cost Medicaid more than they save",
       "finding": "Some procedural prescription denials were associated with more emergency visits and hospital stays, with acute care costs that outweighed the short-term drug savings.",
-      "why_surprising": "Health plans deny prescriptions to reduce drug costs, but this study shows the approach backfires for some medication classes. The acute care utilization from untreated chronic conditions outweighs initial savings, resulting in net cost increases.",
+      "why_surprising": "Prescription denials aim to curb drug spending, yet denials in some medication classes were associated with higher acute care use and net spending after accounting for drug savings. This observational study does not establish that denials caused those increases.",
       "design": "cross_sectional",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Prevalence and Geographic Variation of Serious Mental Illness Among Young Adults Enrolled in Medicaid in New York State",
@@ -9409,10 +9862,16 @@
       "pmid": "40100185",
       "headline": "Homelessness carries the highest odds of serious mental illness in young adults",
       "finding": "Among young adults enrolled in Medicaid, homelessness (odds ratio 5.49), disability, female sex and rural residence were associated with higher odds of serious mental illness.",
-      "why_surprising": "Racial and ethnic minorities typically face greater barriers to mental health care and higher social stressors, so we'd expect higher SMI rates. This finding suggests either protective factors in these communities, differences in diagnosis/treatment-seeking, or measurement issues that differ by race.",
+      "why_surprising": "Asian, Black and Latinx enrollees had lower odds of serious mental illness than White enrollees. This cross-sectional study cannot determine whether those differences reflect underlying illness, diagnosis or other factors.",
       "design": "cross_sectional",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Predicting quality measure completion among 14 million low-income patients enrolled in medicaid",
@@ -9434,11 +9893,17 @@
       "doi": "10.1111/1468-0009.70004",
       "pmid": "40115992",
       "headline": "Medicaid expansion associated with fewer heart attacks and strokes",
-      "finding": "Medicaid expansion was associated with fewer heart attacks, strokes and cardiovascular deaths among nonelderly adults, with the largest gains for lower-income, Black and Hispanic adults; the estimates are uncertain.",
-      "why_surprising": "Common concerns about Medicaid focus on program costs rather than health gains. This shows expansion redistributed health gains toward lower-income groups, though cost-effectiveness remained uncertain (only 26–29% confidence it was both efficient and equity-enhancing).",
+      "finding": "A simulation model linked Medicaid expansion to fewer heart attacks, strokes and cardiovascular deaths among nonelderly adults, with the largest projected gains for lower-income, Black and Hispanic adults; estimates were uncertain.",
+      "why_surprising": "The model suggested that health gains favored lower-income groups, but the economic and equity conclusions were uncertain. Expansion was both cost-effective and equity-enhancing in only 26–29% of probabilistic sensitivity-analysis simulations.",
       "design": "modeling",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Reinforcement Learning to Prevent Acute Care Events Among Medicaid Populations: Mixed Methods Study",
@@ -9447,11 +9912,17 @@
       "doi": "10.2196/74264",
       "pmid": "41062083",
       "headline": "Reinforcement-learning-guided care management linked to fewer acute events",
-      "finding": "Care management guided by a reinforcement-learning policy was associated with a 20.7% relative reduction in acute care events compared with standard practice (number needed to treat 8.3).",
-      "why_surprising": "Care managers rely on experience and judgment to prioritize interventions. This result shows an algorithmic approach trained on patient trajectories can identify better intervention sequences than experienced practitioners, and does so more fairly across demographic groups.",
+      "finding": "Counterfactual analyses estimated that reinforcement-learning-guided care management could yield a 20.7% relative reduction in acute care events versus standard practice among Medicaid beneficiaries (estimated number needed to treat 8.3).",
+      "why_surprising": "Care managers rely on experience and judgment to prioritize interventions. This study suggests that an algorithm trained on patient trajectories could recommend better next steps than standard practice, with counterfactual analyses also suggesting smaller disparities across demographic groups.",
       "design": "quasi_experimental",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Simulating A/B testing versus SMART designs for LLM-driven patient engagement to close preventive care gaps",
@@ -9459,12 +9930,18 @@
       "year": 2024,
       "doi": "10.1038/s41746-024-01330-2",
       "pmid": "39558021",
-      "headline": "SMART design outperforms A/B testing for tailoring patient engagement messages",
+      "headline": "SMART outperforms A/B testing on cost-effectiveness in outreach simulations",
       "finding": "In simulations comparing designs for testing personalized outreach, SMART showed better cost-effectiveness and net benefit across all scenarios, with superior power for detecting heterogeneous treatment effects in later stages.",
-      "why_surprising": "A/B testing is the standard approach for message testing in health programs. SMART's advantage here may surprise because it's less familiar and requires more complex implementation, yet simulation shows it delivers better results while being more cost-effective.",
+      "why_surprising": "Traditional A/B testing compares two alternative messages. In these simulations, SMART offered better cost-effectiveness and net benefit across all scenarios, but its advantage in detecting heterogeneous treatment effects appeared only in later randomization stages.",
       "design": "modeling",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Preferences for food vouchers among adults with low incomes",
@@ -9473,11 +9950,17 @@
       "doi": "10.1080/19320248.2024.2383753",
       "pmid": "40134938",
       "headline": "Low-income adults prefer unrestricted food vouchers over produce-only options",
-      "finding": "Participants preferred vouchers eligible for all foods over fruit and vegetable restrictions, and monthly over weekly redemption schedules. Preferences shifted based on actual voucher assignment.",
-      "why_surprising": "Health programs typically restrict vouchers to nutrient-dense foods to maximize health benefit. This finding shows participants value flexibility and convenience over program design intended to guide healthier choices, though preferences adapted to their assigned voucher type.",
+      "finding": "Participants preferred vouchers eligible for all foods over produce-only vouchers, and monthly over weekly redemption. Preferences differed by assignment: those assigned produce-only vouchers were more likely to prefer that type.",
+      "why_surprising": "Flexibility was a key driver of preference, with participants favoring all-food vouchers overall. However, those assigned produce-only vouchers were more likely to prefer that type, showing that preferences differed with participants’ program experience.",
       "design": "rct",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Impact of Vietnam-era G.I. Bill eligibility on later-life blood pressure distribution: evidence from the Vietnam draft lottery natural experiment",
@@ -9485,12 +9968,18 @@
       "year": 2024,
       "doi": "10.1093/aje/kwae357",
       "pmid": "39289172",
-      "headline": "G.I. Bill eligibility lowered later-life blood pressure, most for poorer men",
-      "finding": "Vietnam-era G.I. Bill eligibility shifted the blood pressure distribution toward lower risk, with a 3 mmHg lower systolic pressure at the 90th percentile and benefits concentrated in men from lower-income childhoods.",
-      "why_surprising": "Education subsidies target academic opportunity, not health directly. That college eligibility specifically benefits blood pressure distribution at higher quantiles—reducing concentrated morbidity risk—rather than uniformly across all pressure levels adds nuance to how early-life opportunity shapes adult cardiovascular health.",
+      "headline": "G.I. Bill eligibility lowered blood pressure at higher quantiles",
+      "finding": "G.I. Bill eligibility, proxied by draft-lottery eligibility, shifted blood pressure toward lower risk: systolic pressure was 3 mmHg lower at the 90th percentile. Protective effects appeared among men with low and medium childhood socioeconomic status.",
+      "why_surprising": "Education subsidies target academic opportunity, not health directly. This natural experiment found larger blood-pressure benefits at higher quantiles, rather than uniform benefits across the distribution. Effects also differed by childhood socioeconomic status, with opposite effects among men in the highest-status group.",
       "design": "quasi_experimental",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Comparison of Self and Caregiver Reports of Antiretroviral Treatment Adherence among Children and Adolescents Living with HIV in Western Kenya",
@@ -9498,12 +9987,18 @@
       "year": 2024,
       "doi": "10.1177/23259582241242335",
       "pmid": "38562058",
-      "headline": "Child and caregiver reports of HIV medication adherence equally inaccurate",
-      "finding": "Child and caregiver self-reports were similarly associated with objective pill bottle data (correlations 0.23 and 0.20), and both groups under-reported missed doses compared to actual adherence measured by pill bottle caps.",
-      "why_surprising": "One might expect caregivers to have better visibility into adherence patterns, making their reports more accurate. This study found child and caregiver reports were equally unreliable compared to objective measurement, suggesting similar blind spots in both perspectives.",
+      "headline": "Child and caregiver HIV adherence reports show similarly weak links to pill cap data",
+      "finding": "Child and caregiver self-reports had similarly weak correlations with pill cap adherence measures (0.23 and 0.20, respectively). Both reported fewer missed doses than indicated by the cap data.",
+      "why_surprising": "Caregivers might be expected to report adherence more accurately. In this study, both reports correlated weakly with pill cap measures, suggesting similar reporting limitations. However, this does not establish equal accuracy, and pill caps do not verify medication ingestion.",
       "design": "cohort",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "Association of Adequacy of Broadband Internet Service With Access to Primary Care in the Veterans Health Administration Before and During the COVID-19 Pandemic",
@@ -9526,10 +10021,16 @@
       "pmid": "35787081",
       "headline": "One in seven insulin users face catastrophic out-of-pocket costs",
       "finding": "Among Americans using insulin, 14.1% spent more than 40% of postsubsistence family income on insulin annually. Catastrophic spending was 61% less likely among Medicaid than Medicare beneficiaries.",
-      "why_surprising": "Medicare covers seniors and disabled people, typically lower-income groups. One might expect better protection than Medicaid, yet Medicare beneficiaries face higher catastrophic spending. This suggests insurance design, not just income, drives vulnerability.",
+      "why_surprising": "Insurance coverage does not guarantee protection from high insulin costs. In this cross-sectional study, Medicaid coverage was associated with less catastrophic spending than Medicare coverage, suggesting that coverage type may matter alongside income.",
       "design": "cross_sectional",
       "non_intuitive": 2,
-      "replicated": false
+      "replicated": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-10",
+        "revised": true
+      }
     },
     {
       "title": "The Underuse of Medicare's Prevention and Coordination Codes in Primary Care : A Cross-Sectional and Modeling Study",

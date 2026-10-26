@@ -674,7 +674,13 @@
           h("td", { text: num(vals.reduce((x, y) => x + y, 0)) }));
       })));
     fill(host, s.length ? tbl : none("No hypotheses yet. Counts of hypotheses by analysis template and topic tag will appear here."),
-      s.length ? h("div", { class: "note", text: "Hypotheses with several tags count once per tag. Darker = more." }) : null);
+      s.length ? h("div", { class: "note", text: "Hypotheses with several tags count once per tag. Darker = more." }) : null,
+      s.length >= 5 ? (() => {
+        const last = s.slice(-20), share = (key) => { const c = {}; for (const e of last) for (const v of [].concat(key(e))) c[v] = (c[v] || 0) + 1; const top = Object.entries(c).sort((a, b) => b[1] - a[1])[0]; return top ? [top[0], Math.round((100 * top[1]) / last.length)] : ["—", 0]; };
+        const [t, tp] = share((e) => TEMPLATES[e.template] || e.template), [g, gp] = share((e) => (e.tags.length ? e.tags : ["untagged"]));
+        const known = last.filter((e) => e.known).length;
+        return h("div", { class: "note diversity", text: `Diversity, last ${last.length} tests: top template ${t} ${tp}%, top topic ${g} ${gp}%. New proposals skip any template, outcome or exposure above 40%.${known ? ` ${known} already established in the literature, tested as replications.` : ""}` });
+      })() : null);
   }
 
   /* ================= GATES ================= */
@@ -687,6 +693,7 @@
       ["Replicated", "held-out half of members", p.replicated],
       ["Passed controls", "negative control and skeptic agent", p.passed_controls],
       ["Clinician-approved", "signed off for publication", p.approved],
+      ["Audited", "checked by a different-model auditor", feed.findings.filter((f) => f.audit).length],
       ["Published", "on this page", p.published],
     ];
     // gates after "Tested" appear once something has reached them
@@ -699,9 +706,10 @@
       ["Papers by Waymark", "author affiliation on the registry record", pubs.length],
       ["Peer reviewed", "published in a journal", pubs.filter((x) => x.peer_reviewed).length],
       ["Featured findings", "non-intuitive results, clinician-approved", feed.published_findings.length],
+      ["Audited", "wording and novelty checked by a different-model auditor", feed.published_findings.filter((f) => f.audit).length],
       ["Replicated", "validated on held-out, external or prospective data", pubs.filter((x) => x.replicated).length],
     ];
-    fill($("#pub-gate-list"), pg.map(([name, sub, n], i) => h("div", { class: "gate" + (i === 2 ? " pub" : "") },
+    fill($("#pub-gate-list"), pg.filter(([, , n], i) => i === 0 || n > 0).map(([name, sub, n], i) => h("div", { class: "gate" + (name === "Featured findings" ? " pub" : "") },
       h("div", { class: "name" }, name, h("small", { text: sub })),
       h("div", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${n ? Math.max(0.5, (100 * n) / pmax) : 0}%` })),
       h("div", { class: "n", text: num(n) }))));
@@ -834,7 +842,7 @@
         h("div", { class: "pubfind-grid" }, pf.map((f) =>
           h("article", { class: "pubcard" },
             h("div", { class: "meta" }, h("span", { text: `${f.venue.split(":")[0].trim()}, ${f.year}` }),
-              f.replicated ? h("span", { class: "badge ok", text: "replicated" }) : h("span", { class: "badge", text: "peer-reviewed" })),
+              f.replicated ? h("span", { class: "badge ok", text: "replicated" }) : h("span", { class: "badge", text: "peer-reviewed" }), auditBadge(f)),
             h("h3", { text: f.headline }),
             h("p", { class: "pf-finding", text: f.finding }),
             f.why_surprising ? h("p", { class: "pf-why" }, h("b", { text: "Why it matters " }), f.why_surprising) : null,
@@ -873,7 +881,7 @@
       const host = h("div", { class: "chart" });
       const card = h("article", { class: "finding", id: f.id },
         h("div", { style: "min-width:0" },
-          h("div", { class: "meta" }, h("span", { text: f.id }), h("span", { text: fmtMonth(f.published) }), h("span", { class: "tags" }, f.tags.map((t) => h("span", { class: "tag", text: TAGS[t] || t })))),
+          h("div", { class: "meta" }, h("span", { text: f.id }), h("span", { text: fmtMonth(f.published) }), auditBadge(f), h("span", { class: "tags" }, f.tags.map((t) => h("span", { class: "tag", text: TAGS[t] || t })))),
           h("h3", { text: f.title }),
           h("p", { class: "insight", text: f.insight }),
           effectBlock(f), checksBlock(f, feed.pipeline.fdr_alpha, feed.pipeline.fdr_method), detailsBlock(f)),
@@ -882,6 +890,8 @@
       return card;
     }));
   }
+
+  const auditBadge = (x) => x && x.audit ? h("span", { class: "badge ok", title: `Checked against its own evidence by a ${x.audit.family === "openai" ? "different-family (OpenAI)" : "second"} model${x.audit.revised ? "; wording corrected" : ""}`, text: "audited" }) : null;
 
   /* ================= LITERATURE ================= */
   const doiUrl = (d) => "https://doi.org/" + d.split("/").map(encodeURIComponent).join("/");
@@ -914,7 +924,8 @@
           h("div", { class: "meta" }, h("span", { text: l.id }), h("span", { text: fmtMonth(l.published) }),
             h("span", { class: l.peer_reviewed ? "badge" : "badge pre", text: l.peer_reviewed ? "peer-reviewed" : "preprint" }),
             h("span", { class: "badge" + (l.verdict === "applies" ? "" : " pre"), text: l.verdict }),
-            l.waymark_authored ? h("span", { class: "badge pre", title: "A Waymark author is on this paper, so it is not independent evidence", text: "Waymark-authored" }) : null),
+            l.waymark_authored ? h("span", { class: "badge pre", title: "A Waymark author is on this paper, so it is not independent evidence", text: "Waymark-authored" }) : null,
+            auditBadge(l)),
           h("h3", null, href ? h("a", { href, target: "_blank", rel: "noopener", text: l.title }) : l.title),
           h("p", { class: "cite", text: `${l.venue}, ${l.year} · via ${l.source}` }),
           h("div", { class: "ids" }, ids),

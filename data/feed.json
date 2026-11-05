@@ -3419,8 +3419,8 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 313,
-    "published": 313
+    "approved": 321,
+    "published": 321
   },
   "literature": [
     {
@@ -3724,6 +3724,45 @@
         "verdict": "pass",
         "month": "2026-11",
         "revised": true
+      }
+    },
+    {
+      "id": "LIT-02878",
+      "published": "2026-11",
+      "title": "Temporal Island Sparse Autoencoders for Interpreting Clinical Time-Series Models",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.03420",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on EHR model interpretability. Could improve Signal's next-best-action suggestions or Anchor's verification if Waymark deployed similar deep models on outpatient claims/notes. But MIMIC is ICU-heavy hospital data; transfer to ambulatory Medicaid populations unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
       }
     },
     {
@@ -5692,6 +5731,44 @@
       }
     },
     {
+      "id": "LIT-02425",
+      "published": "2026-10",
+      "title": "Implementing Culturally Tailored Diabetes Prevention in Hispanic Communities: An Integrative Review Using the RE-AIM Framework",
+      "venue": "Preventing chronic disease",
+      "year": 2026,
+      "doi": "10.5888/pcd23.260050",
+      "pmid": "42955715",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review identifies CHW models and community-based delivery as implementation facilitators for diabetes prevention. However, abstract does not specify Medicaid population, payer, or managed-care setting; applicability to Waymark's population and programs is unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-02420",
       "published": "2026-10",
       "title": "A community health worker pilot intervention to increase patient portal use among people with HIV",
@@ -5841,6 +5918,45 @@
       }
     },
     {
+      "id": "LIT-02401",
+      "published": "2026-10",
+      "title": "Vaping, Tobacco, and Nicotine Treatment ECHO: A Brief Report on Building Tobacco Treatment Capacity in Missouri",
+      "venue": "American journal of preventive medicine",
+      "year": 2026,
+      "doi": "10.1016/j.amepre.2026.108631",
+      "pmid": "42956860",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "pharmacy",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "VTN-ECHO trains Medicaid-relevant workforces (CHWs, pharmacists, therapists, social workers) on tobacco treatment. Missouri Medicaid tobacco-use data and mixed-state reach suggest US Medicaid transferability. But no evidence that Waymark members' tobacco outcomes or reach change.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-02380",
       "published": "2026-10",
       "title": "Potential savings in Medicaid Antiseizure medication reimbursement, 2008–2025: persistent brand-name reimbursement Despite generic availability",
@@ -5975,6 +6091,43 @@
       "local_test": "not_testable",
       "linked_finding": null,
       "what_it_means": "Medical debt relief is a social need intervention relevant to Waymark members. North Carolina's payment-leverage model is operationally interesting. However, the review highlights gaps in beneficiaries' health and financial outcomes, limiting its guidance on whom to reach or which interventions to prioritize.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02361",
+      "published": "2026-10",
+      "title": "Unmet social needs in pediatric patients with inflammatory bowel disease linked to increased risk of missed appointments",
+      "venue": "JPGN reports",
+      "year": 2026,
+      "doi": "10.1002/jpr3.70295",
+      "pmid": "42959529",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "In this cross-sectional pediatric IBD study, unmet social needs were associated with more missed medical appointments, but not missed biologic infusions. Causation and intervention effectiveness were not established. Payer was unreported; this specialty gastroenterology population differs from Waymark's broader Medicaid membership.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
@@ -6202,6 +6355,81 @@
       "local_test": "not_testable",
       "linked_finding": null,
       "what_it_means": "Addresses CHW workforce wellness and retention—relevant to Waymark's CHW delivery model. Qualitative findings on stress and coping are descriptive, not causal. No intervention tested; no outcome data on performance or retention.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02325",
+      "published": "2026-10",
+      "title": "Community health worker intervention to prevent incident type 2 diabetes: A cluster randomized trial",
+      "venue": "PloS one",
+      "year": 2026,
+      "doi": "10.1371/journal.pone.0361464",
+      "pmid": "42961875",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "chw"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "CHW intervention in US setting is relevant. However, population is VA/public hospital patients (not Medicaid managed care), prediabetes focus (not Waymark's typical chronic disease/high-need population), and negative primary outcome limit applicability. Increased engagement is noted but not metabolic benefit.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02324",
+      "published": "2026-10",
+      "title": "Evaluating user experiences with an AI chatbot for health-related social needs: A cross-sectional mixed methods study",
+      "venue": "PLOS digital health",
+      "year": 2026,
+      "doi": "10.1371/journal.pdig.0001789",
+      "pmid": "42961877",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Population overlaps Waymark's (Medicaid, unmet social needs). Chatbot design and performance metrics are relevant to Compass. However, cross-sectional design with no control arm cannot measure impact on health, referral uptake, or resource linkage—only user experience. No evidence it changes outcomes.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
@@ -7657,6 +7885,43 @@
       }
     },
     {
+      "id": "LIT-01999",
+      "published": "2026-10",
+      "title": "In-hospital Medicaid Enrollment Facilitates Follow-up care for Emergency General Surgery Patients",
+      "venue": "Surgery",
+      "year": 2026,
+      "doi": "10.1016/j.surg.2026.110687",
+      "pmid": "42945931",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Retrospective cohort showing association between Medicaid enrollment and care access. Could inform Waymark's care-coordination outreach to newly-insured Medicaid members, but single-center design and observational confounding limit generalizability. Causality unestablished.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
       "id": "LIT-01984",
       "published": "2026-10",
       "title": "FLAT-WHITE: from target trial emulation to federated high-throughput causal machine learning using decentralized real-world data",
@@ -8179,6 +8444,43 @@
         "family": "openai",
         "verdict": "pass",
         "month": "2026-10",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-01844",
+      "published": "2026-10",
+      "title": "Verifying Facts in Patient Care Documents Generated by Large Language Models Using Electronic Health Records",
+      "venue": "NEJM AI",
+      "year": 2025,
+      "doi": "10.1056/aidbp2500418",
+      "pmid": "42932523",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "VeriFact addresses verification of statements present in documents. The abstract does not report detection of omitted information. Medicaid fit is weak: no payer, insurance, or US Medicaid managed-care setting reported; benchmark is discharge summaries, not care coordination or community health workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
         "revised": true
       }
     },

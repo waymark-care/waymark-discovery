@@ -3419,8 +3419,8 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 299,
-    "published": 299
+    "approved": 313,
+    "published": 313
   },
   "literature": [
     {
@@ -3496,6 +3496,43 @@
         "verdict": "pass",
         "month": "2026-11",
         "revised": true
+      }
+    },
+    {
+      "id": "LIT-02913",
+      "published": "2026-11",
+      "title": "Causal Record Linkage",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.00760",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses methodological foundations for causal inference on linked data—relevant to Waymark's observational evaluation and multi-source data integration. Preprint status and abstract-only framing of solutions limit immediate applicability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
       }
     },
     {
@@ -3615,6 +3652,43 @@
       }
     },
     {
+      "id": "LIT-02882",
+      "published": "2026-11",
+      "title": "Evaluation of clinical prediction models: Decomposing performance uncertainty into model development and validation components",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.03337",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on uncertainty decomposition in model validation. Relevant to Signal's rising-risk predictions, but abstract provides no empirical test in Medicaid or managed-care settings, and no case study population details.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-02880",
       "published": "2026-11",
       "title": "Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records",
@@ -3638,6 +3712,43 @@
       "local_test": "not_testable",
       "linked_finding": null,
       "what_it_means": "This non-peer-reviewed preprint models a composite of documented suicide-related codes retrospectively using hospital EHR features and ML interpretation. It may inform Waymark's behavioral health outreach and Signal, but transfer to Medicaid outpatient care is untested. The evidence provides no prospective validation, causal findings, or operational deployment results.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02876",
+      "published": "2026-11",
+      "title": "Causal Inference from Self-controlled Case Series",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.03531",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods preprint, not peer reviewed, on causal identification with SCCS under sufficient assumptions. SCCS is especially useful for rare outcomes. Its fit with Waymark's rising-risk prediction and care coordination is indirect, though it may inform causal evaluation. The abstract does not report empirical validation.",
       "action_taken": "",
       "evidence": {
         "identity_verified": true,
@@ -4031,6 +4142,41 @@
       }
     },
     {
+      "id": "LIT-02771",
+      "published": "2026-11",
+      "title": "The Effect of Opioid Abatement Funds on the Utilization of Medications for Opioid Use Disorder",
+      "venue": "Health services research",
+      "year": 2026,
+      "doi": "10.1111/1475-6773.70173",
+      "pmid": "42973177",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Study measures state-level policy effects on treatment admission rates, not individual Medicaid member outcomes or care delivery. No data on Medicaid-specific populations, managed-care enrollment, or community-based interventions Waymark delivers.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-02763",
       "published": "2026-11",
       "title": "A prospective randomized study of patient-centered AI for clinical visit preparation",
@@ -4331,6 +4477,45 @@
       }
     },
     {
+      "id": "LIT-02625",
+      "published": "2026-11",
+      "title": "“Building the connection route to help”: a qualitative study of opioid use disorder recovery processes for black women age 18–30",
+      "venue": "Journal of Ethnicity in Substance Abuse",
+      "year": 2026,
+      "doi": "10.1080/15332640.2026.2749554",
+      "pmid": "42952465",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative findings on trusted relationships could inform behavioral health and care-coordination design for young Black women with OUD. Participants’ insurance status is unclear; applicability to Medicaid members needs assessment.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
       "id": "LIT-02621",
       "published": "2026-11",
       "title": "Transforming primary care: funding and governance in the shift from physician-centred models to interprofessional teams – a scoping review",
@@ -4481,6 +4666,44 @@
         "verdict": "pass",
         "month": "2026-11",
         "revised": true
+      }
+    },
+    {
+      "id": "LIT-02593",
+      "published": "2026-11",
+      "title": "Childhood Food Insecurity and the Development of Atherosclerotic Cardiovascular Disease: Dietary, Metabolic, and Psychosocial Pathways",
+      "venue": "Current atherosclerosis reports",
+      "year": 2026,
+      "doi": "10.1007/s11883-026-01473-5",
+      "pmid": "42965738",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review identifies food insecurity screening and interdisciplinary intervention as critical but notes insufficient evidence on screening-tool effectiveness. Applies to Waymark's social-needs navigation and care-coordination teams reaching Medicaid children; transfer depends on whether findings generalize to managed-care pediatric populations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
       }
     },
     {
@@ -5053,6 +5276,80 @@
       }
     },
     {
+      "id": "LIT-02482",
+      "published": "2026-10",
+      "title": "Effectiveness of integrating patient-reported outcome measures into electronic health records for measurement-based care in patients with chronic illnesses: a systematic review",
+      "venue": "Frontiers in health services",
+      "year": 2026,
+      "doi": "10.3389/frhs.2026.1930126",
+      "pmid": "42952996",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review examines EHR-integrated PROMs for chronic disease monitoring and care coordination. Waymark uses Signal for risk prediction and care prioritization. Transfer is uncertain: abstract does not report Medicaid populations, insurance type, or social-needs navigation; settings differ from Waymark's community-based model.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02466",
+      "published": "2026-10",
+      "title": "Examining the Association Between Food Insecurity and Pregnancy Outcomes",
+      "venue": "Maternal & child nutrition",
+      "year": 2026,
+      "doi": "10.1111/mcn.70283",
+      "pmid": "42954142",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Food insecurity was associated with adverse pregnancy and postpartum outcomes among WIC-eligible mothers, a Medicaid-relevant population. The cross-sectional design cannot establish causation. WIC participation did not significantly modify these associations; the study does not establish whether addressing food insecurity would improve outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
       "id": "LIT-02453",
       "published": "2026-11",
       "title": "Compliance by Design: Governing AI ‐Augmented Quantitative Analysis in Clinical and Translational Research",
@@ -5089,6 +5386,43 @@
         "verdict": "pass",
         "month": "2026-11",
         "revised": true
+      }
+    },
+    {
+      "id": "LIT-02451",
+      "published": "2026-10",
+      "title": "Association Between the Expiration of Supplemental Nutrition Assistance Program Emergency Allotments and Child Maltreatment",
+      "venue": "American journal of preventive medicine",
+      "year": 2028,
+      "doi": "10.1016/j.amepre.2026.108588",
+      "pmid": "42954961",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Expiration of pandemic-expanded SNAP benefits was associated with increases in substantiated child maltreatment rates.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
       }
     },
     {
@@ -5244,6 +5578,43 @@
       }
     },
     {
+      "id": "LIT-02430",
+      "published": "2026-10",
+      "title": "The Program for Education in Drugs and Alcohol for Latine (PEDAL): A Substance Use Spanish-language Curriculum for Community Health Workers",
+      "venue": "Journal of immigrant and minority health",
+      "year": 2026,
+      "doi": "10.1007/s10903-026-02013-8",
+      "pmid": "42955593",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "PEDAL trains CHWs on substance-use recognition and community connection—relevant to Waymark's CHW program. Sample payer and Medicaid status unreported. No outcome data on member-level impacts or care-team workflow changes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-02429",
       "published": "2026-10",
       "title": "Insurance Type and Receipt of Condition-Concordant Behavioral Health Treatment Among U.S. Adults Reporting Past-Year Probation or Parole",
@@ -5279,6 +5650,45 @@
         "verdict": "pass",
         "month": "2026-11",
         "revised": false
+      }
+    },
+    {
+      "id": "LIT-02426",
+      "published": "2026-10",
+      "title": "Community Health Worker Interventions Addressing Social Determinants of Health in Chronic Disease: A Systematic Review",
+      "venue": "Preventing chronic disease",
+      "year": 2026,
+      "doi": "10.5888/pcd23.260132",
+      "pmid": "42955714",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This review is relevant to Waymark's CHW work, but does not evaluate its full Medicaid care model. Only 7 RCTs met criteria. Effects on major clinical indicators were modest and inconsistent, while social needs and care engagement showed promise. Evidence of meaningful clinical benefit remains limited.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
       }
     },
     {
@@ -7247,6 +7657,43 @@
       }
     },
     {
+      "id": "LIT-01984",
+      "published": "2026-10",
+      "title": "FLAT-WHITE: from target trial emulation to federated high-throughput causal machine learning using decentralized real-world data",
+      "venue": "npj health systems",
+      "year": 2026,
+      "doi": "10.1038/s44401-026-00160-6",
+      "pmid": "42946784",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "FLAT-WHITE directly addresses Waymark's known interest in target-trial emulation and causal inference with observational data. The federated, privacy-preserving design suits Waymark's multi-state operations. However, the application is drug repurposing in Alzheimer's disease—not Waymark's population or care model.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
       "id": "LIT-01965",
       "published": "2026-10",
       "title": "Exhaustive adjustment-set selection and causal effects for distribution-valued outcomes, with inference under latent Gaussian spatio-temporal dependence",
@@ -7397,6 +7844,44 @@
       }
     },
     {
+      "id": "LIT-01929",
+      "published": "2026-10",
+      "title": "Shape-Preserving Treatment Effects for Functional Outcomes",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2610.35180",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods preprint, not peer reviewed, on functional outcomes and time-varying effects. Relevant to Waymark's causal-methods interests, but the abstract identifies no Medicaid population or evaluation of Waymark programs. Its real-data application concerns weight trajectories after medication initiation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
       "id": "LIT-01919",
       "published": "2026-10",
       "title": "Beyond Physical Illness: Can Clinical Narratives Reveal Emerging Mental Health Risks in Chronically Ill Patients?",
@@ -7470,6 +7955,43 @@
         "verdict": "pass",
         "month": "2026-10",
         "revised": true
+      }
+    },
+    {
+      "id": "LIT-01885",
+      "published": "2026-10",
+      "title": "Risk and Protective Factors of Food Insecurity Among Children in Low-Income Families in the United States: Application of the Multiple Disadvantage Model",
+      "venue": "European journal of investigation in health, psychology and education",
+      "year": 2026,
+      "doi": "10.3390/ejihpe16100156",
+      "pmid": "42930219",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies risk and protective factors for child food insecurity that could inform screening and referral priorities. Sample is low-income but payer/Medicaid status not specified. Cross-sectional design limits causal inference.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
       }
     },
     {

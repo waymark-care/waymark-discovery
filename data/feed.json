@@ -3419,10 +3419,574 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 321,
-    "published": 321
+    "approved": 336,
+    "published": 336
   },
   "literature": [
+    {
+      "id": "LIT-03092",
+      "published": "2026-11",
+      "title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.03826",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Unreviewed preprint proposing diagnosis prediction methods. Abstract does not report payer, population characteristics, or applicability to Medicaid. Signal product suggests next-best actions; diagnosis prediction could inform recommendations, but transfer is uncertain.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-03080",
+      "published": "2026-11",
+      "title": "Therapy-FIS: A Dataset for Assessing Facilitative Interpersonal Skills in Psychotherapeutic Setting",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.04645",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint presents a dataset and benchmark for automated therapist skill assessment. It could eventually inform Waymark behavioral health quality measurement and supervision, but uses standardized mock-patient tasks, not real clinical encounters, and does not establish applicability to Medicaid care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-03074",
+      "published": "2026-11",
+      "title": "Personas Are Not People: Identity as State, Not Attribute",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.05292",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM safety and synthetic-population evaluation, relevant to Signal and Compass. But focuses on survey/recruitment simulation, not care-team operations or member outreach. Limited direct operationalization.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-03053",
+      "published": "2026-11",
+      "title": "Algorithmic design choices as determinants of health equity: a causal simulation study of healthcare resource allocation",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.10.30.26366732",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "modeling",
+      "verdict": "applies",
+      "programs": [
+        "signal",
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This unreviewed preprint uses All of Us adult data to simulate how training objectives, features and thresholds affect allocation equity. Its access-independent benchmark could inform fairness testing for Signal, but applicability to Waymark's Medicaid population needs evaluation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-03019",
+      "published": "2026-11",
+      "title": "Later life precarity and longitudinal frailty trajectories in older adults",
+      "venue": "Ageing and society",
+      "year": 2026,
+      "doi": "10.1017/s0144686x26100543",
+      "pmid": "42974631",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Precarity measurement could inform Waymark's social-needs screening and risk stratification. However, UK older-adult population differs substantially from US Medicaid adults; generalizability to working-age members with SMI/substance use unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-03013",
+      "published": "2026-11",
+      "title": "Full-Service Mobile Food Markets and Dietary Quality in Low-Income Housing Communities",
+      "venue": "JAMA network open",
+      "year": 2026,
+      "doi": "10.1001/jamanetworkopen.2026.46816",
+      "pmid": "42975406",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Mobile markets address food access, a social need Waymark screens for. This trial found no significant improvement in diet quality or food security, but sodium intake fell. Costs and ROI were not assessed. Waymark would need evidence on costs, uptake and benefits in its Medicaid population before deciding whether to include the program.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02994",
+      "published": "2026-11",
+      "title": "Medical Respite Care and Changes in Acute Care Use Among People Experiencing Homelessness: A Matched‐Cohort Evaluation in Edmonton, Canada",
+      "venue": "Journal of evaluation in clinical practice",
+      "year": 2026,
+      "doi": "10.1111/jep.70647",
+      "pmid": "42976184",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Housing-adjacent social intervention in a high-needs population. However, Canadian public healthcare system, homelessness-specific setting, and respite care model differ substantially from Medicaid managed care. Authors explicitly flag causal concerns.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02971",
+      "published": "2026-11",
+      "title": "Evaluating Covered California's Grocery Support Program: A pragmatic randomized controlled trial of a food insecurity intervention",
+      "venue": "Contemporary clinical trials",
+      "year": 2026,
+      "doi": "10.1016/j.cct.2026.108520",
+      "pmid": "42977027",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "RCT of food insecurity intervention with claims outcomes is methodologically strong and addresses Waymark's core social-needs population. Covered California is exchange, not Medicaid, but design and population plausibly transfer. Results pending.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02962",
+      "published": "2026-11",
+      "title": "Hallucinations in generative LLMs for radiology: a comprehensive review",
+      "venue": "Current problems in diagnostic radiology",
+      "year": 2026,
+      "doi": "10.1067/j.cpradiol.2026.10.014",
+      "pmid": "42977577",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly addresses LLM safety and hallucination risks relevant to Waymark's AI products (Signal, Compass). However, radiology-specific context limits transfer; applicability depends on whether Waymark's LLM deployment faces similar hallucination pathways in care coordination and SMS navigation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02960",
+      "published": "2026-11",
+      "title": "Eliminating Safety Clutter in a Safety-Net Hospital",
+      "venue": "Joint Commission journal on quality and patient safety",
+      "year": 2026,
+      "doi": "10.1016/j.jcjq.2026.09.010",
+      "pmid": "42977671",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The paper addresses EHR alert governance and safety-clutter reduction, relevant to Waymark's AI-safety work and Anchor verification layer. It studies a safety-net hospital, not community-based Medicaid managed care; Medicaid enrollment is not reported. The abstract does not describe the causal evaluation methods of interest to Waymark.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02945",
+      "published": "2026-11",
+      "title": "A multi-guideline clinical agent for vascular surgery: architecture, implementation, and benchmark evaluation",
+      "venue": "Journal of the American Medical Informatics Association : JAMIA",
+      "year": 2026,
+      "doi": "10.1093/jamia/ocag178",
+      "pmid": "42978152",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM safety and guideline traceability, relevant to Waymark. Answer omissions were not explicitly evaluated. The vascular surgery setting is distant from Medicaid care coordination, behavioral health, and social needs. Benchmark on 55 vignettes, not real-world impact.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02938",
+      "published": "2026-11",
+      "title": "Multilevel Strategies to Reduce Prostate Cancer Disparities among Black Men in Underserved Communities in Memphis, TN: A Scoping Review",
+      "venue": "Public health nursing (Boston, Mass.)",
+      "year": 2026,
+      "doi": "10.1111/phn.70206",
+      "pmid": "42978285",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Scoping review of prostate cancer disparities interventions for Black men in underserved Memphis communities. Eight sources were synthesized narratively; the abstract reports no effect sizes. Direct evidence for Memphis-specific interventions and Black male nurse representation remains limited.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02934",
+      "published": "2026-11",
+      "title": "Primary Prevention ICD in a Contemporary Underserved Population: Factors Associated With Underutilization and Mortality",
+      "venue": "Pacing and clinical electrophysiology : PACE",
+      "year": 2026,
+      "doi": "10.1111/pace.70491",
+      "pmid": "42978414",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Examines ICD referral and care coordination in an underserved population, with potential relevance to Waymark. However, the single-center observational design, lack of Medicaid-specific results, imprecise subgroup estimates, and uncertain overall mortality association limit actionability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-02927",
+      "published": "2026-11",
+      "title": "When fluency outpaces provenance: source traceability and digital health literacy against AI health misinformation",
+      "venue": "Frontiers in public health",
+      "year": 2026,
+      "doi": "10.3389/fpubh.2026.1986759",
+      "pmid": "42978781",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Conceptual framework on LLM health-information safety aligns with Waymark's AI-safety interest. However, no empirical validation, no Medicaid population, and no operational test in managed-care setting yet.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-02924",
+      "published": "2026-11",
+      "title": "Addressing benchmarking gaps in large language models for health and medicine with dynamic red-teaming",
+      "venue": "Nature health",
+      "year": 2026,
+      "doi": "10.1038/s44360-026-00152-8",
+      "pmid": "42978863",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "ai_safety",
+        "compass"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This paper offers a continuous safety-auditing framework for health LLMs, validated against board-certified clinicians. It could inform evaluation of LLM-based features in Waymark's AI products before deployment and aligns with Waymark's stated interest in LLM safety.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
     {
       "id": "LIT-02918",
       "published": "2026-11",

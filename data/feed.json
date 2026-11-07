@@ -1,16 +1,16 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-11-06",
+  "generated_at": "2026-11-07",
   "synthetic": false,
   "pipeline": {
-    "proposed": 65,
-    "tested": 18,
+    "proposed": 72,
+    "tested": 19,
     "passed_discovery": 5,
     "replicated": 5,
     "passed_controls": 0,
     "approved": 0,
     "published": 0,
-    "last_run": "2026-11-05",
+    "last_run": "2026-11-06",
     "fdr_alpha": 0.05,
     "fdr_method": "LORD++",
     "min_cell_size": 11
@@ -954,343 +954,441 @@
       "neg_log10_alpha": null,
       "source": "internal",
       "known": false
+    },
+    {
+      "id": "WD-0066",
+      "month": "2026-11",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "social-needs",
+        "care-model"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.52,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0067",
+      "month": "2026-11",
+      "template": "cyclic_window_single",
+      "tags": [
+        "social-needs",
+        "timing",
+        "chronic-disease"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.52,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0068",
+      "month": "2026-11",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "care-model",
+        "medication-safety"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.52,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0069",
+      "month": "2026-11",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "social-needs"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.52,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0070",
+      "month": "2026-11",
+      "template": "cyclic_window_single",
+      "tags": [
+        "care-model",
+        "social-needs",
+        "timing"
+      ],
+      "gate": "not_significant",
+      "neg_log10_p": 0.62,
+      "neg_log10_alpha": 2.52,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0071",
+      "month": "2026-11",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "social-needs"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.57,
+      "source": "internal",
+      "known": false
+    },
+    {
+      "id": "WD-0072",
+      "month": "2026-11",
+      "template": "stratified_rate_ratio",
+      "tags": [
+        "social-needs",
+        "medication-safety"
+      ],
+      "gate": "underpowered",
+      "neg_log10_p": null,
+      "neg_log10_alpha": 2.57,
+      "source": "internal",
+      "known": false
     }
   ],
   "activity": [
     {
       "seq": 1,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03214",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03173",
       "outcome": "fail"
     },
     {
       "seq": 2,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03215",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03183",
       "outcome": "fail"
     },
     {
       "seq": 3,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03216",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03193",
       "outcome": "fail"
     },
     {
       "seq": 4,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03217",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03208",
       "outcome": "fail"
     },
     {
       "seq": 5,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03218",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03219",
       "outcome": "fail"
     },
     {
       "seq": 6,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03219",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03223",
+      "outcome": "fail"
     },
     {
       "seq": 7,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03220",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03227",
       "outcome": "fail"
     },
     {
       "seq": 8,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03221",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03237",
       "outcome": "fail"
     },
     {
       "seq": 9,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03222",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03251",
       "outcome": "fail"
     },
     {
       "seq": 10,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03223",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03254",
+      "outcome": "fail"
     },
     {
       "seq": 11,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03224",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03263",
       "outcome": "fail"
     },
     {
       "seq": 12,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03225",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03291",
       "outcome": "fail"
     },
     {
       "seq": 13,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03226",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03292",
       "outcome": "fail"
     },
     {
       "seq": 14,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03227",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03306",
+      "outcome": "fail"
     },
     {
       "seq": 15,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03228",
-      "outcome": "fail"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03317",
+      "outcome": "pass"
     },
     {
       "seq": 16,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03229",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03317",
+      "outcome": "pass"
     },
     {
       "seq": 17,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03230",
-      "outcome": "fail"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03326",
+      "outcome": "pass"
     },
     {
       "seq": 18,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03231",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03326",
+      "outcome": "pass"
     },
     {
       "seq": 19,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03232",
-      "outcome": "fail"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03350",
+      "outcome": "pass"
     },
     {
       "seq": 20,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03233",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03350",
+      "outcome": "pass"
     },
     {
       "seq": 21,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03234",
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03317",
       "outcome": "fail"
     },
     {
       "seq": 22,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03235",
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03326",
       "outcome": "pass"
     },
     {
       "seq": 23,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03236",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03350",
+      "outcome": "pass"
     },
     {
       "seq": 24,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03237",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03326",
+      "outcome": "fail"
     },
     {
       "seq": 25,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03238",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03350",
+      "outcome": "fail"
     },
     {
       "seq": 26,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03239",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0066",
+      "outcome": "pass"
     },
     {
       "seq": 27,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03240",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0066",
+      "outcome": "pass"
     },
     {
       "seq": 28,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03241",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0067",
+      "outcome": "pass"
     },
     {
       "seq": 29,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03242",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0067",
+      "outcome": "pass"
     },
     {
       "seq": 30,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03243",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0068",
+      "outcome": "pass"
     },
     {
       "seq": 31,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03244",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0068",
+      "outcome": "pass"
     },
     {
       "seq": 32,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03245",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0069",
+      "outcome": "pass"
     },
     {
       "seq": 33,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03246",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0069",
+      "outcome": "pass"
     },
     {
       "seq": 34,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03247",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0070",
+      "outcome": "pass"
     },
     {
       "seq": 35,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03248",
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0070",
       "outcome": "fail"
     },
     {
       "seq": 36,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03249",
-      "outcome": "fail"
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0071",
+      "outcome": "pass"
     },
     {
       "seq": 37,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03250",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0071",
+      "outcome": "pass"
     },
     {
       "seq": 38,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03251",
+      "agent": "hypothesizer",
+      "verb": "propose",
+      "object": "WD-0072",
       "outcome": "pass"
     },
     {
       "seq": 39,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03252",
-      "outcome": "fail"
+      "agent": "tester",
+      "verb": "test",
+      "object": "WD-0072",
+      "outcome": "pass"
     },
     {
       "seq": 40,
       "month": "2026-11",
-      "agent": "screener",
-      "verb": "screen",
-      "object": "LIT-03253",
-      "outcome": "fail"
+      "agent": "scout",
+      "verb": "read",
+      "object": "pubmed",
+      "outcome": "pass"
     },
     {
       "seq": 41,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03254",
-      "outcome": "pass"
+      "object": "LIT-03364",
+      "outcome": "fail"
     },
     {
       "seq": 42,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03255",
+      "object": "LIT-03365",
       "outcome": "fail"
     },
     {
@@ -1298,7 +1396,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03256",
+      "object": "LIT-03366",
       "outcome": "fail"
     },
     {
@@ -1306,7 +1404,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03257",
+      "object": "LIT-03367",
       "outcome": "fail"
     },
     {
@@ -1314,23 +1412,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03258",
-      "outcome": "pass"
+      "object": "LIT-03368",
+      "outcome": "fail"
     },
     {
       "seq": 46,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03259",
-      "outcome": "fail"
+      "object": "LIT-03369",
+      "outcome": "pass"
     },
     {
       "seq": 47,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03260",
+      "object": "LIT-03370",
       "outcome": "fail"
     },
     {
@@ -1338,7 +1436,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03261",
+      "object": "LIT-03371",
       "outcome": "fail"
     },
     {
@@ -1346,15 +1444,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03262",
-      "outcome": "fail"
+      "object": "LIT-03372",
+      "outcome": "pass"
     },
     {
       "seq": 50,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03263",
+      "object": "LIT-03373",
       "outcome": "pass"
     },
     {
@@ -1362,7 +1460,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03264",
+      "object": "LIT-03374",
       "outcome": "fail"
     },
     {
@@ -1370,7 +1468,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03265",
+      "object": "LIT-03375",
       "outcome": "pass"
     },
     {
@@ -1378,7 +1476,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03266",
+      "object": "LIT-03376",
       "outcome": "fail"
     },
     {
@@ -1386,7 +1484,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03267",
+      "object": "LIT-03377",
       "outcome": "fail"
     },
     {
@@ -1394,7 +1492,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03268",
+      "object": "LIT-03378",
       "outcome": "fail"
     },
     {
@@ -1402,7 +1500,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03269",
+      "object": "LIT-03379",
       "outcome": "fail"
     },
     {
@@ -1410,7 +1508,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03270",
+      "object": "LIT-03380",
       "outcome": "fail"
     },
     {
@@ -1418,7 +1516,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03271",
+      "object": "LIT-03381",
       "outcome": "fail"
     },
     {
@@ -1426,7 +1524,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03272",
+      "object": "LIT-03382",
       "outcome": "fail"
     },
     {
@@ -1434,15 +1532,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03273",
-      "outcome": "pass"
+      "object": "LIT-03383",
+      "outcome": "fail"
     },
     {
       "seq": 61,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03274",
+      "object": "LIT-03384",
       "outcome": "fail"
     },
     {
@@ -1450,7 +1548,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03275",
+      "object": "LIT-03385",
       "outcome": "fail"
     },
     {
@@ -1458,7 +1556,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03276",
+      "object": "LIT-03386",
       "outcome": "pass"
     },
     {
@@ -1466,7 +1564,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03277",
+      "object": "LIT-03387",
       "outcome": "fail"
     },
     {
@@ -1474,7 +1572,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03278",
+      "object": "LIT-03388",
       "outcome": "fail"
     },
     {
@@ -1482,7 +1580,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03279",
+      "object": "LIT-03389",
       "outcome": "fail"
     },
     {
@@ -1490,7 +1588,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03280",
+      "object": "LIT-03390",
       "outcome": "fail"
     },
     {
@@ -1498,23 +1596,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03281",
-      "outcome": "pass"
+      "object": "LIT-03391",
+      "outcome": "fail"
     },
     {
       "seq": 69,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03282",
-      "outcome": "pass"
+      "object": "LIT-03392",
+      "outcome": "fail"
     },
     {
       "seq": 70,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03283",
+      "object": "LIT-03393",
       "outcome": "fail"
     },
     {
@@ -1522,7 +1620,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03284",
+      "object": "LIT-03394",
       "outcome": "fail"
     },
     {
@@ -1530,15 +1628,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03285",
-      "outcome": "fail"
+      "object": "LIT-03395",
+      "outcome": "pass"
     },
     {
       "seq": 73,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03286",
+      "object": "LIT-03396",
       "outcome": "fail"
     },
     {
@@ -1546,7 +1644,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03287",
+      "object": "LIT-03397",
       "outcome": "fail"
     },
     {
@@ -1554,7 +1652,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03288",
+      "object": "LIT-03398",
       "outcome": "fail"
     },
     {
@@ -1562,7 +1660,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03289",
+      "object": "LIT-03399",
       "outcome": "fail"
     },
     {
@@ -1570,23 +1668,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03290",
-      "outcome": "fail"
+      "object": "LIT-03400",
+      "outcome": "pass"
     },
     {
       "seq": 78,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03291",
-      "outcome": "pass"
+      "object": "LIT-03401",
+      "outcome": "fail"
     },
     {
       "seq": 79,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03292",
+      "object": "LIT-03402",
       "outcome": "pass"
     },
     {
@@ -1594,31 +1692,31 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03293",
-      "outcome": "pass"
+      "object": "LIT-03403",
+      "outcome": "fail"
     },
     {
       "seq": 81,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03294",
+      "object": "LIT-03404",
       "outcome": "fail"
     },
     {
       "seq": 82,
       "month": "2026-11",
-      "agent": "scout",
-      "verb": "read",
-      "object": "openalex",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03405",
+      "outcome": "fail"
     },
     {
       "seq": 83,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03295",
+      "object": "LIT-03406",
       "outcome": "fail"
     },
     {
@@ -1626,7 +1724,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03296",
+      "object": "LIT-03407",
       "outcome": "fail"
     },
     {
@@ -1634,7 +1732,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03297",
+      "object": "LIT-03408",
       "outcome": "fail"
     },
     {
@@ -1642,7 +1740,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03298",
+      "object": "LIT-03409",
       "outcome": "fail"
     },
     {
@@ -1650,15 +1748,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03299",
-      "outcome": "fail"
+      "object": "LIT-03410",
+      "outcome": "pass"
     },
     {
       "seq": 88,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03300",
+      "object": "LIT-03411",
       "outcome": "fail"
     },
     {
@@ -1666,7 +1764,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03301",
+      "object": "LIT-03412",
       "outcome": "fail"
     },
     {
@@ -1674,15 +1772,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03302",
-      "outcome": "fail"
+      "object": "LIT-03413",
+      "outcome": "pass"
     },
     {
       "seq": 91,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03303",
+      "object": "LIT-03414",
       "outcome": "fail"
     },
     {
@@ -1690,7 +1788,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03304",
+      "object": "LIT-03415",
       "outcome": "fail"
     },
     {
@@ -1698,7 +1796,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03305",
+      "object": "LIT-03416",
       "outcome": "fail"
     },
     {
@@ -1706,23 +1804,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03306",
-      "outcome": "pass"
+      "object": "LIT-03417",
+      "outcome": "fail"
     },
     {
       "seq": 95,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03307",
-      "outcome": "pass"
+      "object": "LIT-03418",
+      "outcome": "fail"
     },
     {
       "seq": 96,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03308",
+      "object": "LIT-03419",
       "outcome": "fail"
     },
     {
@@ -1730,7 +1828,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03309",
+      "object": "LIT-03420",
       "outcome": "fail"
     },
     {
@@ -1738,15 +1836,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03310",
-      "outcome": "fail"
+      "object": "LIT-03421",
+      "outcome": "pass"
     },
     {
       "seq": 99,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03311",
+      "object": "LIT-03422",
       "outcome": "fail"
     },
     {
@@ -1754,7 +1852,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03312",
+      "object": "LIT-03423",
       "outcome": "fail"
     },
     {
@@ -1762,15 +1860,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03313",
-      "outcome": "fail"
+      "object": "LIT-03424",
+      "outcome": "pass"
     },
     {
       "seq": 102,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03314",
+      "object": "LIT-03425",
       "outcome": "fail"
     },
     {
@@ -1778,7 +1876,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03315",
+      "object": "LIT-03426",
       "outcome": "fail"
     },
     {
@@ -1786,15 +1884,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03316",
-      "outcome": "fail"
+      "object": "LIT-03427",
+      "outcome": "pass"
     },
     {
       "seq": 105,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03317",
+      "object": "LIT-03428",
       "outcome": "pass"
     },
     {
@@ -1802,7 +1900,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03318",
+      "object": "LIT-03429",
       "outcome": "fail"
     },
     {
@@ -1810,15 +1908,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03319",
-      "outcome": "fail"
+      "object": "LIT-03430",
+      "outcome": "pass"
     },
     {
       "seq": 108,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03320",
+      "object": "LIT-03431",
       "outcome": "fail"
     },
     {
@@ -1826,7 +1924,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03321",
+      "object": "LIT-03432",
       "outcome": "fail"
     },
     {
@@ -1834,7 +1932,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03322",
+      "object": "LIT-03433",
       "outcome": "fail"
     },
     {
@@ -1842,7 +1940,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03323",
+      "object": "LIT-03434",
       "outcome": "fail"
     },
     {
@@ -1850,15 +1948,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03324",
-      "outcome": "fail"
+      "object": "LIT-03435",
+      "outcome": "pass"
     },
     {
       "seq": 113,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03325",
+      "object": "LIT-03436",
       "outcome": "fail"
     },
     {
@@ -1866,31 +1964,31 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03326",
-      "outcome": "pass"
+      "object": "LIT-03437",
+      "outcome": "fail"
     },
     {
       "seq": 115,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03327",
-      "outcome": "fail"
+      "object": "LIT-03438",
+      "outcome": "pass"
     },
     {
       "seq": 116,
       "month": "2026-11",
-      "agent": "scout",
-      "verb": "read",
-      "object": "medrxiv",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03439",
+      "outcome": "fail"
     },
     {
       "seq": 117,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03328",
+      "object": "LIT-03440",
       "outcome": "fail"
     },
     {
@@ -1898,15 +1996,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03329",
-      "outcome": "fail"
+      "object": "LIT-03441",
+      "outcome": "pass"
     },
     {
       "seq": 119,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03330",
+      "object": "LIT-03442",
       "outcome": "fail"
     },
     {
@@ -1914,23 +2012,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03331",
-      "outcome": "fail"
+      "object": "LIT-03443",
+      "outcome": "pass"
     },
     {
       "seq": 121,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03332",
-      "outcome": "fail"
+      "object": "LIT-03444",
+      "outcome": "pass"
     },
     {
       "seq": 122,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03333",
+      "object": "LIT-03445",
       "outcome": "fail"
     },
     {
@@ -1938,15 +2036,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03334",
-      "outcome": "pass"
+      "object": "LIT-03446",
+      "outcome": "fail"
     },
     {
       "seq": 124,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03335",
+      "object": "LIT-03447",
       "outcome": "fail"
     },
     {
@@ -1954,7 +2052,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03336",
+      "object": "LIT-03448",
       "outcome": "fail"
     },
     {
@@ -1962,7 +2060,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03337",
+      "object": "LIT-03449",
       "outcome": "fail"
     },
     {
@@ -1970,7 +2068,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03338",
+      "object": "LIT-03450",
       "outcome": "fail"
     },
     {
@@ -1978,7 +2076,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03339",
+      "object": "LIT-03451",
       "outcome": "fail"
     },
     {
@@ -1986,31 +2084,31 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03340",
+      "object": "LIT-03452",
       "outcome": "fail"
     },
     {
       "seq": 130,
       "month": "2026-11",
-      "agent": "scout",
-      "verb": "read",
-      "object": "arxiv",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03453",
+      "outcome": "fail"
     },
     {
       "seq": 131,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03341",
-      "outcome": "fail"
+      "object": "LIT-03454",
+      "outcome": "pass"
     },
     {
       "seq": 132,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03342",
+      "object": "LIT-03455",
       "outcome": "fail"
     },
     {
@@ -2018,7 +2116,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03343",
+      "object": "LIT-03456",
       "outcome": "fail"
     },
     {
@@ -2026,7 +2124,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03344",
+      "object": "LIT-03457",
       "outcome": "fail"
     },
     {
@@ -2034,7 +2132,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03345",
+      "object": "LIT-03458",
       "outcome": "fail"
     },
     {
@@ -2042,7 +2140,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03346",
+      "object": "LIT-03459",
       "outcome": "fail"
     },
     {
@@ -2050,7 +2148,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03347",
+      "object": "LIT-03460",
       "outcome": "fail"
     },
     {
@@ -2058,7 +2156,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03348",
+      "object": "LIT-03461",
       "outcome": "fail"
     },
     {
@@ -2066,23 +2164,23 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03349",
-      "outcome": "fail"
+      "object": "LIT-03462",
+      "outcome": "pass"
     },
     {
       "seq": 140,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03350",
-      "outcome": "pass"
+      "object": "LIT-03463",
+      "outcome": "fail"
     },
     {
       "seq": 141,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03351",
+      "object": "LIT-03464",
       "outcome": "fail"
     },
     {
@@ -2090,7 +2188,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03352",
+      "object": "LIT-03465",
       "outcome": "fail"
     },
     {
@@ -2098,7 +2196,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03353",
+      "object": "LIT-03466",
       "outcome": "fail"
     },
     {
@@ -2106,7 +2204,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03354",
+      "object": "LIT-03467",
       "outcome": "fail"
     },
     {
@@ -2114,15 +2212,15 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03355",
-      "outcome": "pass"
+      "object": "LIT-03468",
+      "outcome": "fail"
     },
     {
       "seq": 146,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03356",
+      "object": "LIT-03469",
       "outcome": "fail"
     },
     {
@@ -2130,7 +2228,7 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03357",
+      "object": "LIT-03470",
       "outcome": "fail"
     },
     {
@@ -2138,31 +2236,31 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03358",
-      "outcome": "fail"
+      "object": "LIT-03471",
+      "outcome": "pass"
     },
     {
       "seq": 149,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03359",
-      "outcome": "fail"
+      "object": "LIT-03472",
+      "outcome": "pass"
     },
     {
       "seq": 150,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03360",
-      "outcome": "fail"
+      "object": "LIT-03473",
+      "outcome": "pass"
     },
     {
       "seq": 151,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03361",
+      "object": "LIT-03474",
       "outcome": "fail"
     },
     {
@@ -2170,671 +2268,671 @@
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03362",
-      "outcome": "fail"
+      "object": "LIT-03475",
+      "outcome": "pass"
     },
     {
       "seq": 153,
       "month": "2026-11",
       "agent": "screener",
       "verb": "screen",
-      "object": "LIT-03363",
+      "object": "LIT-03476",
       "outcome": "fail"
     },
     {
       "seq": 154,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03130",
+      "agent": "scout",
+      "verb": "read",
+      "object": "openalex",
       "outcome": "pass"
     },
     {
       "seq": 155,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03135",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03477",
+      "outcome": "fail"
     },
     {
       "seq": 156,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03137",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03478",
+      "outcome": "fail"
     },
     {
       "seq": 157,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03152",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03479",
+      "outcome": "fail"
     },
     {
       "seq": 158,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03154",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03480",
       "outcome": "pass"
     },
     {
       "seq": 159,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03156",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03481",
+      "outcome": "fail"
     },
     {
       "seq": 160,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03157",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03482",
+      "outcome": "fail"
     },
     {
       "seq": 161,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03160",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03483",
+      "outcome": "fail"
     },
     {
       "seq": 162,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03162",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03484",
+      "outcome": "fail"
     },
     {
       "seq": 163,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03166",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03485",
+      "outcome": "fail"
     },
     {
       "seq": 164,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03173",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03486",
       "outcome": "pass"
     },
     {
       "seq": 165,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03175",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03487",
+      "outcome": "fail"
     },
     {
       "seq": 166,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03176",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03488",
       "outcome": "pass"
     },
     {
       "seq": 167,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03183",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03489",
+      "outcome": "fail"
     },
     {
       "seq": 168,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03189",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03490",
+      "outcome": "fail"
     },
     {
       "seq": 169,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03193",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03491",
+      "outcome": "fail"
     },
     {
       "seq": 170,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03206",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03492",
       "outcome": "pass"
     },
     {
       "seq": 171,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03208",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03493",
+      "outcome": "fail"
     },
     {
       "seq": 172,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03219",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03494",
+      "outcome": "fail"
     },
     {
       "seq": 173,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03223",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03495",
+      "outcome": "fail"
     },
     {
       "seq": 174,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03227",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03496",
+      "outcome": "fail"
     },
     {
       "seq": 175,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03235",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03497",
+      "outcome": "fail"
     },
     {
       "seq": 176,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03237",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03498",
+      "outcome": "fail"
     },
     {
       "seq": 177,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03238",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03499",
+      "outcome": "fail"
     },
     {
       "seq": 178,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03251",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03500",
+      "outcome": "fail"
     },
     {
       "seq": 179,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03254",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03501",
+      "outcome": "fail"
     },
     {
       "seq": 180,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03258",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03502",
+      "outcome": "fail"
     },
     {
       "seq": 181,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03263",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03503",
+      "outcome": "fail"
     },
     {
       "seq": 182,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03265",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03504",
+      "outcome": "fail"
     },
     {
       "seq": 183,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03273",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03505",
+      "outcome": "fail"
     },
     {
       "seq": 184,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03276",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03506",
+      "outcome": "fail"
     },
     {
       "seq": 185,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03281",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03507",
+      "outcome": "fail"
     },
     {
       "seq": 186,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03282",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03508",
       "outcome": "pass"
     },
     {
       "seq": 187,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03291",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03509",
+      "outcome": "fail"
     },
     {
       "seq": 188,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03292",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03510",
+      "outcome": "fail"
     },
     {
       "seq": 189,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03293",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03511",
+      "outcome": "fail"
     },
     {
       "seq": 190,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03306",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03512",
       "outcome": "pass"
     },
     {
       "seq": 191,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03307",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03513",
+      "outcome": "fail"
     },
     {
       "seq": 192,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03317",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03514",
+      "outcome": "fail"
     },
     {
       "seq": 193,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03326",
+      "agent": "scout",
+      "verb": "read",
+      "object": "medrxiv",
       "outcome": "pass"
     },
     {
       "seq": 194,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03334",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03515",
+      "outcome": "fail"
     },
     {
       "seq": 195,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03350",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03516",
+      "outcome": "fail"
     },
     {
       "seq": 196,
       "month": "2026-11",
-      "agent": "verifier",
-      "verb": "verify",
-      "object": "LIT-03355",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03517",
+      "outcome": "fail"
     },
     {
       "seq": 197,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03173",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03518",
+      "outcome": "fail"
     },
     {
       "seq": 198,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03173",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03519",
       "outcome": "pass"
     },
     {
       "seq": 199,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03291",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03520",
+      "outcome": "fail"
     },
     {
       "seq": 200,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03291",
-      "outcome": "pass"
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03521",
+      "outcome": "fail"
     },
     {
       "seq": 201,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03334",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03522",
       "outcome": "fail"
     },
     {
       "seq": 202,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03355",
+      "agent": "screener",
+      "verb": "screen",
+      "object": "LIT-03523",
       "outcome": "fail"
     },
     {
       "seq": 203,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03130",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03369",
       "outcome": "pass"
     },
     {
       "seq": 204,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03130",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03372",
       "outcome": "pass"
     },
     {
       "seq": 205,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03135",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03373",
+      "outcome": "pass"
     },
     {
       "seq": 206,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03137",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03375",
+      "outcome": "pass"
     },
     {
       "seq": 207,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03152",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03386",
+      "outcome": "pass"
     },
     {
       "seq": 208,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03154",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03395",
+      "outcome": "pass"
     },
     {
       "seq": 209,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03156",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03400",
+      "outcome": "pass"
     },
     {
       "seq": 210,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03157",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03402",
+      "outcome": "pass"
     },
     {
       "seq": 211,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03160",
-      "outcome": "pass"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03410",
+      "outcome": "fail"
     },
     {
       "seq": 212,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03160",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03413",
       "outcome": "pass"
     },
     {
       "seq": 213,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03162",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03421",
       "outcome": "pass"
     },
     {
       "seq": 214,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03162",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03424",
       "outcome": "pass"
     },
     {
       "seq": 215,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03166",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03427",
+      "outcome": "pass"
     },
     {
       "seq": 216,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03175",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03428",
       "outcome": "pass"
     },
     {
       "seq": 217,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03175",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03430",
       "outcome": "pass"
     },
     {
       "seq": 218,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03176",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03435",
+      "outcome": "pass"
     },
     {
       "seq": 219,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03183",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03438",
       "outcome": "pass"
     },
     {
       "seq": 220,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03183",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03441",
       "outcome": "pass"
     },
     {
       "seq": 221,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03189",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03443",
+      "outcome": "pass"
     },
     {
       "seq": 222,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03193",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03444",
       "outcome": "pass"
     },
     {
       "seq": 223,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03193",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03454",
       "outcome": "pass"
     },
     {
       "seq": 224,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03206",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03462",
+      "outcome": "pass"
     },
     {
       "seq": 225,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03208",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03471",
       "outcome": "pass"
     },
     {
       "seq": 226,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03208",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03472",
       "outcome": "pass"
     },
     {
       "seq": 227,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03219",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03473",
       "outcome": "pass"
     },
     {
       "seq": 228,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03219",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03475",
       "outcome": "pass"
     },
     {
       "seq": 229,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03223",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03480",
       "outcome": "pass"
     },
     {
       "seq": 230,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03223",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03486",
       "outcome": "pass"
     },
     {
       "seq": 231,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03227",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03488",
       "outcome": "pass"
     },
     {
       "seq": 232,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03227",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03492",
       "outcome": "pass"
     },
     {
       "seq": 233,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03235",
-      "outcome": "fail"
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03508",
+      "outcome": "pass"
     },
     {
       "seq": 234,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03237",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03512",
       "outcome": "pass"
     },
     {
       "seq": 235,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03237",
+      "agent": "verifier",
+      "verb": "verify",
+      "object": "LIT-03519",
       "outcome": "pass"
     },
     {
@@ -2842,7 +2940,7 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03238",
+      "object": "LIT-03435",
       "outcome": "fail"
     },
     {
@@ -2850,7 +2948,7 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03251",
+      "object": "LIT-03454",
       "outcome": "pass"
     },
     {
@@ -2858,7 +2956,7 @@
       "month": "2026-11",
       "agent": "corroborator",
       "verb": "corroborate",
-      "object": "LIT-03251",
+      "object": "LIT-03454",
       "outcome": "pass"
     },
     {
@@ -2866,7 +2964,7 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03254",
+      "object": "LIT-03369",
       "outcome": "pass"
     },
     {
@@ -2874,7 +2972,7 @@
       "month": "2026-11",
       "agent": "corroborator",
       "verb": "corroborate",
-      "object": "LIT-03254",
+      "object": "LIT-03369",
       "outcome": "pass"
     },
     {
@@ -2882,7 +2980,7 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03258",
+      "object": "LIT-03372",
       "outcome": "fail"
     },
     {
@@ -2890,55 +2988,55 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03263",
-      "outcome": "pass"
+      "object": "LIT-03373",
+      "outcome": "fail"
     },
     {
       "seq": 243,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03263",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03375",
+      "outcome": "fail"
     },
     {
       "seq": 244,
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03265",
-      "outcome": "fail"
+      "object": "LIT-03386",
+      "outcome": "pass"
     },
     {
       "seq": 245,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03273",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03386",
+      "outcome": "pass"
     },
     {
       "seq": 246,
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03276",
-      "outcome": "fail"
+      "object": "LIT-03395",
+      "outcome": "pass"
     },
     {
       "seq": 247,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03281",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03395",
+      "outcome": "pass"
     },
     {
       "seq": 248,
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03282",
+      "object": "LIT-03400",
       "outcome": "fail"
     },
     {
@@ -2946,7 +3044,7 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03292",
+      "object": "LIT-03402",
       "outcome": "pass"
     },
     {
@@ -2954,7 +3052,7 @@
       "month": "2026-11",
       "agent": "corroborator",
       "verb": "corroborate",
-      "object": "LIT-03292",
+      "object": "LIT-03402",
       "outcome": "pass"
     },
     {
@@ -2962,391 +3060,391 @@
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03293",
-      "outcome": "fail"
+      "object": "LIT-03413",
+      "outcome": "pass"
     },
     {
       "seq": 252,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03306",
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03413",
       "outcome": "pass"
     },
     {
       "seq": 253,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03306",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03421",
+      "outcome": "fail"
     },
     {
       "seq": 254,
       "month": "2026-11",
       "agent": "appraiser",
       "verb": "appraise",
-      "object": "LIT-03307",
-      "outcome": "fail"
+      "object": "LIT-03424",
+      "outcome": "pass"
     },
     {
       "seq": 255,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03130",
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03424",
       "outcome": "pass"
     },
     {
       "seq": 256,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03160",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03427",
+      "outcome": "fail"
     },
     {
       "seq": 257,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03162",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03428",
+      "outcome": "fail"
     },
     {
       "seq": 258,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03173",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03430",
       "outcome": "pass"
     },
     {
       "seq": 259,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03175",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03430",
+      "outcome": "pass"
     },
     {
       "seq": 260,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03183",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03438",
+      "outcome": "fail"
     },
     {
       "seq": 261,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03193",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03441",
+      "outcome": "fail"
     },
     {
       "seq": 262,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03208",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03443",
+      "outcome": "fail"
     },
     {
       "seq": 263,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03219",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03444",
+      "outcome": "fail"
     },
     {
       "seq": 264,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03223",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03462",
+      "outcome": "fail"
     },
     {
       "seq": 265,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03227",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03471",
       "outcome": "pass"
     },
     {
       "seq": 266,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03237",
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03471",
       "outcome": "pass"
     },
     {
       "seq": 267,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03251",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03472",
       "outcome": "pass"
     },
     {
       "seq": 268,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03254",
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03472",
       "outcome": "pass"
     },
     {
       "seq": 269,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03263",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03473",
+      "outcome": "fail"
     },
     {
       "seq": 270,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03291",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03475",
+      "outcome": "fail"
     },
     {
       "seq": 271,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03292",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03480",
+      "outcome": "fail"
     },
     {
       "seq": 272,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03306",
-      "outcome": "pass"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03486",
+      "outcome": "fail"
     },
     {
       "seq": 273,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03130",
-      "outcome": "fail"
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03488",
+      "outcome": "pass"
     },
     {
       "seq": 274,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03160",
-      "outcome": "fail"
+      "agent": "corroborator",
+      "verb": "corroborate",
+      "object": "LIT-03488",
+      "outcome": "pass"
     },
     {
       "seq": 275,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03162",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03492",
       "outcome": "fail"
     },
     {
       "seq": 276,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03173",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03508",
       "outcome": "fail"
     },
     {
       "seq": 277,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03183",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03512",
       "outcome": "fail"
     },
     {
       "seq": 278,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03193",
+      "agent": "appraiser",
+      "verb": "appraise",
+      "object": "LIT-03519",
       "outcome": "fail"
     },
     {
       "seq": 279,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03208",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03369",
+      "outcome": "pass"
     },
     {
       "seq": 280,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03219",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03386",
+      "outcome": "pass"
     },
     {
       "seq": 281,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03223",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03395",
+      "outcome": "pass"
     },
     {
       "seq": 282,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03227",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03402",
+      "outcome": "pass"
     },
     {
       "seq": 283,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03237",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03413",
+      "outcome": "pass"
     },
     {
       "seq": 284,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03251",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03424",
+      "outcome": "pass"
     },
     {
       "seq": 285,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03254",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03430",
+      "outcome": "pass"
     },
     {
       "seq": 286,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03263",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03454",
+      "outcome": "pass"
     },
     {
       "seq": 287,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03291",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03471",
+      "outcome": "pass"
     },
     {
       "seq": 288,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03292",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03472",
+      "outcome": "pass"
     },
     {
       "seq": 289,
       "month": "2026-11",
-      "agent": "translator",
-      "verb": "translate",
-      "object": "LIT-03306",
-      "outcome": "fail"
+      "agent": "skeptic",
+      "verb": "review",
+      "object": "LIT-03488",
+      "outcome": "pass"
     },
     {
       "seq": 290,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03317",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03369",
+      "outcome": "fail"
     },
     {
       "seq": 291,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03317",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03386",
+      "outcome": "fail"
     },
     {
       "seq": 292,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03326",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03395",
+      "outcome": "fail"
     },
     {
       "seq": 293,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03326",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03402",
+      "outcome": "fail"
     },
     {
       "seq": 294,
       "month": "2026-11",
-      "agent": "appraiser",
-      "verb": "appraise",
-      "object": "LIT-03350",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03413",
+      "outcome": "fail"
     },
     {
       "seq": 295,
       "month": "2026-11",
-      "agent": "corroborator",
-      "verb": "corroborate",
-      "object": "LIT-03350",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03424",
+      "outcome": "fail"
     },
     {
       "seq": 296,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03317",
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03430",
       "outcome": "fail"
     },
     {
       "seq": 297,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03326",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03454",
+      "outcome": "fail"
     },
     {
       "seq": 298,
       "month": "2026-11",
-      "agent": "skeptic",
-      "verb": "review",
-      "object": "LIT-03350",
-      "outcome": "pass"
+      "agent": "translator",
+      "verb": "translate",
+      "object": "LIT-03471",
+      "outcome": "fail"
     },
     {
       "seq": 299,
       "month": "2026-11",
       "agent": "translator",
       "verb": "translate",
-      "object": "LIT-03326",
+      "object": "LIT-03472",
       "outcome": "fail"
     },
     {
@@ -3354,7 +3452,7 @@
       "month": "2026-11",
       "agent": "translator",
       "verb": "translate",
-      "object": "LIT-03350",
+      "object": "LIT-03488",
       "outcome": "fail"
     }
   ],
@@ -3392,30 +3490,30 @@
     {
       "month": "2026-11",
       "source": "medrxiv",
-      "screened": 67,
+      "screened": 76,
       "relevant": null
     },
     {
       "month": "2026-11",
       "source": "openalex",
-      "screened": 130,
-      "relevant": 17
+      "screened": 168,
+      "relevant": 23
     },
     {
       "month": "2026-11",
       "source": "pubmed",
-      "screened": 465,
-      "relevant": 95
+      "screened": 578,
+      "relevant": 121
     }
   ],
   "literature_pipeline": {
-    "intake": 3363,
-    "identity_verified": 613,
-    "relevant": 620,
-    "appraised": 613,
-    "applies": 391,
-    "corroborated": 391,
-    "skeptic_passed": 367,
+    "intake": 3523,
+    "identity_verified": 645,
+    "relevant": 653,
+    "appraised": 645,
+    "applies": 402,
+    "corroborated": 402,
+    "skeptic_passed": 378,
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
@@ -15840,17 +15938,6 @@
       "replication": null
     },
     {
-      "title": "Test-Time Learning and Inference-Time Deliberation for Efficiency-First Offline Reinforcement Learning in Care Coordination and Population Health Management",
-      "venue": "arXiv (Cornell University)",
-      "year": 2025,
-      "month": "2025-09",
-      "doi": "10.48550/arxiv.2509.16291",
-      "pmid": null,
-      "peer_reviewed": false,
-      "replicated": false,
-      "replication": null
-    },
-    {
       "title": "Feasibility-Guided Fair Adaptive Offline Reinforcement Learning for Medicaid Care Management",
       "venue": "arXiv (Cornell University)",
       "year": 2025,
@@ -15867,6 +15954,17 @@
       "year": 2025,
       "month": "2025-09",
       "doi": "10.48550/arxiv.2509.09772",
+      "pmid": null,
+      "peer_reviewed": false,
+      "replicated": false,
+      "replication": null
+    },
+    {
+      "title": "Test-Time Learning and Inference-Time Deliberation for Efficiency-First Offline Reinforcement Learning in Care Coordination and Population Health Management",
+      "venue": "arXiv (Cornell University)",
+      "year": 2025,
+      "month": "2025-09",
+      "doi": "10.48550/arxiv.2509.16291",
       "pmid": null,
       "peer_reviewed": false,
       "replicated": false,

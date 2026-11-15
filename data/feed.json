@@ -3761,10 +3761,798 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 408,
-    "published": 408
+    "approved": 429,
+    "published": 429
   },
   "literature": [
+    {
+      "id": "LIT-04294",
+      "published": "2026-11",
+      "title": "Improving Efficiency and Power in Small Rare-Disease Trials Through Prespecified, Data-Adaptive Covariate Adjustment",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.15071",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Non-peer-reviewed methods preprint reporting simulation gains in rare-disease randomized trials. Could inform Waymark's evaluation methods, but the abstract does not establish transfer to observational studies of Medicaid managed-care populations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04280",
+      "published": "2026-11",
+      "title": "Curiosity-0826-4B: Generative Medical Event Sequence Modeling Across Pediatric and Adult Populations",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.15710",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Model development paper with zero-shot predictions potentially relevant to Waymark's Signal (rising-risk prediction). Payer and Medicaid status unknown. No clinical utility or operational validation. Preprint.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04279",
+      "published": "2026-11",
+      "title": "Conformal prediction for censored life history data",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.15724",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on prediction-interval calibration under censoring. Relevant to Waymark's causal-evaluation interest, but illustrations use disease cohorts (heart failure, cancer), not Medicaid populations or social-risk prediction.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04271",
+      "published": "2026-11",
+      "title": "From More to Better: Causal Inference and Digital Experimentation in the Age of AI",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.16335",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Preprint roundtable addresses causal inference, experimentation, and AI evaluation—core to Waymark's methods interest. No empirical data, population, or setting specifics reported. Conceptual guidance only.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04268",
+      "published": "2026-11",
+      "title": "Inverse Confounding Analysis: Part 2. Applications to Real- World Observational Data",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.16559",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on sensitivity analysis for unmeasured confounding. Preprint. Abstract does not specify populations or settings of real-world datasets applied. Potential relevance to Waymark's observational evaluation framework is unclear without knowing whether datasets or methods transfer to Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04264",
+      "published": "2026-11",
+      "title": "Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.17053",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods preprint, not peer reviewed, on LLM-based EHR encoding for prediction using MIMIC-IV and CPRD. Relevant to NLP and risk prediction, but transfer to Waymark's Medicaid population is not established. The abstract does not report evaluations of clinical omission errors, clinical safety, or real-world deployment constraints.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04256",
+      "published": "2026-11",
+      "title": "Gabapentinoid to Loop Diuretic Prescribing Cascade: A Systematic Review and Meta-Analysis of Observational Studies",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.11.08.26367537",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint addresses medication safety and deprescribing relevant to Waymark's clinical pharmacist program. Most studies focused on older adults; the abstract does not specify Medicaid populations, payer, or a US setting, so applicability to Waymark remains uncertain.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04225",
+      "published": "2026-11",
+      "title": "Large language models and conversational AI in nursing practice: a narrative review of English- and Chinese-language evidence",
+      "venue": "Frontiers in Public Health",
+      "year": 2026,
+      "doi": "10.3389/fpubh.2026.2005767",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review synthesizes LLM use in nursing workflows including documentation and decision support, relevant to Waymark's AI-safety interests. However, nursing-focused evidence may not transfer directly to community health worker and care coordinator workflows in Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04216",
+      "published": "2026-11",
+      "title": "Advancing Precision Therapeutics in Older Adults: A Scoping Review of Pharmacogenomic Service Models",
+      "venue": "Clinical Pharmacology & Therapeutics",
+      "year": 2026,
+      "doi": "10.1002/cpt.70547",
+      "pmid": "43004963",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Scoping review of pharmacogenomic service design in adults aged ≥65 years. Waymark's pharmacy program includes pharmacist medication review and adherence work. The abstract does not report effectiveness results or Medicaid-specific findings; applicability to younger Medicaid adults with high acute care use is unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04209",
+      "published": "2026-11",
+      "title": "Benefits and barriers to implementing Family Check-Up in primary care from the perspective of pediatric providers",
+      "venue": "Discover Pediatrics",
+      "year": 2026,
+      "doi": "10.1007/s44571-026-00016-2",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pediatric-focused qualitative study of provider referral barriers. Waymark's profile includes pediatric Medicaid members and behavioral health/care coordination, but the abstract does not report how implementing FCU would change Waymark's operations or reach.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04188",
+      "published": "2026-11",
+      "title": "Characterizing Self-Reported Negative Symptom-Related Experiences and Multilevel Burden in Schizophrenia: Evidence from the Medical Expenditure Panel Survey",
+      "venue": "Neuropsychiatric disease and treatment",
+      "year": 2026,
+      "doi": "10.2147/ndt.s619841",
+      "pmid": "43017222",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies high-burden schizophrenia subgroup with elevated Medicaid use, but does not test or propose an intervention, care model change, or evaluation method that Waymark could operationalize.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04183",
+      "published": "2026-11",
+      "title": "From task-specific networks to foundation models in diabetes care: a critical review of opportunities, evaluation gaps, and safety frontiers",
+      "venue": "Frontiers in artificial intelligence",
+      "year": 2026,
+      "doi": "10.3389/frai.2026.1983619",
+      "pmid": "43017418",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Reviews foundation-model safety risks relevant to Waymark's AI products, including hallucination, miscalibration and inequity. Covers retinal imaging and CGM alongside clinical LLMs and EHR data, so relevance varies by application. The abstract reports no Medicaid-specific evaluation; transfer to Waymark's workflows remains uncertain.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04178",
+      "published": "2026-11",
+      "title": "Medication adherence and associated factors among heart failure patients: a systematic review and meta-analysis of observational studies",
+      "venue": "Annals of medicine and surgery (2012)",
+      "year": 2026,
+      "doi": "10.1097/ms9.0000000000005676",
+      "pmid": "43017664",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pooled adherence rates and correlates across 19 heart failure studies could inform pharmacist targeting and interventions. Payer, US setting, and Medicaid eligibility are not specified, so applicability to Waymark's population is uncertain.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04159",
+      "published": "2026-11",
+      "title": "The Friday Test: Why access and continuity must anchor pediatric practice transformation",
+      "venue": "Families, systems & health : the journal of collaborative family healthcare",
+      "year": 2026,
+      "doi": "10.1037/fsh0001087",
+      "pmid": "43019467",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "A conceptual analysis of Washington State's pediatric integration initiative emphasizes timely access, continuity with families, sustained financing for coordination, and strategies tailored to local capacity rather than strict model fidelity.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04156",
+      "published": "2026-11",
+      "title": "Text Psychometrics: Assessing psychological constructs in text using natural language processing",
+      "venue": "PLOS digital health",
+      "year": 2026,
+      "doi": "10.1371/journal.pdig.0001757",
+      "pmid": "43019512",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Paper proposes evaluation framework for NLP-based psychological assessment. Relevant to Waymark's interest in NLP of care notes and LLM safety. But uses crisis counseling/Reddit data, not Medicaid care settings or Waymark workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04148",
+      "published": "2026-11",
+      "title": "Behavioral health collaborative care in a large integrated health system: a difference-in-differences analysis of utilization and paid amounts",
+      "venue": "General hospital psychiatry",
+      "year": 2026,
+      "doi": "10.1016/j.genhosppsych.2026.10.009",
+      "pmid": "43019711",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Study evaluates behavioral health collaborative care in Medicare, commercially insured and health system employee cohorts. It may inform Waymark's behavioral health work, but similarity to Waymark's care model and applicability to Medicaid managed care are unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04138",
+      "published": "2026-11",
+      "title": "GLP-1 Receptor Agonist Use and Risk of Pain-Related Medical Encounters Among Patients with Comorbid Type 2 Diabetes and Opioid Use Disorder: A Target Trial Emulation Study",
+      "venue": "The journal of pain",
+      "year": 2026,
+      "doi": "10.1016/j.jpain.2026.106489",
+      "pmid": "43020169",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The study uses target trial emulation, matching Waymark's causal-methods interest, in adults with diabetes and opioid use disorder. The abstract identifies MarketScan claims but does not specify insurance coverage. Applicability to Waymark's Medicaid managed-care population needs assessment.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04136",
+      "published": "2026-11",
+      "title": "Addressing health-related social needs and providing care coordination for patients with cardiovascular disease",
+      "venue": "Journal of the American Pharmacists Association : JAPhA",
+      "year": 2026,
+      "doi": "10.1016/j.japh.2026.103581",
+      "pmid": "43020202",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Describes a pharmacy-CHW model for cardiovascular and HRSN screening in rural settings. Payer not reported; unclear if Medicaid managed care. Reports patient reach and screening activity, but no clinical health outcomes, control group, or causal inference. Descriptive implementation only.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04134",
+      "published": "2026-11",
+      "title": "Assessing the reporting quality of United States-based social needs screening and intervention programs in primary care: A systematic review utilizing the Reach, Effectiveness, Adoption, Implementation, Maintenance framework",
+      "venue": "Preventive medicine",
+      "year": 2026,
+      "doi": "10.1016/j.ypmed.2026.108707",
+      "pmid": "43020284",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Systematic review of social-needs screening in primary care identifies reporting gaps relevant to Waymark's social-needs program. However, the review assesses *reporting quality*, not intervention effectiveness or impact on outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04128",
+      "published": "2026-11",
+      "title": "Understanding the social determinants of healthy aging across the lifecourse with social policy experiments",
+      "venue": "Nature aging",
+      "year": 2026,
+      "doi": "10.1038/s43587-026-01228-6",
+      "pmid": "43020843",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Frames social policy experiments as causal evaluation approach relevant to Waymark's methods interest. However, focuses on aging biomarkers and life-course social policy, not acute care, chronic disease management, or Medicaid-specific outcomes Waymark targets.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04105",
+      "published": "2026-11",
+      "title": "Pharmacist Payor Enrollment for Optimized Reimbursement: Experience at Oregon Health &amp; Science University",
+      "venue": "American journal of health-system pharmacy : AJHP : official journal of the American Society of Health-System Pharmacists",
+      "year": 2026,
+      "doi": "10.1093/ajhp/zxag391",
+      "pmid": "43021652",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses pharmacist billing and reimbursement operations relevant to Waymark's pharmacy program. Oregon Medicaid included in payer mix. However, study is financial/operational, not clinical; no member outcomes or program impact reported.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
     {
       "id": "LIT-04079",
       "published": "2026-11",

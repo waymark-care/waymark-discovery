@@ -3761,10 +3761,457 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 429,
-    "published": 429
+    "approved": 441,
+    "published": 441
   },
   "literature": [
+    {
+      "id": "LIT-04487",
+      "published": "2026-11",
+      "title": "SafeLLM: Extraction as a Hallucination-Resistant Alternative to Rewriting in Safety-Critical Settings",
+      "venue": "Research Square",
+      "year": 2026,
+      "doi": "10.21203/rs.3.rs-11288339/v1",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint explores LLM safety in clinical guideline access. It is relevant to Waymark's omission-error evaluation and AI safety work, but its UK guideline focus requires a transfer argument before applying findings to US Medicaid care delivery.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04483",
+      "published": "2026-11",
+      "title": "Incarceration History and Continuity of Healthcare: Barriers to Care Access and Service Utilization Among Adults with Mental Illness",
+      "venue": "Research Square",
+      "year": 2026,
+      "doi": "10.21203/rs.3.rs-11393983/v1",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint links incarceration history to unmet care needs and ED use as usual care among adults with mental illness, a group relevant to Waymark. Its cross-sectional design, sample not specific to Medicaid, and lack of intervention data limit conclusions for program design or evaluation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04473",
+      "published": "2026-11",
+      "title": "A four-domain framework for AI-enabled mobile health: from sensing to equitable governance",
+      "venue": "Frontiers in Digital Health",
+      "year": 2026,
+      "doi": "10.3389/fdgth.2026.1967889",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Framework and narrative review on AI-mHealth governance and equity auditing may inform Signal's design and Waymark's causal-methods evaluation, but abstracts no Medicaid managed-care evidence, outcome data in that population, or transfer pathway.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04469",
+      "published": "2026-11",
+      "title": "Evaluating AI-generated clinical documentation: a narrative review of quality frameworks and the case for a purpose-built instrument",
+      "venue": "International Journal of Medical Informatics",
+      "year": 2026,
+      "doi": "10.1016/j.ijmedinf.2026.106789",
+      "pmid": "43014021",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Narrative review identifies AI documentation quality gaps and error patterns relevant to Waymark's NLP-of-care-notes interest, but does not evaluate specific products, populations, or interventions that would directly change Waymark operations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04464",
+      "published": "2026-11",
+      "title": "Artificial Intelligence in Clinical Decision-Making: Applications, Challenges, and Implications for Patient Safety",
+      "venue": "Journal of Clinical Practice and Health Sciences",
+      "year": 2026,
+      "doi": "10.71465/jcphs6",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses AI safety hazards (calibration, distribution shift, automation bias, fabricated outputs) and implementation safeguards relevant to Signal and Anchor products, but is a narrative review without primary data, population specificity, or Medicaid evidence.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04463",
+      "published": "2026-11",
+      "title": "A landscape review of real-world data sources in the United States for healthcare decision-making",
+      "venue": "Discover Health Systems",
+      "year": 2026,
+      "doi": "10.1007/s44250-026-00428-6",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Landscape review of US real-world data sources, not an intervention or evaluation method. Findings on fragmented data, limited social-needs information and data lags may inform Waymark's data selection and evaluation planning. Medicaid representation and direct applicability remain unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04434",
+      "published": "2026-11",
+      "title": "A CHW-led intervention to promote cardiovascular disease prevention discussions in patients with limited health literacy: A pilot randomized controlled trial",
+      "venue": "PEC innovation",
+      "year": 2026,
+      "doi": "10.1016/j.pecinn.2026.100511",
+      "pmid": "43023036",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "applies",
+      "programs": [
+        "chw"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pilot RCT of CHW coaching for patients with limited health literacy. Participant ratings exceeded feasibility, acceptability, and appropriateness benchmarks. Waymark could consider adapting the approach for Medicaid managed care, but a larger evaluation is needed.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04419",
+      "published": "2026-11",
+      "title": "Assessment of Combined Food and Nutrition Insecurity Screening in the Emergency Department: A Brief Report",
+      "venue": "The western journal of emergency medicine",
+      "year": 2026,
+      "doi": "10.5811/westjem.64320",
+      "pmid": "43023778",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Screening tool evaluation in ED could inform Waymark's social-needs assessment, but abstract does not report payer, population insurance status, or downstream care-coordination outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04395",
+      "published": "2026-11",
+      "title": "Challenges of Single-Reference Benchmarks for Clinical Reasoning in Large Language Model–Based Decision Support",
+      "venue": "Journal of medical Internet research",
+      "year": 2026,
+      "doi": "10.2196/99019",
+      "pmid": "43024856",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methodological viewpoint on LLM evaluation design. Relevant to Anchor (AI output verification) but does not study a real population, intervention, or clinical outcome. No transfer argument for Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04384",
+      "published": "2026-11",
+      "title": "AI safety evaluation in an underrepresented population: real-world performance of clinical decision support and frontier language models on Medicaid patient messaging triage",
+      "venue": "BMC medical informatics and decision making",
+      "year": 2026,
+      "doi": "10.1186/s12911-026-03763-z",
+      "pmid": "43026589",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "applies",
+      "programs": [
+        "compass",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly evaluates AI safety for text-message triage in Medicaid populations across Waymark's states. Tests guardrail compositions and LLM performance relevant to COMPASS product safety and omission-error evaluation methods Waymark tracks.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": true,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04327",
+      "published": "2026-11",
+      "title": "Medical Debt and Hunger-Coping Economic Tradeoffs Among Charitable Food Assistance Clients",
+      "venue": "Nutrients",
+      "year": 2026,
+      "doi": "10.3390/nu18213475",
+      "pmid": "43030104",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Among food-pantry clients, medical debt was associated with choosing between food and other basic needs. The abstract reports no insurance or payer data, so applicability to Medicaid managed-care members is uncertain. This cross-sectional study cannot establish causation or show whether targeting support by medical debt improves outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04301",
+      "published": "2026-11",
+      "title": "Teaching Hallucination Literacy in Medical Education: A Claim-Level Verification Framework and Toolkit",
+      "venue": "Medical science educator",
+      "year": 2026,
+      "doi": "10.1007/s40670-026-02907-0",
+      "pmid": "43031803",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The abstract describes a pedagogical framework for human verification of AI outputs. Anchor already performs AI verification; this addresses educational training, not clinical workflow or product behavior at Waymark.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
     {
       "id": "LIT-04294",
       "published": "2026-11",

@@ -3817,10 +3817,346 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 445,
-    "published": 445
+    "approved": 454,
+    "published": 454
   },
   "literature": [
+    {
+      "id": "LIT-04673",
+      "published": "2026-11",
+      "title": "GT-FENG: General Theory of Factual Evaluation and Normative Grounding in Language Models *Author(s)",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.18279",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "GT-FENG addresses LLM error evaluation in rule-governed domains like Medicaid eligibility. Waymark uses AI products (Compass, Signal) and has stated interest in LLM safety and omission-error evaluation. The Medicaid income-limit case is relevant but the framework is untested in Waymark workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04672",
+      "published": "2026-11",
+      "title": "When evaluation becomes intervention in clinical AI",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.18297",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods paper on AI judge validation directly relevant to Waymark's anchor product and signal oversight. Preprint without empirical data or Medicaid context. Applicability depends on whether abstract's claims transfer to Waymark's specific workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04652",
+      "published": "2026-11",
+      "title": "AI-assisted standardization of real-world laboratory data to improve quality for real-world evidence generation",
+      "venue": "",
+      "year": 2026,
+      "doi": "10.22541/authorea.15012194/v1",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Laboratory standardization could improve clinical data quality underlying risk prediction and verification products. However, the abstract does not report payer, insurance, or Medicaid status. Sample appears to be EHR research cohort (MASH patients), not operational Medicaid managed-care members.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04648",
+      "published": "2026-11",
+      "title": "Pain-indicated buprenorphine prescribing in the United States, 2017–2025: national trends, state policy approaches, and payer patterns in a longitudinal ecological study",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.11.12.26367897",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Non-peer-reviewed ecological preprint on prescribing trends. Identifiable Medicaid claims showed growth in some states and declines in Virginia and North Carolina, where coding and managed-care transitions limited identification. These may not represent all Medicaid recipients. The study did not evaluate care delivery, outreach, or Waymark program outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04621",
+      "published": "2026-11",
+      "title": "How We Ask Matters: A Scoping Review of Visual and Auditory Technologies for Patient-Reported Measures",
+      "venue": "The patient",
+      "year": 2026,
+      "doi": "10.1007/s40271-026-00853-y",
+      "pmid": "43034974",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Review addresses PRM collection methods, not Waymark programs. Acceptability findings may inform COMPASS SMS interface design, but the abstract does not establish applicability to Medicaid populations. Evidence on implementation and equity outcomes remains limited.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04616",
+      "published": "2026-11",
+      "title": "Equitable approaches to palliative pain management in a structural vulnerability context: a secondary analysis of community-based participatory action studies",
+      "venue": "BMC palliative care",
+      "year": 2026,
+      "doi": "10.1186/s12904-026-02286-8",
+      "pmid": "43035668",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This qualitative study describes trust-building and care-coordination strategies potentially relevant to Waymark's CHW and coordination programs. Clients shared some social needs with Waymark members, but the study focused on palliative pain care amid structural vulnerability. Transferability to US Medicaid managed care needs assessment; geography is not specified in the supplied evidence.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04611",
+      "published": "2026-11",
+      "title": "Beyond scales: Artificial intelligence, language, and behavior in suicide risk modeling-a narrative review",
+      "venue": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
+      "year": 2026,
+      "doi": "10.1016/j.euroneuro.2026.113903",
+      "pmid": "43035089",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Narrative review of AI methods for suicide risk prediction, relevant to Waymark's behavioral health, prediction, and AI safety work. The abstract reports no original empirical evaluation and does not establish applicability to Medicaid managed care. It highlights class imbalance, label noise, dataset shift, interpretability, and bias as barriers to clinical use.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04608",
+      "published": "2026-11",
+      "title": "Can AI-assisted analysis of antidepressant drug online reviewers (ADORE) inform real-world use of antidepressants?",
+      "venue": "Journal of affective disorders",
+      "year": 2026,
+      "doi": "10.1016/j.jad.2026.122743",
+      "pmid": "43035153",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Methods to extract tolerability signals from unstructured patient data could inform pharmacist medication review; ecological study of self-selected reviewers on commercial platform does not directly transfer to Medicaid population or clinical workflows.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04595",
+      "published": "2026-11",
+      "title": "Theories and models of self-management of chronic multimorbidity: A scoping review",
+      "venue": "Journal of multimorbidity and comorbidity",
+      "year": 2026,
+      "doi": "10.1177/26335565261489303",
+      "pmid": "43036434",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Scoping review identifies theoretical gaps in multimorbidity care relevant to Waymark's care coordination and integration goals. However, it synthesizes existing theories rather than testing interventions or generating actionable evidence for whom to reach or what to do.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
     {
       "id": "LIT-04564",
       "published": "2026-11",

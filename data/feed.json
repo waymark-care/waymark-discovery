@@ -3860,10 +3860,386 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 454,
-    "published": 454
+    "approved": 464,
+    "published": 464
   },
   "literature": [
+    {
+      "id": "LIT-04809",
+      "published": "2026-11",
+      "title": "OmitEHR: Scalable Omission Detection in LLM-Generated Clinical Summaries",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.19343",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "anchor",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This arXiv preprint describes omission detection in LLM summaries, relevant to Waymark's Anchor verification layer. OmitEHR was evaluated on brief hospital course summaries at one academic medical center. It is not peer reviewed, and transfer to Waymark's Medicaid care workflows would need validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04808",
+      "published": "2026-11",
+      "title": "Objectify, Don't Delete: Complaint-Derived Evaluation of Ambient Clinical Notes",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.19525",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Paper addresses LLM evaluation for clinical notes, relevant to Waymark's interest in LLM safety and omission-error detection. Setting and population for production notes are unspecified; transfer to Medicaid care coordination unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04793",
+      "published": "2026-11",
+      "title": "Who Benefits from Telemonitoring? Uplift Modelling of a Nationwide Home Blood Pressure Monitoring Programme",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.20752",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "signal"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint explores uplift modelling for targeting telemonitoring, paralleling Signal's \"whom to reach\" question. Singapore's hypertension population and home BP monitoring programme differ from Waymark's Medicaid care model, so relevance to Waymark would need validation.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04772",
+      "published": "2026-11",
+      "title": "Systematic Benchmarking and Optimization of Retrieval-Augmented Generation (RAG) for Clinical Phenotyping: A Type II Diabetes Case Study in an ICD-Screened Cohort",
+      "venue": "medrxiv",
+      "year": 2026,
+      "doi": "10.1101/2025.04.29.25326696",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "medrxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This unreviewed preprint benchmarks LLM-based diabetes phenotyping from EHR notes in an ICD-screened cohort. It is relevant to Waymark's care-note NLP interests, but does not establish performance in Medicaid populations or evaluate outreach decisions, care actions, or Anchor-style verification.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04742",
+      "published": "2026-11",
+      "title": "Red Teaming a Patient-Facing Clinical AI Platform: 2-Phase Prospective Study",
+      "venue": "JMIR AI",
+      "year": 2026,
+      "doi": "10.2196/101912",
+      "pmid": "43038519",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "quasi_experimental",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Red teaming methodology and safety rubric for patient-facing AI directly address Waymark's LLM safety interests, but abstract does not report Medicaid population, payer, or whether findings transfer to member-facing SMS navigator like Compass.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04738",
+      "published": "2026-11",
+      "title": "Social Media Use in a Community–Academic Partnership for Health Equity: A Needs Assessment and Mixed Methods Study (Preprint)",
+      "venue": "Online journal of public health informatics",
+      "year": 2026,
+      "doi": "10.2196/99802",
+      "pmid": "43038551",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Study describes CHW social-media capacity building and reach metrics, but lacks evidence that Facebook outreach changes member outcomes or care-team workflows. Medicaid re-enrollment campaign is secondary to primary findings about social-media feasibility.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04728",
+      "published": "2026-11",
+      "title": "Investigating barriers, facilitators, and community pharmacy context in social drivers of health care delivery in Indiana",
+      "venue": "Journal of the American Pharmacists Association : JAPhA",
+      "year": 2026,
+      "doi": "10.1016/j.japh.2026.103598",
+      "pmid": "43039229",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study identifies barriers and facilitators to pharmacy-based SDOH delivery in Indiana. Payer not reported; sample small and not Medicaid-specific. Addresses pharmacy + social needs but no intervention tested.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04711",
+      "published": "2026-11",
+      "title": "Artificial intelligence support for the prediction and management of drug-drug interactions",
+      "venue": "Expert opinion on drug metabolism & toxicology",
+      "year": 2026,
+      "doi": "10.1080/17425255.2026.2764079",
+      "pmid": "43040225",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Directly relevant to pharmacy program and AI safety concerns. Review addresses ML prediction and LLM hallucination—both critical for Waymark's signal product and clinical decision support. However, abstract reports no Medicaid population, managed-care setting, or outcome data from real deployments.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04695",
+      "published": "2026-11",
+      "title": "Factors Influencing Engagement With Secondary Care Among People Experiencing Homelessness and Chronic Conditions: A Systematic Review and Implications for Nursing",
+      "venue": "Journal of advanced nursing",
+      "year": 2026,
+      "doi": "10.1111/jan.70814",
+      "pmid": "43040923",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "care_coordination",
+        "social_needs"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Systematic review identifies structural barriers and facilitators for secondary-care engagement in homeless populations with chronic illness. Themes (flexible services, care coordination, trauma-informed approaches, integrated models) align with Waymark care coordination and social-needs programs, but no Medicaid-specific data or US Medicaid outcomes reported.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04693",
+      "published": "2026-11",
+      "title": "Target Trial Emulation: A Practical Introduction for Hepatology Research",
+      "venue": "Clinical and molecular hepatology",
+      "year": 2026,
+      "doi": "10.3350/cmh.2026.0774",
+      "pmid": "43041056",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "applies",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This methods guide aligns with Waymark's interest in causal evaluation using observational data. It explains sequential trial emulation and cloning-censoring-weighting, which could inform program evaluation design. It does not establish their validity for Waymark's Medicaid programs.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
     {
       "id": "LIT-04673",
       "published": "2026-11",

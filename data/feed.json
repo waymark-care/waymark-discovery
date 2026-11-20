@@ -3889,10 +3889,421 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 464,
-    "published": 464
+    "approved": 475,
+    "published": 475
   },
   "literature": [
+    {
+      "id": "LIT-04955",
+      "published": "2026-11",
+      "title": "SimAI: Mechanistic User Simulation through Psychological Network Models",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.21808",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed preprint suggests SimAI could support training for Waymark therapists and AI safety testing in simulated vulnerable-user interactions. The abstract reports no Medicaid evaluation, care delivery context, or population-health outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04943",
+      "published": "2026-11",
+      "title": "Small Area Causal Inference",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.22339",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "causal_methods"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "An unreviewed preprint proposes a small-area causal inference method with potential relevance to Waymark's evaluation of observational data. However, the abstract provides no evidence of applicability to health care, Medicaid, or population outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04938",
+      "published": "2026-11",
+      "title": "Right Diagnosis, Unsafe Route: Auditing Clinical AI Decision Trajectories and Corrective Oversight for Validity and Potential Harm",
+      "venue": "arXiv",
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2611.22612",
+      "peer_reviewed": false,
+      "source": "arxiv",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "This non-peer-reviewed arXiv preprint addresses clinical LLM safety evaluation. Its trajectory audits and corrective oversight could inform Waymark's Anchor product. Evaluation includes hospital cardiology cases, MIMIC-IV and ASCENT; applicability to Medicaid primary/community care remains untested.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04923",
+      "published": "2026-11",
+      "title": "CliniCIRCA: LLM-powered Clinical Timeline Generation and Summarization from Unstructured EHR Texts for Mental Health Patients",
+      "venue": "Research Square",
+      "year": 2026,
+      "doi": "10.21203/rs.3.rs-11472328/v1",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": false,
+      "source": "openalex",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Non-peer-reviewed preprint on LLM timeline extraction from mental health discharge summaries with clinician adjudication; relevant to Waymark's care-note NLP and safety evaluation. The hospital-based MIMIC-III sample is not described as Medicaid-specific. No evaluation of downstream clinical decisions or population outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04912",
+      "published": "2026-11",
+      "title": "Trustworthy Crisis Mental Health Care: Key Values and Features",
+      "venue": "Milbank Quarterly",
+      "year": 2026,
+      "doi": "10.1111/1468-0009.70137",
+      "pmid": "43035563",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative framework on trustworthiness in crisis mental health could inform how Waymark's therapists and care teams deliver behavioral health, but abstract does not describe operationalization, measurement, or outcomes testable in Waymark's setting.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04909",
+      "published": "2026-11",
+      "title": "Rethinking the public health research ecosystem in the era of artificial intelligence: from evidence generation to population impact",
+      "venue": "Frontiers in public health",
+      "year": 2026,
+      "doi": "10.3389/fpubh.2026.1969940",
+      "pmid": "43041574",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "causal_methods",
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Conceptual framework for AI in public health research systems. No empirical data, population, or Medicaid-specific evidence. Addresses Waymark's methodological interests (evidence-to-action latency, AI governance, equity) but abstractly. AI-READY Framework mentioned but not detailed.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04903",
+      "published": "2026-11",
+      "title": "Patient Refusal of LLM-Assisted Care: Autonomy in an AI-Enabled Health System",
+      "venue": "Pakistan journal of medical sciences",
+      "year": 2026,
+      "doi": "10.12669/pjms.42.10.20929",
+      "pmid": "43041938",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "The paper is a normative ethical argument about LLM governance and patient autonomy in clinical decision support. It does not empirically evaluate Waymark's products (Signal, Anchor, Compass) or test whether disclosed LLM involvement changes patient outcomes, engagement, or care team workflows in Medicaid populations.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04901",
+      "published": "2026-11",
+      "title": "Beyond accuracy and time saved: implementation outcomes for generative AI in hospital administrative and clinical-administrative workflows—a mini review",
+      "venue": "Frontiers in medicine",
+      "year": 2026,
+      "doi": "10.3389/fmed.2026.1980325",
+      "pmid": "43042034",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "systematic_review",
+      "verdict": "watch",
+      "programs": [
+        "signal",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses GenAI safety, verification work, and error detection—relevant to Waymark's AI products (Signal, Anchor). But focuses on hospital administrative workflows, not Medicaid community care or member-facing programs.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04863",
+      "published": "2026-11",
+      "title": "Residual Structural, Behavioral, and Social Barriers to Blood Pressure Control in an EHR-Integrated Remote Hypertension Program",
+      "venue": "JACC. Advances",
+      "year": 2026,
+      "doi": "10.1016/j.jacadv.2026.103476",
+      "pmid": "43044283",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Identifies actionable barriers (health literacy, medication affordability, social loss) that persist despite digital program delivery. Suggests targeted screening could extend program benefit—relevant to Waymark's pharmacy and care-coordination models.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-04848",
+      "published": "2026-11",
+      "title": "Self-prompting small language models for privacy-sensitive clinical information extraction",
+      "venue": "Journal of biomedical informatics",
+      "year": 2026,
+      "doi": "10.1016/j.jbi.2026.105121",
+      "pmid": "43044941",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "methods",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "NLP for care-note extraction could support Waymark's signal product and causal-methods work. But the abstract evaluates dental notes and reports no primary-care or Medicaid-specific validation or real-world deployment. Local inference is relevant for privacy; transferability of clinical NER capability remains unproven.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-04831",
+      "published": "2026-11",
+      "title": "Association of “Nonadherence” Documentation with Clinician Empathy and Clinic Dismissal: A Randomized Survey Experiment",
+      "venue": "Journal of general internal medicine",
+      "year": 2026,
+      "doi": "10.1007/s11606-026-11012-2",
+      "pmid": "43045907",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Study tests how EHR language affects clinician attitudes toward patients, potentially relevant to care-coordination workflows. However, it measures clinician vignette responses, not patient outcomes or Waymark operations in Medicaid managed care.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "openai",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
     {
       "id": "LIT-04809",
       "published": "2026-11",

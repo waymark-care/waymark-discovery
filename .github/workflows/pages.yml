@@ -16,22 +16,24 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install jsonschema
       - run: python scripts/validate_feed.py
+      - name: Stage only the site files
+        if: github.event_name != 'pull_request'
+        run: |
+          mkdir _site && cp -r index.html assets data _site/
+          # stamp asset URLs with the commit so browsers never keep a stale stylesheet or script
+          V="${GITHUB_SHA::8}"
+          sed -i "s#assets/style.css"#assets/style.css?v=$V"#; s#assets/app.js"#assets/app.js?v=$V"#" _site/index.html
+          grep -q "style.css?v=$V" _site/index.html && grep -q "app.js?v=$V" _site/index.html
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with: {path: _site}
   deploy:
     needs: validate
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment: {name: github-pages, url: "${{ steps.d.outputs.page_url }}"}
     steps:
-      - uses: actions/checkout@v4
-      - name: Stage only the site files
-        run: |
-          mkdir _site && cp -r index.html assets data _site/
-          # stamp asset URLs with the commit so browsers never keep a stale stylesheet or script
-          V="${GITHUB_SHA::8}"
-          sed -i "s#assets/style.css\"#assets/style.css?v=$V\"#; s#assets/app.js\"#assets/app.js?v=$V\"#" _site/index.html
-          grep -q "style.css?v=$V" _site/index.html && grep -q "app.js?v=$V" _site/index.html
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with: {path: _site}
       - id: d
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

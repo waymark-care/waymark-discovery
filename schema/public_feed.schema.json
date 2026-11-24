@@ -231,9 +231,9 @@
           },
           "population": {
             "enum": [
-              "1k–5k",
-              "5k–10k",
-              "10k–50k",
+              "1k\u20135k",
+              "5k\u201310k",
+              "10k\u201350k",
               "50k+"
             ]
           },
@@ -338,7 +338,7 @@
                     "type": "array",
                     "items": {
                       "type": "string",
-                      "pattern": "^\\d{1,2}–\\d{1,2}$"
+                      "pattern": "^\\d{1,2}\u2013\\d{1,2}$"
                     },
                     "minItems": 4,
                     "maxItems": 11
@@ -371,11 +371,11 @@
                   },
                   "late_window": {
                     "type": "string",
-                    "pattern": "^\\d{1,2}–\\d{1,2}$"
+                    "pattern": "^\\d{1,2}\u2013\\d{1,2}$"
                   },
                   "early_window": {
                     "type": "string",
-                    "pattern": "^\\d{1,2}–\\d{1,2}$"
+                    "pattern": "^\\d{1,2}\u2013\\d{1,2}$"
                   },
                   "reference_label": {
                     "type": "string",
@@ -414,7 +414,7 @@
                       "properties": {
                         "label": {
                           "type": "string",
-                          "pattern": "^[A-Za-z0-9 +–-]{1,20}$"
+                          "pattern": "^[A-Za-z0-9 +\u2013-]{1,20}$"
                         },
                         "estimate": {
                           "oneOf": [
@@ -721,7 +721,7 @@
     },
     "literature": {
       "type": "array",
-      "maxItems": 500,
+      "maxItems": 5000,
       "description": "Clinician-approved literature cards. Bibliographic fields are copied from the registry record and re-verified at publish.",
       "items": {
         "type": "object",

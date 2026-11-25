@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-11-24",
+  "generated_at": "2026-11-25",
   "synthetic": false,
   "pipeline": {
     "proposed": 102,
@@ -3945,10 +3945,124 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 524,
-    "published": 524
+    "approved": 527,
+    "published": 527
   },
   "literature": [
+    {
+      "id": "LIT-05676",
+      "published": "2026-11",
+      "title": "Toward evidence-grounded AI systems for medication safety",
+      "venue": "Frontiers in Pharmacology",
+      "year": 2026,
+      "doi": "10.3389/fphar.2026.1949488",
+      "pmid": null,
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "openalex",
+      "design": "other",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy",
+        "ai_safety",
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "A narrative review on medication-safety AI, relevant to Waymark's pharmacy program. It proposes a human-supervised architecture for drug-interaction decision support and lists gaps that also matter for AI work, including limited prospective validation, workflow burden and hallucination risk. It is a review, not an evaluation, and it does not test any Waymark product.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-05650",
+      "published": "2026-11",
+      "title": "Economic hardship during pregnancy: Qualitative study on low‐income patient perspectives on financial, housing, and employment barriers to obstetric health",
+      "venue": "Pregnancy (Hoboken, N.J.)",
+      "year": 2026,
+      "doi": "10.1002/pmf2.70508",
+      "pmid": "43068027",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Qualitative study of 48 pregnant or postpartum patients at one Chicago public hospital, most publicly insured, documents unmet social needs (housing, food, employment, financial) and openness to clinic-based support. Describes problems Waymark addresses but provides no intervention evidence or outcome quantification.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-05614",
+      "published": "2026-11",
+      "title": "The arc of uncertainty across clinicians’ interactions with AI",
+      "venue": "Discover artificial intelligence",
+      "year": 2026,
+      "doi": "10.1007/s44163-026-02851-3",
+      "pmid": "43069807",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "qualitative",
+      "verdict": "watch",
+      "programs": [
+        "anchor"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Addresses LLM safety and clinician verification, relevant to Anchor's error-checking function. The abstract is a conceptual perspective (design field: qualitative) with no described population or setting, and no Medicaid or US managed-care evidence.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
     {
       "id": "LIT-05587",
       "published": "2026-11",

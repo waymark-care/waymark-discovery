@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "generated_at": "2026-11-25",
+  "generated_at": "2026-11-26",
   "synthetic": false,
   "pipeline": {
     "proposed": 102,
@@ -3945,10 +3945,198 @@
     "translated": 1,
     "tested_locally": 0,
     "replicated_locally": 0,
-    "approved": 527,
-    "published": 527
+    "approved": 532,
+    "published": 532
   },
   "literature": [
+    {
+      "id": "LIT-05798",
+      "published": "2026-11",
+      "title": "The moderating effects of cultural stress and resilience on depression and anxiety for a community health worker-delivered psychosocial program in immigrant adults",
+      "venue": "Cultural diversity & ethnic minority psychology",
+      "year": 2026,
+      "doi": "10.1037/cdp0000830",
+      "pmid": "43071489",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "rct",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "RCT of CHW-delivered mental health support in immigrants shows moderation by cultural stress and resilience. Abstract does not report payer or insurance; transfer to Medicaid managed care unclear. Behavioral health moderators may inform targeting.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-05785",
+      "published": "2026-11",
+      "title": "Integrating Social and Community Support Into the COVID-19 Emergency Response: The Massachusetts Care Resource Coordination Program",
+      "venue": "Journal of public health management and practice : JPHMP",
+      "year": 2026,
+      "doi": "10.1097/phh.0000000000002455",
+      "pmid": "43071970",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "social_needs",
+        "care_coordination"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Demonstrates social-needs screening and referral workflows similar to Waymark's model, but COVID emergency context, unknown payer mix, no causal design, and lack of health or utilization outcomes limit transferability.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-05764",
+      "published": "2026-11",
+      "title": "Clinical liability cases reveal a coupling between legal defensibility and medical procedure escalation in large language models",
+      "venue": "Communications medicine",
+      "year": 2026,
+      "doi": "10.1038/s43856-026-01839-5",
+      "pmid": "43073475",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cross_sectional",
+      "verdict": "watch",
+      "programs": [
+        "ai_safety"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Paper evaluates LLM behavior on malpractice defensibility and cost escalation. Relates to Waymark's interest in LLM safety and omission-error evaluation (anchor product). However, uses malpractice cases and simulated consultations, not operational Medicaid data or care outcomes.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
+    {
+      "id": "LIT-05745",
+      "published": "2026-11",
+      "title": "Addressing Pediatric Behavioral and Mental Health Concerns by Integrating Community Health Workers in a Primary Care Clinic: An Analysis of Goals and Progression toward Completion",
+      "venue": "The Journal of ambulatory care management",
+      "year": 2026,
+      "doi": "10.1097/jac.0000000000000582",
+      "pmid": "43074147",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "chw",
+        "behavioral_health"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Descriptive cohort of families at one urban FQHC primary care clinic, describing CHW workflows and the behavioral health goals families set. Compares goal types and demographics, and time to steps across goals; estimates no intervention effect. Payer not reported; Medicaid fit not confirmed.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": true
+      }
+    },
+    {
+      "id": "LIT-05740",
+      "published": "2026-11",
+      "title": "Clinical Pharmacist‐Supported Sodium‐Glucose Cotransporter 2 Inhibitor Initiation and Patient Outcomes in Primary Care",
+      "venue": "Diabetes, obesity & metabolism",
+      "year": 2026,
+      "doi": "10.1111/dom.71575",
+      "pmid": "43074473",
+      "arxiv_id": null,
+      "peer_reviewed": true,
+      "source": "pubmed",
+      "design": "cohort",
+      "verdict": "watch",
+      "programs": [
+        "pharmacy"
+      ],
+      "corroboration": {
+        "supports": null,
+        "refutes": null
+      },
+      "local_test": "not_testable",
+      "linked_finding": null,
+      "what_it_means": "Pharmacist-led medication initiation aligns with Waymark's pharmacy program. However, the study population is HMO members (not explicitly Medicaid), and the intervention is centralized EHR-based, not community-embedded. Outcomes are clinical; reach and care-team workflow changes are unclear.",
+      "action_taken": "",
+      "evidence": {
+        "identity_verified": true,
+        "retracted": false,
+        "clinician_reviewed": true
+      },
+      "waymark_authored": false,
+      "audit": {
+        "family": "anthropic",
+        "verdict": "pass",
+        "month": "2026-11",
+        "revised": false
+      }
+    },
     {
       "id": "LIT-05676",
       "published": "2026-11",
